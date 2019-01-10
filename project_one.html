@@ -2,21 +2,28 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
   <title>Katelyn Michalove</title>
 </head>
 <body>
-  <header>
-    <!-- Logo and home button -->
-    <a href="index.html"><img src="Images/logo.png" alt="logo"/>
-    </a>
-    <!-- Animated Main Hamburger Menu -->
-    <div class="container">
-      <div class="bar-1"></div>
-      <div class="bar-2"></div>
-      <div class="bar-3"></div>
-    </div>
-    <nav>
-      <ul>
+<div class="wrapper_two">
+  <header class="project_version">
+    <nav class="topnav">
+      <!-- Logo and home button -->
+      <a href="index.html" class="logo"></a>
+      <!-- Animated Main Hamburger Menu -->
+      <button href="javascript:void(0);" class="menu" onclick="myMenuFunction(); myFunction(this);">
+        <div class=bars>
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+      </button>
+      <ul id="menu_links">
         <li>
           <a href="index.html" alt="Homepage">Work</a>
         </li>
@@ -28,21 +35,27 @@
         </li>
       </ul>
     </nav>
-    <!--Hero Section -->
     <!-- Pink color block -->
     <div class="pink-color-block"></div>
-    <h1>FitCollect</h1>
-    <h3>Managing fitness content can be messy, stressful, and even goal limiting. FitCollect utilizes storage to help active users save time so they can spend it doing what they do best: acheiving fitness goals.</h3>
-    <img src="Images/FitCollect_CS.png" alt="Mobile Screen Picture"/>
-    <div class="pink-button">
-      <a href="https://invis.io/W4OROX4ME87#/327584531_Launch_Screen">View Prototype</a>
+    <div class="intro_header_two">
+      <h1 class="name">FitCollect</h1>
+      <h3 class="desc">Managing fitness content can be messy, stressful, and even goal limiting.</h3>
+      <h3 class="desc">FitCollect utilizes storage to help active users save time so they can spend it doing what they do best: acheiving fitness goals.</h3>
+    </div>
+    <div class="prototype">
+    <div class="fitcollect_img"></div>
+      <a "button_text" href="https://invis.io/W4OROX4ME87#/327584531_Launch_Screen">
+        <div class="pink-button">
+          View Prototype
+        </div>
+      </a>
     </div>
   </header>
   <section class= "introduction">
     <div class="introduction-items">
       <div class="role">
         <img src="Images/Role_Icon.png" alt="Role Icon"/>
-        <h3>Role</h3>
+        <h3 class="main">Role</h3>
         <ul class="role-list">
           <li>
             <h4>UX Research</h4>
@@ -57,7 +70,7 @@
       </div>
       <div class="tools">
         <img src="Images/Tools_icon.png" alt="Tools Icon"/>
-        <h3>Tools</h3>
+        <h3 class="main">Tools</h3>
         <ul class="tools-list">
           <li>
             <h4>Figma</h4>
@@ -87,7 +100,7 @@
       </div>
       <div class="deliverables">
         <img src="Images/Deliverables_icon.png" alt="Deliverables Icon"/>
-        <h3>Deliverables</h3>
+        <h3 class="main">Deliverables</h3>
         <ul class="deliverables-list">
           <li>
             <h4>User Research</h4>
@@ -117,7 +130,7 @@
       </div>
       <div class="duration">
         <img src="Images/Duration_icon.png" alt="duration icon">
-        <h3>Duration</h3>
+        <h3 class="main">Duration</h3>
         <ul class="duration-list">
           <li>
             <h4>7 Weeks</h4>
@@ -127,63 +140,53 @@
     </div>
   </section>
   <section class="problem">
-    <h2>The Problem</h2>
+    <h2 class="section_title">The Problem</h2>
     <div class="the-client">
-      <img src="Images/Client.png" alt="Client Image"/>
-      <h5>The Client</h5>
-      <p>The client started with a desire to enter the cloud storage space. They knew that there were many features that could be offered.</p>
+      <h5 class="white">THE CLIENT</h5>
+      <p class="client_quote">The client started with a desire to enter the cloud storage space. They knew that there were many features that could be offered.</p>
     </div>
     <div class="the-user">
-      <img src="Images/User.png" alt="User Image"/>
-      <h5>The User</h5>
-      <p>“I used to have a workout like that. I used to have it in my email, but last time I was at the gym I couldn’t find it. I feel like I always lose workouts I try and then I have to find new ones.”</p>
+      <h5 class="white">THE USER</h5>
+      <p class="client_quote">“I used to have a workout like that. I used to have it in my email, but last time I was at the gym I couldn’t find it. I feel like I always lose workouts I try and then I have to find new ones.”</p>
     </div>
     <div class="solution">
       <img src="Images/solution_icon.png" alt="Solution Icon"/>
-      <h2>The Solution</h2>
-      <p class="bold-purple">FitCollect utilizes cloud storage to help active users save time so they can spend it doing what they do best: achieving their fitness goals.   </p>
+      <h2 class="section_title">The Solution</h2>
+      <p class="bold-purple sol">FitCollect utilizes cloud storage to help active users save time so they can spend it doing what they do best: achieving their fitness goals.   </p>
     </div>
   </section>
   <section class="discovery">
     <img src="Images/discovery_icon.png" alt="Discovery Icon"/>
-    <h2>Discovery</h2>
+    <h2 class="section_title">Discovery</h2>
     <div class="user-surveys">
-      <h3>User Surveys</h3>
-      <div class="survey-results">
-        <div class="survey-row">
-          <div class="survey-item">
-            <h2 class="percentage">68.8%</h2>
-            <p>Want to upload photos and videos</p>
-          </div>
-          <div class="survey-item">
-            <h2 class="percentage">37.5%</h2>
-            <p>Want to create workouts with spreadsheets and documents</p>
-          </div>
-        </div>
-        <div class="survey-row">
-          <div class="survey-item">
-            <h2 class="percentage">50.0%</h2>
-            <p>Find collaboration unimportant for fitness use</p>
-          </div>
-          <div class="survey-item">
-            <h2 class="percentage">60.0%</h2>
-            <p>Want to save content from the web</p>
-          </div>
-        </div>
-        <div class="survey-row">
-          <div class="survey-item">
-            <h2 class="percentage">89.9%</h2>
-            <p>Prefer a mobile application for fitness</p>
-          </div>
-          <div class="survey-item">
-            <h2 class="percentage">95.7%</h2>
-            <p>Prefer folder organization </p>
-          </div>
-        </div>
+      <h3 class="category_title">User Surveys</h3>
+      <div class="survey-item">
+        <h2 class="percentage">68.8%</h2>
+        <p>Want to upload photos and videos</p>
       </div>
-    </div>
+      <div class="survey-item">
+        <h2 class="percentage">37.5%</h2>
+        <p>Want to create workouts with spreadsheets and documents</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">50.0%</h2>
+        <p>Find collaboration unimportant for fitness use</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">60.0%</h2>
+        <p>Want to save content from the web</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">89.9%</h2>
+        <p>Prefer a mobile application for fitness</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">95.7%</h2>
+        <p>Prefer folder organization </p>
+      </div>
+        </div>
     <div class="user-interviews">
-      <h3>User Interviews</h3>
+      <h3 class="category_title">User Interviews</h3>
       <div class="key-takeaway">
         <img src="Images/takeaway_icon.png" alt="bullet point">
         <p class="takeaway-content">Collaboration is unimportant to the fitness user and isn’t a feature they see themselves using. </p>
@@ -198,89 +201,99 @@
     <div class="grey-line"></div>
 
     <div class="competitive-analysis">
-      <h3>Competitive Analysis</h3>
-      <p class="bold-purple">When learning from the competition, I decided to analyze Google Drive, Box, and Pinterest for a personal use viewpoint. Below are the key findings:</p>
+      <h3 class="category_title">Competitive Analysis</h3>
+      <p class="bold-purple comp">When learning from the competition, I decided to analyze Google Drive, Box, and Pinterest for a personal use viewpoint. Below are the key findings:</p>
       <div class="key-takeaway">
-        <img src="Images/takeaway_icon.png" alt="bullet point">
+        <img class="bullet" src="Images/takeaway_icon.png" alt="bullet point">
         <p class="takeaway-content">Amount of free storage is important to users and should be offered at 10GB to remain competitive.</p>
       </div>
       <div class="key-takeaway">
-        <img src="Images/takeaway_icon.png" alt="bullet point">
+        <img class="bullet" src="Images/takeaway_icon.png" alt="bullet point">
         <p class="takeaway-content">There needs to be a strong user flow for adding and organizing an item similar to Pinterest’s fluid organization.</p>
       </div>
       <div class="key-takeaway">
-        <img src="Images/takeaway_icon.png" alt="bullet point">
+        <img class="bullet" src="Images/takeaway_icon.png" alt="bullet point">
         <p class="takeaway-content">An image format is needed for workout previews to maintain a fun, personal use similar to Pinterest.</p>
       </div>
-      <div class="pink-button">
-        <a href="https://docs.google.com/document/d/1l85OEE5EQzvUx1fy3GcDNK10x-ZM1_2psz6QLzdsfpg/edit?usp=sharing">View SWOT Chart</a>
-      </div>
+      <a href="https://docs.google.com/document/d/1l85OEE5EQzvUx1fy3GcDNK10x-ZM1_2psz6QLzdsfpg/edit?usp=sharing">
+        <div class="pink-button content">
+          View SWOT Chart
+        </div>
+      </a>
     </div>
 
     <!-- Grey Separating Line -->
     <div class="grey-line"></div>
 
     <div class="user-personas">
-      <h3>User Personas</h3>
+      <h3 class="category_title">User Personas</h3>
       <div class="user">
-        <img src="Images/Mike.png" alt="User Persona Image">
+        <img class="user_img" src="Images/Mike.png" alt="User Persona Image">
         <h5 class="user-name">Mike</h5>
         <h5 class="user-type">Spreadsheet User</h5>
-        <p class="bold-purple">“I don’t like using spreadsheet apps but I also hate keeping up with my notebook.“</p>
-        <h5 class="user-name">Goals</h5>
+        <p class="bold-purple user-quote">“I don’t like using spreadsheet apps but I also hate keeping up with my notebook.“</p>
+        <h5 class="user-cat">Goals</h5>
         <p>Stay in shape, increase the amount of weight he can lift, balance fitness and social life.</p>
-        <h5 class="user-name">Frustrations</h5>
+        <h5 class="user-cat">Frustrations</h5>
         <p>Spreadsheet apps not working for fitness purposes, Keeping up with a workout notebook.</p>
       </div>
-      <div class="user">
-        <img src="Images/Ashley.png" alt="User Persona Image">
+      <div class="user_two">
+        <img class="user_img" src="Images/Ashley.png" alt="User Persona Image">
         <h5 class="user-name">Ashley</h5>
         <h5 class="user-type">Workout Collector</h5>
-        <p class="bold-purple"> “I try an awesome workout from Popsugar or somewhere else and I go to look for it later and can’t find. Then I have to try to figure something else out.“</p>
-        <h5 class="user-name">Goals</h5>
+        <p class="bold-purple user-quote">“I try an awesome workout from Popsugar or somewhere else and I go to look for it later and can’t find. Then I have to try to figure something else out.“</p>
+        <h5 class="user-cat">Goals</h5>
         <p>Get in shape for bikini season so she feels confident on her travels. Try out new workouts. </p>
-        <h5 class="user-name">Frustrations</h5>
+        <h5 class="user-cat">Frustrations</h5>
         <p>Scrolling through her photos and emails to find workouts when she’s at the gym. </p>
       </div>
-      <div class="pink-button">
-        <a href="https://drive.google.com/drive/folders/1GCvyzWP7_tC2QqME7XgKe0fQn9pvHmYb?usp=sharing">View Full Personas</a>
-      </div>
+      <a href="https://drive.google.com/drive/folders/1GCvyzWP7_tC2QqME7XgKe0fQn9pvHmYb?usp=sharing">
+        <div class="pink-button">
+        View Full Personas
+        </div>
+      </a>
     </div>
   </section>
-  <section>
+  <section class="IA">
     <img src="Images/IA_icon.png" alt="Information Architecture Icon">
-    <h2>Information Architecture</h2>
+    <h2 class="section_title inner">Information Architecture</h2>
     <div class="user-stories">
-      <h3>User Stories</h3>
-      <p>Based off user interviews and the competitive analysis, user stories were writen for new users, returning users, and all users. </p>
+      <h3 class="category_title">User Stories</h3>
+      <p class="topp">Based off user interviews and the competitive analysis, user stories were writen for new users, returning users, and all users. </p>
       <p>Users need to be able to upload photos and videos, save links and images from the web, create workouts in the form spreadsheets and documents, and organize them by folders. </p>
-      <div class="pink-button">
-        <a href="https://docs.google.com/spreadsheets/d/16EYrCU3_LK03a4MJwNU7qvxrv2ZphkF2VrVo9jLUDfs/edit?usp=sharing">View User Stories</a>
-      </div>
+      <a href="https://drive.google.com/drive/folders/1GCvyzWP7_tC2QqME7XgKe0fQn9pvHmYb?usp=sharing">
+        <div class="pink-button">
+        View User Stories
+        </div>
+      </a>
     </div>
 
     <!-- Grey Separating Line -->
     <div class="grey-line"></div>
 
     <div class="user-flows">
-      <h3>User Flows</h3>
+      <h3 class="category_title">User Flows</h3>
       <p>After conducting my user research and learning the necessary features based on users and competition, I put my user stories to work and designed the user flows needed for an MVP. </p>
-      <img src="Images/UserFlows.png" alt="User Flow Image"/>
-      <div class="pink-button">
-        <a href="https://drive.google.com/drive/folders/1pJ7SDXfAC8ApfxAP3onHfs0nGGd5ascD?usp=sharing">View User Flows</a>
-      </div>
+      <img class="user-flows-img" src="Images/UserFlows.png" alt="User Flow Image"/>
+      <a href="https://drive.google.com/drive/folders/1GCvyzWP7_tC2QqME7XgKe0fQn9pvHmYb?usp=sharing">
+        <div class="pink-button">
+        View User Flows
+        </div>
+      </a>
     </div>
 
     <!-- Grey Separating Line -->
     <div class="grey-line"></div>
 
     <div class="site-map">
-      <h3>Site Map</h3>
+      <h3 class="category_title">Site Map</h3>
       <p>To begin my wireframing I first put together my content strategy and site map. Detailing the site map left very few questions when starting the wireframing process.</p>
-      <img src="Images/sitemap.png" alt="Site Map Image"/>
-      <div class="pink-button">
-        <a href="https://drive.google.com/file/d/1Y5q5FU2WAtJrG4VUGnmQWg1zkDeWUIxG/view?usp=sharing">View Site Map</a>
-      </div>
+      <img class="site-map-img" src="Images/sitemap.png" alt="Site Map Image"/>
+      <a href="https://drive.google.com/drive/folders/1GCvyzWP7_tC2QqME7XgKe0fQn9pvHmYb?usp=sharing">
+        <div class="pink-button">
+        View Site Map
+        </div>
+      </a>
     </div>
 
     <!-- Grey Separating Line -->
@@ -322,6 +335,7 @@
       <h6>Notification Screen</h6>
       <img src="Images/notification.png" alt="Notification Screen"/>
       <p>After alterations and another round of usability testing, users were able to complete high priority tasks and I was able to move on to visual design.</p>
+    </div>
     </section>
     <section>
       <img src="Images/visual_design_icon.png" alt="Visual Design Icon"/>
@@ -433,37 +447,60 @@
     </section>
     <section>
       <h2>View Next</h2>
-      <a href=project_two.html>
+      <a class="STB_link" href=project_two.html>
         <div class="stb">
-          <img src="Images/STB_pic.png" alt="Sixth Tool Baseball Website Image Preview"/>
-          <h2>Sixth Tool Baseball</h2>
-          <h4>Responsive CMS Website</h4>
+          <h2 class="project_headline">Sixth Tool Baseball</h2>
+          <h4 class="project_desc">Responsive CMS Website</h4>
         </div>
       </a>
     </section>
     <footer>
-      <h2>Let's Chat</h2>
-      <p>Thank you for visiting. I hope you enjoyed checking out my work. Feel free to connect with me or reach out for coffee.
-        I am currently open to UX / UI and Visual Design opportunities in North Carolina.</p>
-        <ul>
-          <li>
+      <h2 class= "footer_title">Let's Chat</h2>
+      <p>Thank you for visiting. I hope you enjoyed checking out my work. Feel free to connect with me or reach out for coffee.</p>
+      <p>I am currently open to UX / UI and Visual Design opportunities in North Carolina.</p>
+      <ul class="footer_list">
+          <li class="email">
             <a href="mailto:katelynmichalove@gmail.com">
               <img src="Images/Email_icon.png" alt="email icon"/>
             </a>
           </li>
-          <li>
+          <li class="github">
             <a href="https://github.com/katelynmichalove">
-              <img src="Images/github_icon.png" alt="github icon"/>
+              <img src="Images/github_icon.png"/>
             </a>
           </li>
-          <li>
+          <li class="linkedin">
             <a href="https://www.linkedin.com/in/katelynmichalove/">
-              <img src="Images/linkedin_icon.png" alt="linked in icon"/>
+              <img src="Images/linkedin_icon.png"/>
             </a>
           </li>
         </ul>
         <small class="copyright">&copy; 2019 Katelyn Michalove</small>
         <small class="credit">Designed and Developed by Katelyn Michalove</small>
       </footer>
+      </div>
+
+      <script>
+
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+
+      function myMenuFunction() {
+        var x = document.getElementById("menu_links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      $(function() {
+        $('a[href*=#]').on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+        });
+      });
+      </script>
     </body>
     </html>
