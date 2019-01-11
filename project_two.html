@@ -211,7 +211,7 @@
       </div>
     </section>
     <section class="visual_design">
-      <img src="Images/visual_design_icon.png" alt="Visual Design Icon"/>
+      <img class="visual_icon" src="Images/visual_design_icon.png" alt="Visual Design Icon"/>
       <h2 class="section_title inner">Visual Design</h2>
       <div class="branding">
         <h3 class="category_title">Branding</h3>
@@ -323,5 +323,27 @@
           <small class="credit">Designed and Developed by Katelyn Michalove</small>
         </footer>
       </div>
+      <script>
+
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+
+      function myMenuFunction() {
+        var x = document.getElementById("menu_links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      $(function() {
+        $('a[href*=#]').on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+        });
+      });
+      </script>
       </body>
       </html>

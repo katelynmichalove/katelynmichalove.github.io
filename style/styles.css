@@ -844,3 +844,7 @@ small {
 .wireframes .space_three, .branding .space_three, .front_end .space_three {
   padding-bottom: 0;
 }
+
+.visual_icon {
+  padding-top: 5rem;
+}
