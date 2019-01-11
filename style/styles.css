@@ -22,6 +22,7 @@ html {
   position: relative;
 }
 
+
 .topnav {
   display: grid;
   grid-column: 1 / -1;
@@ -123,7 +124,7 @@ button {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 8.6rem 40rem 35rem;
+  grid-template-rows: 8.6rem 42rem 35rem;
   align-items: center;
 }
 
@@ -221,7 +222,9 @@ h5 {
   font-size: 1.8rem;
   color: #333333;
   font-weight: 400;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  margin: 0;
 }
 
 h6 {
@@ -231,6 +234,8 @@ h6 {
   font-weight: 300;
   font-style: italic;
   margin-bottom: 0;
+  padding-top: 1.5rem;
+  margin-top: 0;
 }
 
 p {
@@ -529,6 +534,7 @@ small {
   grid-column: 1 / -1;
   height: 29.5rem;
   justify-items: center;
+  margin-top: -0.1rem;
   width: 37.5rem;
 }
 
@@ -547,8 +553,6 @@ small {
   padding-top: 5rem;
   margin: 0;
   margin-top: -3rem;
-  margin-right: 2.3rem;
-  margin-left: 2.3rem;
 }
 
 .user-surveys {
@@ -695,8 +699,6 @@ small {
   padding-top: 5rem;
   margin: 0;
   text-align: center;
-  margin-left: 2.3rem;
-  margin-right: 2.3rem;
 }
 
 .user-stories, .user-flows, .site-map, .wireframes, .branding, .mockups {
@@ -707,12 +709,16 @@ small {
 
 .user-stories p {
   padding-bottom: 3rem;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
 }
 
 .user-flows p, .site-map p, .wireframes p, .branding p, .mockups p {
   display: grid;
   padding-bottom: 3rem;
   padding-top: 3rem;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
 
 }
 
@@ -742,8 +748,6 @@ small {
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-items: center;
-  margin-left: 2.3rem;
-  margin-right: 2.3rem;
   justify-items: center;
 }
 
@@ -782,4 +786,17 @@ small {
   justify-items: center;
   padding-top: 2rem;
   padding-bottom: 43rem;
+}
+
+/* Space Correction after Round One Testing Key Takaways */
+.space {
+  padding-bottom: 1.5rem;
+}
+
+/* Spacing Correction between Preference Testing and key takeaways */
+
+/* And Spacing Correction between Round Two User Testing and key takeaways */
+
+.space_two {
+  padding-top: 0;
 }
