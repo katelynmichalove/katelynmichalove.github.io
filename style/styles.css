@@ -285,7 +285,7 @@ p {
 }
 
 
-.fitcollect .project_headline, .stb .project_headline {
+.fitcollect .project_headline, .stb .project_headline, .FitCollect_VN .project_headline {
   font-family: "Josefin Sans";
   color: #ffffff;
   margin-bottom: 0;
@@ -303,7 +303,7 @@ p {
   color: #ffffff;
 }
 
-.stb {
+.stb, .FitCollect_VN {
   display: grid;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
@@ -316,6 +316,11 @@ p {
   text-align: center;
   box-shadow: 1px 1px 10px 3px #999999;
 }
+
+.FitCollect_VN {
+  background-image: url(../Images/FitCollect_pic.png);
+}
+
 
 .STB_link {
   display: grid;
@@ -449,6 +454,17 @@ small {
   height: 25rem;
 }
 
+.STB_img {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  margin: 0;
+  background-image: url(../Images/STB_pic_CS.png);
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 25rem;
+}
+
 .button_text {
   display: grid;
   grid-column: 1 / -1;
@@ -507,6 +523,21 @@ small {
   width: 37.5rem;
 }
 
+.the-client-two {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-rows: 4fr 1fr 1fr 4fr;
+  grid-template-columns: 1fr;
+  background-image: url(../Images/client_two.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  grid-column: 1 / -1;
+  height: 29.5rem;
+  justify-items: center;
+  width: 37.5rem;
+}
+
 .white {
   color: #ffffff;
   display: grid;
@@ -522,7 +553,7 @@ small {
   padding-right: 1rem;
 }
 
-.the-user {
+.the-user, .the-user-two {
   display: grid;
   grid-column: 1 / -1;
   grid-template-rows: 4fr 1fr 1fr 4fr;
@@ -537,6 +568,11 @@ small {
   margin-top: -0.1rem;
   width: 37.5rem;
 }
+
+.the-user-two {
+  background-image: url(../Images/user_two.png);
+}
+
 
 .solution {
   display: grid;
@@ -701,7 +737,7 @@ small {
   text-align: center;
 }
 
-.user-stories, .user-flows, .site-map, .wireframes, .branding, .mockups {
+.user-stories, .user-flows, .site-map, .wireframes, .branding, .mockups, {
   display: grid;
   grid-column: 1 / -1;
   justify-items: center;
@@ -713,7 +749,7 @@ small {
   padding-right: 2.3rem;
 }
 
-.user-flows p, .site-map p, .wireframes p, .branding p, .mockups p {
+.user-flows p, .site-map p, .wireframes p, .branding p, .mockups p, .front_end p {
   display: grid;
   padding-bottom: 3rem;
   padding-top: 3rem;
@@ -760,7 +796,7 @@ small {
   margin-top: 3rem;
 }
 
-.mockups {
+.mockups, .front_end {
   display: grid;
   grid-column: 1 / -1;
   justify-items: center;
@@ -779,13 +815,17 @@ small {
   padding-top: 5rem;
 }
 
-.view_next {
+.view_next, .view_next_two {
   display: grid;
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-items: center;
   padding-top: 2rem;
   padding-bottom: 43rem;
+}
+
+.view_next_two {
+  padding-bottom: 53rem;
 }
 
 /* Space Correction after Round One Testing Key Takaways */
@@ -799,4 +839,8 @@ small {
 
 .space_two {
   padding-top: 0;
+}
+
+.wireframes .space_three, .branding .space_three, .front_end .space_three {
+  padding-bottom: 0;
 }
