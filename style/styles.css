@@ -737,7 +737,7 @@ small {
   text-align: center;
 }
 
-.user-stories, .user-flows, .site-map, .wireframes, .branding, .mockups, {
+.user-stories, .user-flows, .site-map, .wireframes, .branding, .mockups {
   display: grid;
   grid-column: 1 / -1;
   justify-items: center;
