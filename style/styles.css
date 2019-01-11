@@ -66,7 +66,7 @@ html {
 }
 
 .logo {
-  background-image: url(../images/logo.png);
+  background-image: url(../Images/logo.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 6rem;
@@ -269,7 +269,7 @@ p {
   display: grid;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
-  background-image: url(../images/FitCollect_pic.png);
+  background-image: url(../Images/FitCollect_pic.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 33.7rem;
@@ -302,7 +302,7 @@ p {
   display: grid;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
-  background-image: url(../images/STB_pic.png);
+  background-image: url(../Images/STB_pic.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 33.7rem;
@@ -326,7 +326,7 @@ p {
 }
 
 .main_img {
-  background-image: url(../images/Portfolio_Pic.png);
+  background-image: url(../Images/Portfolio_Pic.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   grid-column: 1 / -1;
@@ -438,7 +438,7 @@ small {
   grid-column: 1 / -1;
   grid-row: 1;
   margin: 0;
-  background-image: url(../images/FitCollect_CS.png);
+  background-image: url(../Images/FitCollect_CS.png);
   background-repeat: no-repeat;
   width: 35rem;
   height: 25rem;
@@ -492,7 +492,7 @@ small {
   grid-column: 1 / -1;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
-  background-image: url(../images/Client.png);
+  background-image: url(../Images/Client.png);
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -522,7 +522,7 @@ small {
   grid-column: 1 / -1;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
-  background-image: url(../images/User.png);
+  background-image: url(../Images/User.png);
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
