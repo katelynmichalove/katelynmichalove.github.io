@@ -2,19 +2,21 @@
   box-sizing: border-box;
 }
 
+/* Setting REM for the rest of the document- easy to calc */
 html {
   font-size: 10px;
 }
 
+/* Wrapper for the Homepage- sets the grid for homepage */
 .wrapper {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 2fr 1fr;
   position: relative;
-
 }
 
+/* Wrapper for case study pages- sets the grid */
 .wrapper_two {
   display: grid;
   grid-gap: 1rem;
@@ -23,44 +25,49 @@ html {
 }
 
 
+/* Top navigation grid for all pages */
 .topnav {
+  align-items: center;
   display: grid;
   grid-column: 1 / -1;
   grid-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
-  align-items: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
-
+/* Menu link within Hamburger */
 .topnav #menu_links {
+  background-image: linear-gradient(#C0B3A0,#C0B3A0,#D0C3AF, #fff);
+  background-size: cover;
   display: none;
-  grid-column: 1 / -1 ;
-  list-style: none;
-  font-size: 1.6rem;
   font-family: "Josefin Sans";
-  line-height: 4rem;
-  background-color: #C0B3A0;
-  padding-top: 3rem;
+  font-size: 2.8rem;
+  grid-column: 1 / -1 ;
+  line-height: 8rem;
+  list-style: none;
   padding-bottom: 3rem;
   padding-left: 2.3rem;
+  padding-top: 3rem;
   position: absolute;
-  top: 7rem;
-  width: 100%;
   text-align: center;
+  top: 5rem;
+  width: 100%;
 }
 
+/* Link style for navigation */
 .topnav a {
   text-decoration: none;
   color: #ffffff;
 }
 
+/* Visited link style */
 .topnav a:visited {
   text-decoration: none;
   color: #ffffff;
 }
 
+/* Visited link style */
 .topnav a:hover {
   text-decoration: none;
   color: #E14658;
@@ -70,12 +77,13 @@ html {
   background-image: url(../Images/logo.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 6rem;
-  height: 3.2rem;
   grid-column: 1 / 2;
+  height: 3.2rem;
   margin-left: 2.3rem;
+  width: 6rem;
 }
 
+/* Hambuger Menu Button */
 button {
   background: white;
   border: 0;
@@ -85,14 +93,14 @@ button {
   margin-right: 2.3rem;
 }
 
-
+/* Styling for the Hamburger Menu */
 .topnav .bar-1, .bar-2, .bar-3 {
-  position: relative;
-  width: 3.5rem;
-  height: .5rem;
   background-color: #555;
+  height: .5rem;
   margin: .6rem 0;
+  position: relative;
   transition: 0.4s;
+  width: 3.5rem;
 }
 
 /* Rotate first bar */
@@ -112,45 +120,49 @@ button {
   transform: rotate(45deg) translate(-.9rem, -.7rem) ;
 }
 
+/* Header for homepage- grid set up */
 .main_page {
+  align-items: center;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 0.5fr 1.25fr 2fr;
-  align-items: center;
 }
 
+/* Header for case study pages */
 .project_version {
+  align-items: center;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 8.6rem 42rem 35rem;
-  align-items: center;
 }
 
+/* Styling for all call to action buttons */
 .pink-button {
-  display: grid;
-  grid-column: 1 / -1;
-  width: 16.5rem;
-  height: 4rem;
+  align-items: center;
   background-color: #E14658;
   border-radius: 4%;
+  box-shadow: 2.5px 2.5px 8px #88888880;
+  color: #ffffff;
+  display: grid;
   font-size: 1.8rem;
   font-family: "Lato", sans-serif;
   font-weight: 200;
-  color: #ffffff;
+  grid-column: 1 / -1;
+  height: 4rem;
   text-align: center;
-  align-items: center;
-  box-shadow: 2.5px 2.5px 8px #88888880;
-
+  width: 16.5rem;
 }
 
+/* Hompage mountain image */
 .main_img {
   display: grid;
   grid-column: 1 / -1;
-  margin: 0;
+  margin:0;
 }
 
+/* Stying and placement for all pink color blocks */
 .pink-color-block {
   display: grid;
   grid-column: 1 / 2;
@@ -162,27 +174,29 @@ button {
   margin-top: 2rem;
 }
 
+/* Introduction H1 and H3 title and description for homepage*/
 .intro_header {
-  display: grid;
-  grid-column: 2 / 4;
   align-self: center;
   align-self: start;
+  display: grid;
+  grid-column: 2 / 4;
 }
 
+/* Introduction H1 and H3 title and description for case study pages */
 .intro_header_two {
+  align-self: center;
+  align-self: start;
   display: grid;
   grid-column: 1 / -1;
   grid-gap: 1rem;
   grid-template-columns: 1fr 3fr;
-  align-self: center;
-  align-self: start;
   margin-right: 2.3rem;
 }
 
 h1 {
-  font-size: 4.6rem;
-  font-family: "Josefin Sans", sans-serif;
   color: #333333;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.6rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
   margin-bottom: 0;
@@ -190,167 +204,177 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
-  font-family: "Josefin Sans", sans-serif;
   color: #333333;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.6rem;
   font-weight: 500;
 }
 
 h3 {
+  color: #333333;
   font-size: 2.4rem;
   font-family: "Josefin Sans", sans-serif;
-  color: #333333;
   line-height: 3.6rem;
   font-weight: 300;
 }
 
+h4 {
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h5 {
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+h6 {
+  color: #666666;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 2.4rem;
+  margin: 0;
+}
+
+/* Eliminate styling of ul for all pages */
 ul {
   list-style: none;
   padding: 0;
   line-height: 1rem;
 }
 
-h4 {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  color: #333333;
-  font-weight: 300;
-}
-
-h5 {
-  font-family: "Lato", sans-serif;
-  font-size: 1.8rem;
-  color: #333333;
-  font-weight: 400;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-  margin: 0;
-}
-
-h6 {
-  font-family: "Lato", sans-serif;
-  font-size: 1.6rem;
-  color: #666666;
-  font-weight: 300;
-  font-style: italic;
-  margin-bottom: 0;
-  padding-top: 1.5rem;
-  margin-top: 0;
-}
-
-p {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  margin: 0;
-}
-
+/* Sets up the grid for displaying projects on the homepage */
 .projects {
+  align-content: center;
   display: grid;
   grid-template-rows: 1fr 8fr 8fr;
   grid-template-columns: repeat(auto-fill, minmax(33.7rem, 54.7rem));
   grid-gap: 3rem;
-  text-align: center;
-  align-content: center;
   justify-content: center;
+  text-align: center;
 }
 
+/* Title of the project styling and grid placement */
 .projects .project_title {
   display: grid;
   grid-column: 1 / -1;
   margin-top: 0;
   margin-bottom: 0;
-
 }
 
+/* Link that wraps the entire dive for Fitcollect project on homepage */
 .fitcollect_link {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 }
 
+/* Div for Fitcollect on the homepage */
 .fitcollect {
-  display: grid;
-  grid-template-rows: 4fr 1fr 1fr 4fr;
-  grid-template-columns: 1fr;
   background-image: url(../Images/FitCollect_pic.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 33.7rem;
-  height: 31rem;
-  color: #ffffff;
-  text-align: center;
   box-shadow: 1px 1px 10px 3px #999999;
-}
-
-
-.fitcollect .project_headline, .stb .project_headline, .FitCollect_VN .project_headline {
-  font-family: "Josefin Sans";
   color: #ffffff;
-  margin-bottom: 0;
-  text-align: center;
-  grid-row: 2 / 3;
-}
-
-.project_desc {
-  font-family: "Lato";
-  font-size: 1.8rem;
-  font-weight: 100;
-  padding-top: 1rem;
-  width: 100%;
-  grid-row: 3 / 4;
-  color: #ffffff;
-}
-
-.stb, .FitCollect_VN {
   display: grid;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
+  height: 31rem;
+  text-align: center;
+  width: 33.7rem;
+}
+
+/* Headings for the project titles on both the homepage and View Next on CS Pages*/
+.fitcollect .project_headline, .stb .project_headline, .FitCollect_VN .project_headline {
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  grid-row: 2 / 3;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Heading for project description on both the homepage and view next portion on CS Pages */
+.project_desc {
+  color: #ffffff;
+  font-family: "Lato";
+  font-size: 1.8rem;
+  font-weight: 100;
+  grid-row: 3 / 4;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+/* Div for Sixth Tool Baseball on homepage and view next for fitcollect*/
+.stb, .FitCollect_VN {
   background-image: url(../Images/STB_pic.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 33.7rem;
-  height: 31rem;
-  color: #ffffff;
-  text-align: center;
   box-shadow: 1px 1px 10px 3px #999999;
+  color: #ffffff;
+  display: grid;
+  grid-template-rows: 4fr 1fr 1fr 4fr;
+  grid-template-columns: 1fr;
+  height: 31rem;
+  text-align: center;
+  width: 33.7rem;
 }
 
+/* Image for view next FitCollect*/
 .FitCollect_VN {
   background-image: url(../Images/FitCollect_pic.png);
 }
 
-
+/* link that wraps the entire div for sixth tool baseball on homepage */
 .STB_link {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 }
 
+/* Personal description under my name on homepage*/
 .desc {
   display: grid;
   grid-column: 2 / -1;
   margin-bottom: 0;
-
 }
 
+/* Main image on homepage of mountains- additional styling */
 .main_img {
+  align-items: center;
   background-image: url(../Images/Portfolio_Pic.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   grid-column: 1 / -1;
-  width: 100%;
   height: 35rem;
-  align-items: center;
   justify-items: center;
+  width: 100%;
 }
 
+/* Down arrow found on homepage on top of mountain pic*/
 .arrow {
   width: 3rem;
   margin-top: 20rem;
 }
 
+/* Makes the arrow bounce for annimation*/
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -368,6 +392,8 @@ p {
     transform: translateY(-1.5rem);
   }
 }
+
+
 .projects {
   display: grid;
   grid-column: 1 / -1;
@@ -698,7 +724,7 @@ small {
   justify-self: center;
 }
 
-.user_img, .user-name, .user-type {
+.user_img,.user-name, .user-type {
   text-align: center;
   margin: 0;
   padding-top: 1rem;
@@ -815,7 +841,7 @@ small {
   padding-top: 5rem;
 }
 
-.view_next, .view_next_two {
+.view_next {
   display: grid;
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
@@ -824,9 +850,6 @@ small {
   padding-bottom: 43rem;
 }
 
-.view_next_two {
-  padding-bottom: 53rem;
-}
 
 /* Space Correction after Round One Testing Key Takaways */
 .space {
@@ -841,10 +864,66 @@ small {
   padding-top: 0;
 }
 
-.wireframes .space_three, .branding .space_three, .front_end .space_three {
+.wireframes .space_three, .branding .space_three, .front_end .space_three, .user .space_three, .user_two .space_three {
   padding-bottom: 0;
 }
 
 .visual_icon {
   padding-top: 5rem;
+}
+
+.about_content {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr;
+}
+
+.about_content p {
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+}
+
+
+.about_content h3, .hobbies_content h3 {
+display: grid;
+grid-column: 1 / -1;
+margin: 0;
+font-weight: 500;
+padding-left: 2.3rem;
+padding-right: 2.3rem;
+padding-bottom: 1.5rem;
+padding-top: 3rem;
+text-align: left;
+}
+
+.aboutme_img {
+  justify-self: center;
+  padding-top: 1.5rem;
+}
+
+.hobbies_content {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-gap: 1rem;
+  padding-bottom: 120%;
+  grid-template-columns: 1fr 3fr;
+  align-self: center;
+  align-self: start;
+  margin-right: 2.3rem;
+  padding-top: 3rem;
+}
+
+.hobbies_content .hobbies_title {
+  display: grid;
+  grid-column: 2 / 4;
+  padding-top: .75rem;
+  padding-left: 0;
+}
+
+.hobby {
+  display: grid;
+  grid-column: 2 / 4;
+  padding-bottom: 1rem;
+  padding-right: 2.3rem;
+
 }

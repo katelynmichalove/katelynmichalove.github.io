@@ -2,22 +2,28 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
   <title>Katelyn Michalove</title>
 </head>
 <body>
-  <!-- Hero Image -->
+  <div class="wrapper_two">
   <header>
-    <!-- Logo and home button -->
-    <a href="index.html"><img src="Images/logo.png" alt="logo"/>
-    </a>
-    <!-- Animated Main Hamburger Menu -->
-    <div class="container">
-      <div class="bar-1"></div>
-      <div class="bar-2"></div>
-      <div class="bar-3"></div>
-    </div>
-    <nav>
-      <ul>
+    <nav class="topnav">
+      <!-- Logo and home button -->
+      <a href="index.html" class="logo"></a>
+      <!-- Animated Main Hamburger Menu -->
+      <button href="javascript:void(0);" class="menu" onclick="myMenuFunction(); myFunction(this);">
+        <div class=bars>
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+      </button>
+      <ul id="menu_links">
         <li>
           <a href="index.html" alt="Homepage">Work</a>
         </li>
@@ -25,59 +31,67 @@
           <a href="about.html" alt="About">About</a>
         </li>
         <li>
-          <a href="resume.html" alt="Resume">Resume</a>
+          <a href="Katelyn_Michalove_Resume.pdf" alt="Resume" target="_blank">Resume</a>
         </li>
       </ul>
     </nav>
+    <div class="intro_header_two">
     <!-- Pink color block -->
     <div class="pink-color-block"></div>
     <!-- Intro-->
-    <h2>Hello. I’m Katelyn Michalove pronounced ‘Mike-uh-love’. </h2>
-    <h3>Check out my story and other passions.</h3>
+    <h1 class="name">Hello. I’m Katelyn Michalove pronounced ‘Mike-uh-love’. </h1>
+    <h3 class="desc">Check out my story and other passions.</h3>
+    </div>
   </header>
-  <img src="Images/About_pic.png" alt="Picture of Me"/>
-  <h3>Growing Up an Artist</h3>
-  <p>I found myself caught between two worlds, both of which were never quite right for me. In one I found myself in love with art, the creative freedom, and the strong emotions it could convey. I felt connected to the artist of every piece I looked at. I took art class every year and the class hour seemed to pass faster each time.</p>
-  <p>Unfortunately I had always heard art wasn’t a real career path and for a while I listened to this. With doubts of ever making money and never really feeling like a true ‘artist’, I kept it as a hobby and explored other avenues. I became a Chemical Engineer, learning the trade of methodical problem solving which actually required quite a bit of creativity on the job.</p>
-  <p>I’ve always had a desire to solve problems, the more difficult, the better. What I learned is that to ignite my passion (sometimes obsession), the problem had to relate to a specific topic: People. Enter my love, passion, and discovery of design.</p>
-  <h3>Artist Turned Chemical Engineer</h3>
-  <p>My second world consisted of math and chemistry, both of which fueled my desire for problem solving. I spent hours solving three page math problems and somehow enjoyed it. At the time this seemed to be a more acceptable career path. This combination of subjects led me to become a Chemical Engineer.</p>
-  <p>I thought I didn’t belong as an artist, if only my teenage self could have seen me as an engineer. I realized this wasn’t the right path for me and I didn’t know what I was going to do with my life. In the past I believed a job was a job and you weren’t meant to be thrilled to do it.</p>
-  <p>Luckily at this point in my life I had grown and knew that there was another way. I could do anything with my career if I put in enough work and I could be thrilled while doing it too.</p>
-  <h3>Why Design?</h3>
-  <p>To change careers I thought back, way back, to childhood and who I really was as a person. I remembered being a relatively quiet child that other children reached out to and even spilled their guts to. I was always connecting well with others, somehow always feeling their emotions and understanding their actions.</p>
-  <p>That’s when I realized my career had to be connected to others. Yes I wanted to solve problems, but they had to be focused on people. My true passion isn’t necessarily art, math, or problem solving, it’s helping people. As a bonus I get to uncover that childhood artist.</p>
-  <!-- Pink color block -->
-  <div class="pink-color-block"></div>
-  <h3>Hobbies</h3>
-  <p>hiking around the outdoors with my husband.</p>
-  <p>obsessing over my German Shepherd.</p>
-  <p>celebrating Halloween way too early.</p>
-  <p>running, working out.</p>
-  <p>researching nutrition.</p>
-  <footer>
-    <h2>Let's Chat</h2>
-    <p>Thank you for visiting. I hope you enjoyed checking out my work. Feel free to connect with me or reach out for coffee.
-      I am currently open to UX / UI and Visual Design opportunities in North Carolina.</p>
-      <ul>
-        <li>
-          <a href="mailto:katelynmichalove@gmail.com">
-            <img src="Images/Email_icon.png" alt="email icon"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/katelynmichalove">
-            <img src="Images/github_icon.png" alt="github icon"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/katelynmichalove/">
-            <img src="Images/linkedin_icon.png" alt="linkedin icon"/>
-          </a>
-        </li>
-      </ul>
-      <small class="copyright">&copy; 2019 Katelyn Michalove</small>
-      <small class="credit">Designed and Developed by Katelyn Michalove</small>
-    </footer>
+  <section class="about_content">
+        <img class="aboutme_img" src="Images/About_pic.png" alt="Picture of Me"/>
+        <h3>Growing Up an Artist</h3>
+        <p>I found myself caught between two worlds, both of which were never quite right for me. In one I found myself in love with art, the creative freedom, and the strong emotions it could convey. I felt connected to the artist of every piece I looked at. I took art class every year and the class hour seemed to pass faster each time.</p>
+        <p>Unfortunately I had always heard art wasn’t a real career path and for a while I listened to this. With doubts of ever making money and never really feeling like a true ‘artist’, I kept it as a hobby and explored other avenues. I became a Chemical Engineer, learning the trade of methodical problem solving which actually required quite a bit of creativity on the job.</p>
+        <p>I’ve always had a desire to solve problems, the more difficult, the better. What I learned is that to ignite my passion (sometimes obsession), the problem had to relate to a specific topic: People. Enter my love, passion, and discovery of design.</p>
+        <h3>Artist Turned Chemical Engineer</h3>
+        <p>My second world consisted of math and chemistry, both of which fueled my desire for problem solving. I spent hours solving three page math problems and somehow enjoyed it. At the time this seemed to be a more acceptable career path. This combination of subjects led me to become a Chemical Engineer.</p>
+        <p>I thought I didn’t belong as an artist, if only my teenage self could have seen me as an engineer. I realized this wasn’t the right path for me and I didn’t know what I was going to do with my life. In the past I believed a job was a job and you weren’t meant to be thrilled to do it.</p>
+        <p>Luckily at this point in my life I had grown and knew that there was another way. I could do anything with my career if I put in enough work and I could be thrilled while doing it too.</p>
+        <h3>Why Design?</h3>
+        <p>To change careers I thought back, way back, to childhood and who I really was as a person. I remembered being a relatively quiet child that other children reached out to and even spilled their guts to. I was always connecting well with others, somehow always feeling their emotions and understanding their actions.</p>
+        <p>That’s when I realized my career had to be connected to others. Yes I wanted to solve problems, but they had to be focused on people. My true passion isn’t necessarily art, math, or problem solving, it’s helping people. As a bonus I get to uncover that childhood artist.</p>
+  </section>
+  <section class="hobbies_content">
+        <!-- Pink color block -->
+        <div class="pink-color-block hobbies_block"></div>
+        <h3 class="hobbies_title">Hobbies</h3>
+        <p class="hobby">hiking around the outdoors with my husband.</p>
+        <p class="hobby">obsessing over my German Shepherd.</p>
+        <p class="hobby">celebrating Halloween way too early.</p>
+        <p class="hobby">running, working out.</p>
+        <p class="hobby">researching nutrition.</p>
+  </section>
+<footer>
+  <h2 class= "footer_title">Let's Chat</h2>
+  <p>Thank you for visiting. I hope you enjoyed checking out my work. Feel free to connect with me or reach out for coffee.</p>
+  <p>I am currently open to UX / UI and Visual Design opportunities in North Carolina.</p>
+  <ul class="footer_list">
+      <li class="email">
+        <a href="mailto:katelynmichalove@gmail.com">
+          <img src="Images/Email_icon.png" alt="email icon"/>
+        </a>
+      </li>
+      <li class="github">
+        <a href="https://github.com/katelynmichalove">
+          <img src="Images/github_icon.png"/>
+        </a>
+      </li>
+      <li class="linkedin">
+        <a href="https://www.linkedin.com/in/katelynmichalove/">
+          <img src="Images/linkedin_icon.png"/>
+        </a>
+      </li>
+    </ul>
+    <small class="copyright">&copy; 2019 Katelyn Michalove</small>
+    <small class="credit">Designed and Developed by Katelyn Michalove</small>
+  </footer>
+  </div>
+    <script src="script.js"></script>
   </body>
   </html>

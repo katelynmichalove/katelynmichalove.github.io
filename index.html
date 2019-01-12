@@ -26,13 +26,13 @@
         </button>
         <ul id="menu_links">
           <li>
-            <a href="index.html" alt="Homepage">Work</a>
+            <a href="#section02" alt="Homepage">Work</a>
           </li>
           <li>
             <a href="about.html" alt="About">About</a>
           </li>
           <li>
-            <a href="resume.html" alt="Resume">Resume</a>
+            <a href="Katelyn_Michalove_Resume.pdf" alt="Resume" target="_blank">Resume</a>
           </li>
         </ul>
       </nav>
@@ -56,7 +56,7 @@
       <a class="fitcollect_link" href="project_one.html">
         <div class="fitcollect">
           <h2 class="project_headline">FitCollect</h2>
-          <h4 class="project_desc">Android App | UX & Visual Design</h4>
+          <h4 class="project_desc">Android App | UX &amp; Visual Design</h4>
         </div>
       </a>
       <!-- Sixth Tool Baseball Section-->
@@ -67,7 +67,7 @@
         </div>
       </a>
     </section>
-    <footer>
+    <footer class="about_footer">
       <h2 class= "footer_title">Let's Chat</h2>
       <p>Thank you for visiting. I hope you enjoyed checking out my work. Feel free to connect with me or reach out for coffee.</p>
       <p>I am currently open to UX / UI and Visual Design opportunities in North Carolina.</p>
@@ -92,27 +92,6 @@
         <small class="credit">Designed and Developed by Katelyn Michalove</small>
       </footer>
     </div>
-    <script>
-
-    function myFunction(x) {
-      x.classList.toggle("change");
-    }
-
-    function myMenuFunction() {
-      var x = document.getElementById("menu_links");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-
-    $(function() {
-      $('a[href*=#]').on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-      });
-    });
-    </script>
+    <script src="script.js"></script>
   </body>
   </html>
