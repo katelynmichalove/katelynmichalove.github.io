@@ -12,8 +12,8 @@ html {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 2fr 1fr;
   position: relative;
+  width: 100%;
 }
 
 /* Wrapper for case study pages- sets the grid */
@@ -28,12 +28,11 @@ html {
 /* Top navigation grid for all pages */
 .topnav {
   align-items: center;
-  display: grid;
-  grid-column: 1 / -1;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  width: 90%;
 }
 
 /* Menu link within Hamburger */
@@ -41,15 +40,15 @@ html {
   background-image: linear-gradient(#C0B3A0,#C0B3A0,#D0C3AF, #fff);
   background-size: cover;
   display: none;
+  flex-direction: column;
   font-family: "Josefin Sans";
   font-size: 2.8rem;
-  grid-column: 1 / -1 ;
-  line-height: 8rem;
+  line-height: 7rem;
   list-style: none;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-left: 2.3rem;
   padding-right: 2.3rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   position: absolute;
   text-align: center;
   top: 5rem;
@@ -78,9 +77,11 @@ html {
   background-image: url(../Images/logo.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  grid-column: 1 / 2;
   height: 3.2rem;
-  margin-left: 2.3rem;
+  margin-right: auto;
+  position: absolute;
+  top: 2rem;
+  left: 5%;
   width: 6rem;
 }
 
@@ -89,9 +90,12 @@ button {
   background: white;
   border: 0;
   cursor: pointer;
-  grid-column-start: 4;
-  justify-self: end;
-  margin-right: 2.3rem;
+  margin-left: auto;
+  position: absolute;
+  padding: 0;
+  right: 5%;
+  top: 2rem;
+
 }
 
 /* Styling for the Hamburger Menu */
@@ -125,9 +129,9 @@ button {
 .main_page {
   align-items: center;
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.5fr 1.25fr 2fr;
+  width: 100%;
 }
 
 /* Header for case study pages */
@@ -170,9 +174,16 @@ button {
   background-color: #E14658;
   width: 6rem;
   height: .4rem;
-  margin-left: 2.3rem;
   align-self: start;
   margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.heading_section {
+  display: grid;
+  grid-column: 1 / -1;
+  width: 90%;
+  justify-self: center;
 }
 
 /* Introduction H1 and H3 title and description for homepage*/
@@ -266,10 +277,10 @@ ul {
 .projects {
   align-content: center;
   display: grid;
-  grid-template-rows: 1fr 8fr 8fr;
-  grid-template-columns: repeat(auto-fill, minmax(33.7rem, 54.7rem));
+  grid-template-columns: repeat(auto-fill, minmax(28.8rem, 35rem));
   grid-gap: 3rem;
   justify-content: center;
+  padding-bottom: 47rem;
   text-align: center;
 }
 
@@ -279,6 +290,7 @@ ul {
   grid-column: 1 / -1;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 3rem;
 }
 
 /* Link that wraps the entire dive for Fitcollect project on homepage */
@@ -298,9 +310,9 @@ ul {
   display: grid;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
-  height: 31rem;
+  height: 30rem;
   text-align: center;
-  width: 33.7rem;
+  width: 90%;
 }
 
 /* Headings for the project titles on both the homepage and View Next on CS Pages*/
@@ -310,6 +322,8 @@ ul {
   grid-row: 2 / 3;
   margin-bottom: 0;
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Heading for project description on both the homepage and view next portion on CS Pages */
@@ -333,9 +347,9 @@ ul {
   display: grid;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
-  height: 31rem;
+  height: 30rem;
   text-align: center;
-  width: 33.7rem;
+  width: 90%;
 }
 
 /* Image for view next FitCollect*/
@@ -926,5 +940,103 @@ text-align: left;
   grid-column: 2 / 4;
   padding-bottom: 1rem;
   padding-right: 2.3rem;
+}
 
+@media screen and (min-width: 575px) {
+  .wrapper {
+    grid-template-columns: 6fr;
+  }
+
+  .main_img {
+    height: 46.5rem;
+  }
+
+  .projects {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 40rem));
+  }
+
+  .fitcollect, .stb {
+    height: 35rem;
+  }
+
+  .topnav #menu_links {
+    background-image: none;
+    background-color: #C0B3A0;
+
+}
+
+
+@media screen and (min-width: 1030px) {
+
+  .main_img {
+    height: 60rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(45rem, 50rem));
+  }
+
+  .fitcollect, .stb {
+    height: 45rem;
+  }
+
+  .topnav {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+
+  }
+
+  .topnav a {
+    color: #333333;
+  }
+
+  .topnav a:visited {
+    text-decoration: none;
+    color: #333333;
+  }
+
+  .topnav #menu_links {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: white;
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    width: auto;
+  }
+
+
+
+  .logo {
+    display: flex;
+    flex: 1;
+  }
+
+  button {
+    display: none;
+  }
+
+  .heading_section {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
 }

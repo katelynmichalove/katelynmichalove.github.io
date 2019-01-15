@@ -5,10 +5,10 @@ function myFunction(x) {
 
 function myMenuFunction() {
   var x = document.getElementById("menu_links");
-  if (x.style.display === "block") {
+  if (x.style.display === "flex") {
     x.style.display = "none";
   } else {
-    x.style.display = "block";
+    x.style.display = "flex";
   }
 }
 
