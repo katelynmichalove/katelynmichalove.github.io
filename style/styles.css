@@ -9,6 +9,7 @@ html {
 
 /* Wrapper for the Homepage- sets the grid for homepage */
 .wrapper {
+  background-color: #F0F0F0;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
@@ -37,18 +38,18 @@ html {
 
 /* Menu link within Hamburger */
 .topnav #menu_links {
-  background-image: linear-gradient(#C0B3A0,#C0B3A0,#D0C3AF, #fff);
+  background-image: linear-gradient(#C0B3A0,#C0B3A0,#D0C3AF, #F0F0F0);
   background-size: cover;
   display: none;
   flex-direction: column;
   font-family: "Josefin Sans";
   font-size: 2.8rem;
-  line-height: 7rem;
+  line-height: 6rem;
   list-style: none;
   padding-bottom: 2rem;
   padding-left: 2.3rem;
   padding-right: 2.3rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   position: absolute;
   text-align: center;
   top: 5rem;
@@ -87,7 +88,7 @@ html {
 
 /* Hambuger Menu Button */
 button {
-  background: white;
+  background: #F0F0F0;
   border: 0;
   cursor: pointer;
   margin-left: auto;
@@ -100,7 +101,7 @@ button {
 
 /* Styling for the Hamburger Menu */
 .topnav .bar-1, .bar-2, .bar-3 {
-  background-color: #555;
+  background-color: #333333;
   height: .5rem;
   margin: .6rem 0;
   position: relative;
@@ -132,6 +133,7 @@ button {
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
+  background-color: #F0F0F0;
 }
 
 /* Header for case study pages */
@@ -164,7 +166,7 @@ button {
 .main_img {
   display: grid;
   grid-column: 1 / -1;
-  margin:0;
+  margin0
 }
 
 /* Stying and placement for all pink color blocks */
@@ -280,7 +282,7 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(28.8rem, 35rem));
   grid-gap: 3rem;
   justify-content: center;
-  padding-bottom: 47rem;
+  padding-bottom: 40rem;
   text-align: center;
 }
 
@@ -302,21 +304,47 @@ ul {
 
 /* Div for Fitcollect on the homepage */
 .fitcollect {
-  background-image: url(../Images/FitCollect_pic.png);
+  background-image: url(../Images/FitCollect_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 1px 1px 10px 3px #999999;
   color: #ffffff;
   display: grid;
-  grid-template-rows: 4fr 1fr 1fr 4fr;
-  grid-template-columns: 1fr;
   height: 30rem;
-  text-align: center;
+  position: relative;
   width: 90%;
 }
 
+.overlay {
+  display: grid;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  background-color: #3F325095;
+  grid-template-rows: 4fr 1fr 1fr 4fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
 /* Headings for the project titles on both the homepage and View Next on CS Pages*/
-.fitcollect .project_headline, .stb .project_headline, .FitCollect_VN .project_headline {
+.fitcollect .project_headline, .stb .project_headline {
+  width: 100%;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  grid-row: 2 / 3;
+  margin: 0;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.FitCollect_VN .project_headline {
   color: #ffffff;
   font-family: "Josefin Sans";
   grid-row: 2 / 3;
@@ -334,12 +362,14 @@ ul {
   font-weight: 100;
   grid-row: 3 / 4;
   padding-top: 1rem;
+  margin: 0;
   width: 100%;
+  text-align: center;
 }
 
 /* Div for Sixth Tool Baseball on homepage and view next for fitcollect*/
 .stb, .FitCollect_VN {
-  background-image: url(../Images/STB_pic.png);
+  background-image: url(../Images/STB_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 1px 1px 10px 3px #999999;
@@ -350,6 +380,10 @@ ul {
   height: 30rem;
   text-align: center;
   width: 90%;
+}
+
+.stb {
+  position: relative;
 }
 
 /* Image for view next FitCollect*/
@@ -385,8 +419,9 @@ ul {
 
 /* Down arrow found on homepage on top of mountain pic*/
 .arrow {
-  width: 3rem;
-  margin-top: 20rem;
+  width: 4rem;
+  margin-top: 8rem;
+  text-align: center;
 }
 
 /* Makes the arrow bounce for annimation*/
@@ -430,6 +465,11 @@ footer {
   padding-bottom: 1rem;
 }
 
+footer p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
 
 .footer_title {
   color: #ffffff;
@@ -440,30 +480,30 @@ footer {
 
 .footer_list {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: block;
   padding-left: 0;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  justify-items: center;
+}
+
+.footer_list li {
   align-items: center;
 }
 
 .email {
-  display: grid;
-  grid-column: 2;
+  display: inline-block;
   width: 3.5rem;
+  margin-right: 2rem;
 }
 
 .github {
-  display: grid;
-  grid-column: 3;
+  display: inline-block;
   width: 3.5rem;
+  margin-right: 2rem;
 }
 
 .linkedin {
-  display: grid;
-  grid-column: 4;
+  display: inline-block;
   width: 3.5rem;
   align-self: center;
 }
@@ -954,18 +994,28 @@ text-align: left;
   .projects {
     grid-column: 1 / -1;
     grid-template-columns: repeat(auto-fill, minmax(30rem, 40rem));
+    padding-bottom: 45rem;
   }
 
   .fitcollect, .stb {
     height: 35rem;
   }
 
-  .topnav #menu_links {
-    background-image: none;
-    background-color: #C0B3A0;
+  .topnav {
+    padding-bottom: 8rem;
+  }
+
+  .intro_header {
+    padding-bottom: 5rem;
+  }
+
+
+  footer p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
 
 }
-
 
 @media screen and (min-width: 1030px) {
 
@@ -975,6 +1025,7 @@ text-align: left;
 
   .projects {
     grid-template-columns: repeat(auto-fill, minmax(45rem, 50rem));
+    padding-bottom: 40rem;
   }
 
   .fitcollect, .stb {
@@ -982,14 +1033,16 @@ text-align: left;
   }
 
   .topnav {
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-
+    display: block;
+    align-items: center;
+    padding-bottom: 8.6rem;
   }
 
   .topnav a {
     color: #333333;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding-left: 5rem;
   }
 
   .topnav a:visited {
@@ -997,23 +1050,39 @@ text-align: left;
     color: #333333;
   }
 
+  .topnav a:hover {
+    text-decoration: none;
+    color: #E14658;
+  }
+
   .topnav #menu_links {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    background-color: white;
-    justify-content: flex-end;
+    background-image: none;
+    background-color: #C0B3A0;
+    display: block;
+    background-color: #F0F0F0;
     padding-top: 0;
     padding-bottom: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 2rem;
+    right: 10%;
     margin-top: 0;
     width: auto;
   }
 
-
+  .topnav #menu_links li {
+    display: inline-block;
+    }
 
   .logo {
-    display: flex;
-    flex: 1;
+    left: 10%;
+    margin-top: 2rem;
+    width: 7.5rem;
+    height: 4rem;
+  }
+
+  .pink-color-block {
+    width: 7.5rem;
   }
 
   button {
@@ -1022,6 +1091,7 @@ text-align: left;
 
   .heading_section {
     width: 80%;
+    padding-bottom: 5%;
   }
 
   h1 {
@@ -1038,5 +1108,52 @@ text-align: left;
 
   h4 {
     font-size: 2.4rem;
+  }
+
+  .projects .project_title {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+
+  .overlay {
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .fitcollect:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .stb:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .fitcollect .project_headline, .stb .project_headline {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .project_desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .projects {
+    padding-bottom: 50rem;
+    background-color: #F0F0F0;
+    margin-top: -1rem;
   }
 }
