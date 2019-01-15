@@ -279,7 +279,7 @@ ul {
 .projects {
   align-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(28.8rem, 35rem));
+  grid-template-columns: repeat(auto-fit, minmax(28.8rem, 35rem));
   grid-gap: 3rem;
   justify-content: center;
   padding-bottom: 40rem;
@@ -993,7 +993,7 @@ text-align: left;
 
   .projects {
     grid-column: 1 / -1;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 40rem));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 40rem));
     grid-gap: 3rem;
     padding-bottom: 45rem;
   }
@@ -1025,7 +1025,7 @@ text-align: left;
   }
 
   .projects {
-    grid-template-columns: repeat(auto-fit, minmax(45rem, 50rem));
+    grid-template-columns: repeat(2, minmax(45rem, 50rem));
     padding-bottom: 40rem;
     grid-gap: 0;
   }
