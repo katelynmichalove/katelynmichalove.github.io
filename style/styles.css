@@ -555,11 +555,14 @@ small {
   justify-self: center;
 }
 
-.moodboard {
+.moodboard img {
   display: grid;
   grid-column: 1 / -1;
   padding-bottom: 3rem;
-
+  width: 100%;
+  max-width: 55rem;
+  justify-self: center;
+  text-align: center;
 }
 
 .view_next .fitcollect_link {
@@ -909,6 +912,9 @@ small {
   width: 100%;
 }
 
+.wireframes .screens_four {
+  justify-items: center;
+}
 .STB_wireframe_collage {
   display: none;
 }
@@ -920,6 +926,7 @@ small {
 .STB_front_end_collage {
   display: none;
 }
+
 
 .inner {
   margin-bottom: 0;
@@ -971,6 +978,11 @@ small {
 .refined_logo img, .icons img, .typography img {
   width: 90%;
   max-width: 42.5rem;
+}
+
+.typography_two img, .color_scheme_two img {
+  width: 90%;
+  max-width: 35rem;
 }
 
 .color_scheme img {
@@ -1719,7 +1731,12 @@ text-align: left;
     width: 90%;
     max-width: 50rem;
     height: auto;
+}
 
+.moodboard {
+  display: grid;
+  grid-column: 2 / 12;
+  max-width: 55rem;
 }
 
 @media screen and (min-width: 1030px) {
@@ -2267,7 +2284,7 @@ text-align: left;
 
   .branding_intro {
     display: grid;
-    grid-column: 1 / -1;
+    grid-column: 3 / 11;
 
   }
 
@@ -2293,7 +2310,8 @@ text-align: left;
 
   .moodboard {
     display: grid;
-    grid-column: 1 / -1;
+    grid-column: 3 / 11;
+    max-width: 55rem;
   }
 
   .color_scheme_two {
@@ -2389,6 +2407,7 @@ text-align: left;
     width: 100%;
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-top: 5rem;
   }
 
   .front_end .screens_six {
