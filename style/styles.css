@@ -2515,24 +2515,8 @@ text-align: left;
 @media screen and (min-width: 1440px) {
 
   .wrapper_two {
-    margin: 0 8%;
-  }
-
-}
-
-@media screen and (min-width: 1920px) {
-
-  .wrapper_two {
-    margin: 0 12%;
-  }
-
-}
-
-
-@media screen and (min-width: 2560px) {
-
-  .wrapper_two {
-    margin: 0 18%;
+    margin: 0 auto;
+    max-width: 1400px;
   }
 
 }
