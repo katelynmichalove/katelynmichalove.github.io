@@ -31,7 +31,6 @@ html {
 
 /* Top navigation grid for all pages */
 .topnav {
-  align-items: center;
   display: flex;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -78,13 +77,14 @@ html {
 }
 
 .logo {
+  align-self: center;
   background-image: url(../Images/logo.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 3.2rem;
   margin-right: auto;
   position: absolute;
-  top: 2rem;
+  top: 2.3rem;
   left: 5%;
   width: 6rem;
 }
