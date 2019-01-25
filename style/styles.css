@@ -78,10 +78,10 @@ html {
 
 .logo {
   align-self: center;
-  background-image: url(../Images/logo.png);
+  background-image: url(../Images/logo.svg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 3.2rem;
+  height: 4rem;
   margin-right: auto;
   position: absolute;
   top: 2.3rem;
@@ -165,7 +165,8 @@ button {
   grid-column: 1 / -1;
   height: 4rem;
   text-align: center;
-  width: 16.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Hompage mountain image */
@@ -309,6 +310,7 @@ ul {
   background-image: url(../Images/FitCollect_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   box-shadow: 1px 1px 10px 3px #999999;
   color: #ffffff;
   display: grid;
@@ -374,6 +376,7 @@ ul {
   background-image: url(../Images/STB_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   box-shadow: 1px 1px 10px 3px #999999;
   color: #ffffff;
   display: grid;
@@ -405,6 +408,9 @@ ul {
   display: grid;
   grid-column: 2 / -1;
   margin-bottom: 0;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  padding-right: 3rem;
 }
 
 /* Main image on homepage of mountains- additional styling */
@@ -592,6 +598,10 @@ small {
   grid-column: 1 / -1;
 }
 
+.introduction-items h3 {
+  color: #6A5487;
+}
+
 .main {
   font-weight: 500;
 }
@@ -743,6 +753,7 @@ small {
 
 .percentage {
   color: #6A5487;
+  margin-bottom: 0;
 }
 
 .section_title {
@@ -821,7 +832,15 @@ small {
   justify-self: center;
 }
 
-.user_img,.user-name, .user-type {
+.user-name {
+  font-weight: 800;
+  padding-top: 2rem;
+  margin: 0;
+  text-align: center;
+  color: #6A5487;
+}
+
+.user_img, .user-type {
   text-align: center;
   margin: 0;
   padding-top: 1rem;
@@ -836,6 +855,7 @@ small {
   padding-top: 2rem;
   padding-left: 0;
   padding-right: 0;
+  font-size: 2rem;
 }
 
 .user-cat {
@@ -890,10 +910,14 @@ small {
   justify-items: center;
 }
 
+.branding {
+  background-color: #f0f0f0;
+}
 .user-stories p {
   padding-bottom: 3rem;
   padding-left: 2.3rem;
   padding-right: 2.3rem;
+  max-width: 70rem;
 }
 
 .user-flows p, .site-map p, .wireframes p, .branding p, .mockups p, .front_end p {
@@ -1041,6 +1065,8 @@ small {
   justify-items: center;
   padding-top: 2rem;
   padding-bottom: 43rem;
+  background-color: #f0f0f0;
+  margin-top: 3rem;
 }
 
 .view_next .STB_link {
@@ -1190,10 +1216,12 @@ text-align: left;
 
   .problem {
     grid-template-columns: repeat(12, 1fr);
+    padding-top: 5rem;
   }
 
   .problem .solution {
     grid-column: 2 / 12;
+    padding-top: 10rem;
   }
 
   .section_title {
@@ -1282,7 +1310,7 @@ text-align: left;
   .pink-divider {
     width: .1rem;
     height: 45rem;
-    background-color: #E14658;
+    background-color: #6A5487;
     grid-column-start: 2;
     grid-row: 1;
     align-self: center;
@@ -1291,7 +1319,7 @@ text-align: left;
   .pink-divider_two {
     width: .1rem;
     height: 45rem;
-    background-color: #E14658;
+    background-color: #6A5487;
     grid-column-start: 3;
     grid-row: 1;
     align-self: center;
@@ -1808,9 +1836,7 @@ text-align: left;
 
   .logo {
     left: 10%;
-    margin-top: 2rem;
-    width: 7.5rem;
-    height: 4rem;
+    margin-top: 0.5rem;
   }
 
   .pink-color-block {
@@ -1843,7 +1869,8 @@ text-align: left;
   }
 
   h5 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    padding-bottom: 3rem;
   }
 
   h6 {
@@ -1923,6 +1950,12 @@ text-align: left;
     display: grid;
     grid-column: 7 / -1;
     grid-row: 2;
+  }
+
+  .key-takeaway {
+    padding-top: 5rem;
+    max-width: 70rem;
+    justify-self: center;
   }
 
   .aboutme_img {
@@ -2027,7 +2060,7 @@ text-align: left;
   .pink-divider {
     width: .1rem;
     height: 45rem;
-    background-color: #E14658;
+    background-color: #6A5487;
     grid-column-start: 2;
     grid-row: 1;
     align-self: center;
@@ -2036,7 +2069,7 @@ text-align: left;
   .pink-divider_two {
     width: .1rem;
     height: 45rem;
-    background-color: #E14658;
+    background-color: #6A5487;
     grid-column-start: 3;
     grid-row: 1;
     align-self: center;
@@ -2070,6 +2103,10 @@ text-align: left;
     grid-column: 3 / 11;
   }
 
+  .problem {
+    padding-top: 10rem;
+  }
+
   .user-surveys {
     background-color: #F0F0F0;
     display: grid;
@@ -2077,7 +2114,9 @@ text-align: left;
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 0;
+    margin-top: 5rem;
   }
+
 
   .user-surveys h3 {
     display: grid;
@@ -2089,6 +2128,7 @@ text-align: left;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
+    padding-top: 10rem;
   }
 
   .competitive-analysis {
@@ -2102,6 +2142,7 @@ text-align: left;
     display: grid;
     grid-row: 4;
     grid-column: 3 / 11;
+    padding-top: 5rem;
   }
 
   .grey-line {
@@ -2109,13 +2150,15 @@ text-align: left;
     grid-row-start: 5;
     grid-column: 1 / -1;
     width: 44rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
   }
 
   .two {
     display: grid;
     grid-row-start: 7;
     grid-column: 1 / -1;
-    margin-bottom: 21rem;
+    margin-bottom: 27rem;
   }
 
   .background {
@@ -2146,6 +2189,14 @@ text-align: left;
     background-size: cover;
     padding-bottom: 5rem;
   }
+
+  .user .user-quote, .user_two .user-quote {
+    font-size: 2.4rem;
+    font-style: italic;
+    text-indent: -1rem;
+    text-align: left;
+  }
+
 
   .UP {
     margin-top: -22rem;
@@ -2185,10 +2236,24 @@ text-align: left;
     grid-template-columns: repeat(12, 1fr);
   }
 
+  .site-map p {
+    max-width: 70rem;
+  }
+
+  .user-flows {
+    padding-top: 5rem;
+  }
+
+  .IA {
+    padding-top: 10rem;
+  }
+
   .user-flows p, .site-map p {
     display: grid;
     grid-column: 3 / 11;
     grid-row: 2;
+    max-width: 70rem;
+    text-align: left;
   }
 
   .user-flows img, .site-map img {
@@ -2214,21 +2279,31 @@ text-align: left;
   .user-stories {
     display: grid;
     grid-column: 3 / 11;
+    padding-top: 5rem;
+  }
+
+  .user-stories p {
+    text-align: left;
   }
 
   .wireframes {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding-top: 5rem;
   }
 
   .wireframes p {
     display: grid;
     grid-column: 3 / 11;
+    max-width: 70rem;
+    text-align: left;
   }
 
   .wireframes .sketches {
     display: grid;
     grid-column: 1 / -1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .wireframes .screens_one, .preference_testing .screens_one, .final_design .screens_one {
@@ -2239,12 +2314,15 @@ text-align: left;
     justify-items: center;
   }
 
+
+
   .wireframes .screens_two {
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0;
   }
+
 
   .R1 {
     display: grid;
@@ -2288,6 +2366,17 @@ text-align: left;
   .branding {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    margin-top: 5rem;
+  }
+
+  .branding p {
+    max-width: 45rem;
+    text-align: left;
+  }
+
+  .branding .branding_intro {
+    text-align: center;
+    max-width: 70rem;
   }
 
   .logo_sketches {
@@ -2387,6 +2476,7 @@ text-align: left;
   .mockups {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding-top: 5rem;
   }
 
   .mockups p {
@@ -2436,12 +2526,26 @@ text-align: left;
   .preference_testing, .final_design {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding-top: 5rem;
+  }
+
+  .preference_testing {
+    padding-bottom: 0;
+  }
+
+  .round_two {
+    padding-top: 5rem;
   }
 
   .preference_testing h5, .preference_testing .summary, .final_design h5, .final_design .summary {
     display: grid;
     grid-column: 1 / -1;
     justify-self: center;
+  }
+
+  .final_design .summary {
+    max-width: 70rem;
+
   }
 
   .preference_testing .summary {
@@ -2512,9 +2616,13 @@ text-align: left;
     padding-top: 5rem;
   }
 
+  .view_next {
+    margin-top: 10rem;
+  }
+
   .view_next .STB_link, .view_next .fitcollect_link {
     width: 50rem;
-    max-width: 50rem;
+    max-width: 55rem;
   }
 
 
