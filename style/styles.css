@@ -78,15 +78,11 @@ html {
 
 .logo {
   align-self: center;
-  background-image: url(../Images/logo.svg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   height: 4rem;
   margin-right: auto;
   position: absolute;
   top: 2.3rem;
   left: 5%;
-  width: 6rem;
 }
 
 /* Hambuger Menu Button */
@@ -180,7 +176,7 @@ button {
   display: grid;
   grid-column: 1 / 2;
   background-color: #E14658;
-  width: 6rem;
+  width: 4.5rem;
   height: .4rem;
   align-self: start;
   margin-top: 2rem;
@@ -1837,6 +1833,8 @@ text-align: left;
   .logo {
     left: 10%;
     margin-top: 0.5rem;
+    background-size: cover;
+    height: 4.5rem;
   }
 
   .pink-color-block {
