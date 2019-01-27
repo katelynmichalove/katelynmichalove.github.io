@@ -176,7 +176,7 @@ button {
   display: grid;
   grid-column: 1 / 2;
   background-color: #E14658;
-  width: 4.5rem;
+  width: 5.56rem;
   height: .4rem;
   align-self: start;
   margin-top: 2rem;
@@ -306,9 +306,8 @@ ul {
   background-image: url(../Images/FitCollect_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  box-shadow: 1px 1px 10px 3px #999999;
-  color: #ffffff;
+  background-size: 90% 74%;
+  background-color: #8C8496;
   display: grid;
   height: 30rem;
   position: relative;
@@ -372,9 +371,8 @@ ul {
   background-image: url(../Images/STB_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  box-shadow: 1px 1px 10px 3px #999999;
-  color: #ffffff;
+  background-size: 90% 75%;
+  background-color: #8C8496;
   display: grid;
   grid-template-rows: 4fr 1fr 1fr 4fr;
   grid-template-columns: 1fr;
@@ -552,7 +550,7 @@ small {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 90%;
+  width: 100%;
   height: auto;
   justify-self: center;
 }
@@ -1205,7 +1203,7 @@ text-align: left;
 
   .STB_img {
     width: 50rem;
-    height: 30rem;
+    height: 35.8rem;
   }
 
   .introduction {
@@ -1768,6 +1766,10 @@ text-align: left;
   max-width: 55rem;
 }
 
+.screens_three .scr6 .dashboard_changes {
+  max-width: 70rem;
+}
+
 @media screen and (min-width: 1030px) {
 
   p {
@@ -1840,7 +1842,7 @@ text-align: left;
   }
 
   .pink-color-block {
-    width: 7.5rem;
+    width: 6.25rem;
   }
 
   button {
@@ -2485,6 +2487,7 @@ text-align: left;
     display: grid;
     grid-column: 3 / 11;
   }
+
 
   .mockups .screens_three {
     display: grid;
