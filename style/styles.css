@@ -924,7 +924,7 @@ small {
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-items: center;
-  background-image: url(../Images/IA_intro.png);
+  background-image: url(../Images/IA_intro.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1883,6 +1883,14 @@ text-align: left;
   max-width: 70rem;
 }
 
+.about_writing {
+  max-width: 70rem;
+  justify-self: center;
+}
+
+.hobbies_content {
+  justify-self: center;
+}
 @media screen and (min-width: 1030px) {
 
   .mockups .screens_three .no_shadow {
