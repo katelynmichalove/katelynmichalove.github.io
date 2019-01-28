@@ -558,7 +558,8 @@ small {
   display: grid;
   grid-column: 1 / -1;
   grid-row: 1;
-  margin: 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   background-image: url(../Images/FitCollect_CS.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -572,7 +573,8 @@ small {
   display: grid;
   grid-column: 1 / -1;
   grid-row: 1;
-  margin: 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   background-image: url(../Images/STB_pic_CS.png);
   background-size: contain;
   background-repeat: no-repeat;
