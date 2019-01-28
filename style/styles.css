@@ -1030,8 +1030,11 @@ small {
 }
 
 .wireframes .round-one {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
+
+
 
 .wireframes .screens_one img, .wireframes .screens_two img, .mockups .screens_three img, .preference_testing .screens_one img, .final_design .screens_one img, .wireframes .screens_four img, .visual_design .mockups .screens_five img, .front_end .screens_six img {
   width: 90%;
