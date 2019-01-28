@@ -183,7 +183,7 @@ button {
   display: grid;
   font-size: 1.8rem;
   font-family: "Lato", sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   grid-column: 1 / -1;
   height: 4rem;
   text-align: center;
@@ -288,7 +288,7 @@ h6 {
 p {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 2.4rem;
   margin: 0;
 }
@@ -691,8 +691,6 @@ small {
   grid-column: 1 / -1;
   grid-template-columns: 1fr;
   grid-row-start: 3;
-  padding-left: 2rem;
-  padding-right: 2rem;
   width: 90%;
 }
 
@@ -1032,9 +1030,8 @@ small {
 .wireframes .round-one {
   padding-top: 0;
   padding-bottom: 0;
+
 }
-
-
 
 .wireframes .screens_one img, .wireframes .screens_two img, .mockups .screens_three img, .preference_testing .screens_one img, .final_design .screens_one img, .wireframes .screens_four img, .visual_design .mockups .screens_five img, .front_end .screens_six img {
   width: 90%;
