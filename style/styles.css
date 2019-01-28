@@ -22,7 +22,8 @@ html {
 /* Wrapper for case study pages- sets the grid */
 .wrapper_two {
   display: grid;
-  grid-gap: 1rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0;
   grid-template-columns: 1fr;
   position: relative;
   width: 100%;
@@ -616,6 +617,7 @@ small {
   text-align: center;
   justify-items: center;
   align-content: top;
+  padding-top: 5rem;
 }
 
 .the-client {
@@ -698,6 +700,18 @@ small {
   justify-items: center;
 }
 
+.solution p {
+  text-align: left;
+}
+
+.competitive-analysis p {
+  text-align: left;
+}
+
+.branding p {
+  text-align: left;
+}
+
 .discovery {
   display: grid;
   grid-template-columns: 1fr;
@@ -708,6 +722,24 @@ small {
   margin-top: -3rem;
 }
 
+.discovery_intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
+  justify-items: center;
+  background-image: url(../Images/discovery_intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.white_title {
+  color: #fff;
+}
+
+.discovery-icon {
+  padding-top: 5rem;
+}
 .user-surveys {
   background-color: #F0F0F0;
   display: grid;
@@ -738,9 +770,8 @@ small {
 }
 
 .bold-purple {
-  color: #6A5487;
+  color: #333333;
   font-weight: 500;
-  text-align: center;
   padding-left: 2.3rem;
   padding-right: 2.3rem;
   max-width: 70rem;
@@ -811,6 +842,7 @@ small {
   grid-template-columns: 1fr;
   padding-left: 2.3rem;
   padding-right: 2.3rem;
+  padding-bottom: 5rem;
 }
 
 .user {
@@ -882,9 +914,24 @@ small {
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-items: center;
-  padding-top: 5rem;
+  padding-top: 0;
   margin: 0;
   text-align: center;
+}
+
+.IA_intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
+  justify-items: center;
+  background-image: url(../Images/IA_intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.IA_icon {
+  padding-top: 5rem;
 }
 
 .front_end {
@@ -905,15 +952,12 @@ small {
   justify-items: center;
 }
 
-.branding {
-  background-color: #f0f0f0;
-  padding-bottom: 3rem;
-}
-.user-stories p {
+.user-stories p, .user-flows p, .site-map p, .wireframes p {
   padding-bottom: 3rem;
   padding-left: 2.3rem;
   padding-right: 2.3rem;
   max-width: 70rem;
+  text-align: left;
 }
 
 .user-flows p, .site-map p, .wireframes p, .branding p, .mockups p, .front_end p {
@@ -924,15 +968,14 @@ small {
   padding-right: 2.3rem;
 }
 
-
-
 .user-flows-img, .site-map-img {
   padding-bottom: 3rem;
   width: 90%;
 }
 
 .wireframes .sketches {
-  width: 100%;
+  width: 90%;
+  max-width: 100rem;
 }
 
 .wireframes .screens_four {
@@ -950,10 +993,6 @@ small {
   display: none;
 }
 
-
-.inner {
-  margin-bottom: 0;
-}
 
 .topp {
   padding-top: 3rem;
@@ -980,10 +1019,67 @@ small {
   justify-items: center;
 }
 
-.logo_sketches {
+.visual_design_intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
+  justify-items: center;
+  background-image: url(../Images/visual_design_intro.png);
+  background-size: 100% 125%;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
+  margin-top: 2rem;
 }
 
+.visual_design_icon, .reflections_icon {
+  padding-top: 5rem;
+}
+
+.reflections_intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
+  justify-items: center;
+  background-image: url(../Images/reflections_intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.frontend_intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
+  justify-items: center;
+  background-image: url(../Images/frontend_intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.front_end_icon {
+  padding-top: 5rem;
+}
+
+.STB_wireframes {
+  margin-bottom: 5rem;
+}
+
+.IA .STB_wireframes .key-takeaway {
+  justify-self: center;
+}
+
+.visual_design .branding p {
+  text-align: left;
+}
+.logo_sketches {
+  width: 90%;
+}
 
 .branding, .preference_testing, .round_two, .final_design {
   text-align: center;
@@ -1103,11 +1199,15 @@ small {
   padding-left: 2.3rem;
   padding-right: 2.3rem;
   padding-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .about_size {
   font-size: 4.3rem;
+  max-width: 55rem;
 }
+
 .about_content h3, .hobbies_content h3 {
 display: grid;
 grid-column: 1 / -1;
@@ -1159,6 +1259,9 @@ text-align: left;
   padding-right: 0;
 }
 
+.CA_two {
+  margin-bottom: 5rem;
+}
 
 
 
@@ -1398,7 +1501,7 @@ text-align: left;
     grid-template-columns: repeat(12, 1fr);
     background-color: #F0F0F0;
     background-size: cover;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
 
   .UP {
@@ -1539,9 +1642,12 @@ text-align: left;
 
   .wireframes .key-takeaway {
     display: grid;
-    grid-column: 2 / 12;
-    justify-self: left;
+    justify-self: center;
     text-align: left;
+  }
+
+  .style_examples p {
+    max-width: 50rem;
   }
 
   .front_end {
@@ -1580,13 +1686,11 @@ text-align: left;
   }
 
   .style_examples {
-    background-color: #F0F0F0;
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
     align-items: end;
-    padding-bottom: 5rem;
     padding-top: 5rem;
   }
 
@@ -1679,7 +1783,7 @@ text-align: left;
     justify-self: center;
   }
 
-  .preference_testing .summary {
+  .preference_testing .summary, .final_design .summary {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -1687,7 +1791,8 @@ text-align: left;
   .preference_testing .key-takeaway {
     display: grid;
     grid-column: 2 / 12;
-    justify-self: left;
+    justify-self: center;
+    width: 70rem;
   }
 
   .round_two {
@@ -1771,6 +1876,10 @@ text-align: left;
 }
 
 @media screen and (min-width: 1030px) {
+
+  .category_title {
+    padding-top: 10rem;
+  }
 
   p {
     font-size: 2rem;
@@ -1990,8 +2099,8 @@ text-align: left;
   }
 
   .about_content p {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 
   .hobbies_content {
@@ -2117,7 +2226,11 @@ text-align: left;
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 0;
-    margin-top: 5rem;
+  }
+
+  .US_background {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
   }
 
 
@@ -2145,16 +2258,14 @@ text-align: left;
     display: grid;
     grid-row: 4;
     grid-column: 3 / 11;
-    padding-top: 5rem;
   }
 
   .grey-line {
     display: grid;
     grid-row-start: 5;
     grid-column: 1 / -1;
-    width: 44rem;
+    width: 70rem;
     margin-top: 10rem;
-    margin-bottom: 5rem;
   }
 
   .two {
@@ -2194,6 +2305,7 @@ text-align: left;
   }
 
   .user .user-quote, .user_two .user-quote {
+    color: #6A5487;
     font-size: 2.4rem;
     font-style: italic;
     text-indent: -1rem;
@@ -2202,7 +2314,7 @@ text-align: left;
 
 
   .UP {
-    margin-top: -22rem;
+    margin-top: -28rem;
   }
 
   .user {
@@ -2243,14 +2355,6 @@ text-align: left;
     max-width: 70rem;
   }
 
-  .user-flows {
-    padding-top: 5rem;
-  }
-
-  .IA {
-    padding-top: 10rem;
-  }
-
   .user-flows p, .site-map p {
     display: grid;
     grid-column: 3 / 11;
@@ -2282,7 +2386,6 @@ text-align: left;
   .user-stories {
     display: grid;
     grid-column: 3 / 11;
-    padding-top: 5rem;
   }
 
   .user-stories p {
@@ -2292,7 +2395,6 @@ text-align: left;
   .wireframes {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: 5rem;
   }
 
   .wireframes p {
@@ -2370,7 +2472,6 @@ text-align: left;
   .branding {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    margin-top: 5rem;
   }
 
   .branding p {
@@ -2395,13 +2496,11 @@ text-align: left;
   }
 
   .style_examples {
-    background-color: #F0F0F0;
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
     align-items: end;
-    padding-bottom: 5rem;
     padding-top: 5rem;
   }
 
@@ -2480,12 +2579,18 @@ text-align: left;
   .mockups {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: 5rem;
   }
 
   .mockups p {
     display: grid;
     grid-column: 3 / 11;
+    text-align: left;
+    max-width: 70rem;
+  }
+
+  .front_end p {
+    text-align: left;
+    max-width: 70rem;
   }
 
 
@@ -2561,7 +2666,7 @@ text-align: left;
   .preference_testing .key-takeaway {
     display: grid;
     grid-column: 3 / 11;
-    justify-self: left;
+    justify-self: center;
   }
 
   .round_two {
