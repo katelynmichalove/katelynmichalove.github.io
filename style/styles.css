@@ -88,7 +88,6 @@ html {
 
 /* Hambuger Menu Button */
 button {
-  background: #F0F0F0;
   border: 0;
   cursor: pointer;
   margin-left: auto;
@@ -96,6 +95,32 @@ button {
   padding: 0;
   right: 5%;
   top: 2rem;
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #E14658;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#back2Top:hover {
+    background-color: #6A5487;
 }
 
 .CS {
@@ -329,6 +354,7 @@ ul {
   width: 100%;
   height: 100%;
   text-align: center;
+  transition: 0.5s;
 }
 
 /* Headings for the project titles on both the homepage and View Next on CS Pages*/
@@ -727,7 +753,7 @@ small {
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-items: center;
-  background-image: url(../Images/discovery_intro.png);
+  background-image: url(../Images/discovery_intro.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1024,7 +1050,7 @@ small {
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-items: center;
-  background-image: url(../Images/visual_design_intro.png);
+  background-image: url(../Images/visual_design_intro.jpg);
   background-size: 100% 125%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1041,8 +1067,9 @@ small {
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-items: center;
-  background-image: url(../Images/reflections_intro.png);
+  background-image: url(../Images/reflections_intro.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   margin-top: 2rem;
@@ -1054,7 +1081,7 @@ small {
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-items: center;
-  background-image: url(../Images/frontend_intro.png);
+  background-image: url(../Images/frontend_intro.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -1094,18 +1121,19 @@ small {
   padding-bottom: 2rem;
 }
 
-.refined_logo img, .icons img, .typography img {
+.icons img, .typography img, .color_scheme img {
   width: 90%;
-  max-width: 42.5rem;
+  max-width: 46.7rem;
+  height: auto;
+}
+
+.refined_logo img {
+  max-width: 12rem;
 }
 
 .typography_two img, .color_scheme_two img {
   width: 90%;
   max-width: 35rem;
-}
-
-.color_scheme img {
-  width: auto;
 }
 
 .style_examples {
@@ -1265,12 +1293,17 @@ text-align: left;
 .screen_shadow {
   box-shadow: 1px 1px 15px #d3d3d3;
   margin-top: 1.5rem;
+  transition: 0.1s;
+}
+
+.screen_shadow:hover {
+  transform: translateY(13px);
+  box-shadow: 10px 10px 10px #d3d3d3;
 }
 
 .no_shadow {
   margin-top: 1.5rem;
 }
-
 
 
 @media screen and (min-width: 760px) {
@@ -1774,12 +1807,6 @@ text-align: left;
   }
 
 
-  .scr6 {
-    display: grid;
-    grid-column: 1 / -1;
-    justify-items: center;
-  }
-
   .preference_testing, .final_design {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1879,9 +1906,6 @@ text-align: left;
   max-width: 55rem;
 }
 
-.screens_three .scr6 .dashboard_changes {
-  max-width: 70rem;
-}
 
 .about_writing {
   max-width: 70rem;
@@ -1899,6 +1923,10 @@ text-align: left;
 
   .category_title {
     padding-top: 10rem;
+  }
+
+  .white_title {
+    padding-bottom: 3rem;
   }
 
   p {
@@ -2401,6 +2429,7 @@ text-align: left;
   .IA .IA_icon {
     display: grid;
     grid-column: 1 / -1;
+    padding-top: 7rem;
   }
 
   .user-stories {
@@ -2647,11 +2676,6 @@ text-align: left;
     display: none;
   }
 
-  .scr6 {
-    display: grid;
-    grid-column: 1 / -1;
-    justify-items: center;
-  }
 
   .preference_testing, .final_design {
     display: grid;
@@ -2729,6 +2753,7 @@ text-align: left;
   .front_end_icon {
     display: grid;
     grid-column: 1 / -1;
+    padding-top: 7rem;
   }
 
   .reflections {
@@ -2739,6 +2764,10 @@ text-align: left;
   .reflections_icon, .reflections h2 {
     display: grid;
     grid-column: 1 / -1;
+  }
+
+  .reflections_icon, .visual_design_icon, .discovery-icon {
+    padding-top: 7rem;
   }
 
   .reflections .key-takeaway {
