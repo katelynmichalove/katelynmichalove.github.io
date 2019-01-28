@@ -1114,7 +1114,6 @@ small {
 
 .screens_six img {
   width: 90%;
-  max-width: rem;
 }
 
 .style_examples a, .final_design a {
@@ -1261,6 +1260,15 @@ text-align: left;
 
 .CA_two {
   margin-bottom: 5rem;
+}
+
+.screen_shadow {
+  box-shadow: 1px 1px 15px #d3d3d3;
+  margin-top: 1.5rem;
+}
+
+.no_shadow {
+  margin-top: 1.5rem;
 }
 
 
@@ -1876,6 +1884,10 @@ text-align: left;
 }
 
 @media screen and (min-width: 1030px) {
+
+  .mockups .screens_three .no_shadow {
+    max-width: 67.5rem;
+  }
 
   .category_title {
     padding-top: 10rem;
