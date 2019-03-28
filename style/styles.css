@@ -332,7 +332,19 @@ ul {
   background-image: url(../Images/FitCollect_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 90% 74%;
+  background-size: 42% 95%;
+  background-color: #8C8496;
+  display: grid;
+  height: 30rem;
+  position: relative;
+  width: 90%;
+}
+
+.chipin {
+  background-image: url(../Images/ChipIn_pic_desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 42% 95%;
   background-color: #8C8496;
   display: grid;
   height: 30rem;
@@ -358,7 +370,7 @@ ul {
 }
 
 /* Headings for the project titles on both the homepage and View Next on CS Pages*/
-.fitcollect .project_headline, .stb .project_headline {
+.fitcollect .project_headline, .stb .project_headline, .chipin .project_headline {
   width: 100%;
   color: #ffffff;
   font-family: "Josefin Sans";
@@ -387,7 +399,7 @@ ul {
   font-size: 1.8rem;
   font-weight: 100;
   grid-row: 3 / 4;
-  padding-top: 1rem;
+  padding-top: 3rem;
   margin: 0;
   width: 100%;
   text-align: center;
@@ -398,7 +410,7 @@ ul {
   background-image: url(../Images/STB_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 90% 75%;
+  background-size: 95% 85%;
   background-color: #8C8496;
   display: grid;
   grid-template-rows: 4fr 1fr 1fr 4fr;
@@ -418,7 +430,7 @@ ul {
 }
 
 /* link that wraps the entire div for sixth tool baseball on homepage */
-.STB_link {
+.STB_link, .ChipIn_link {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -584,6 +596,21 @@ small {
   justify-self: center;
 }
 
+.ChipIn_img {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background-image: url(../Images/ChipIn_img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  justify-self: center;
+}
+
 .moodboard img {
   display: grid;
   grid-column: 1 / -1;
@@ -681,6 +708,22 @@ small {
   max-width: 33.7rem;
 }
 
+.the-client-three {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-rows: 4fr 1fr 1fr 4fr;
+  grid-template-columns: 1fr;
+  background-image: url(../Images/client_three.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  grid-column: 1 / -1;
+  height: 29.5rem;
+  justify-items: center;
+  width: 90%;
+  max-width: 33.7rem;
+}
+
 .white {
   color: #ffffff;
   display: grid;
@@ -696,7 +739,7 @@ small {
   width: 90%;
 }
 
-.the-user, .the-user-two {
+.the-user, .the-user-two, .the-user-three {
   display: grid;
   grid-column: 1 / -1;
   grid-template-rows: 4fr 1fr 1fr 4fr;
@@ -716,6 +759,10 @@ small {
 
 .the-user-two {
   background-image: url(../Images/user_two.png);
+}
+
+.the-user-three {
+  background-image: url(../Images/user_three.png);
 }
 
 
@@ -796,11 +843,15 @@ small {
 }
 
 .bold-purple {
-  color: #333333;
+  color: #6A5487;
+  font-style: italic;
   font-weight: 500;
   padding-left: 2.3rem;
   padding-right: 2.3rem;
   max-width: 70rem;
+  background-color: #f0f0f0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .percentage {
@@ -852,10 +903,12 @@ small {
 
 .comp {
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .sol {
-  padding-bottom: 3rem;
+  background-color: white;
+  font-style: normal;
 }
 
 .content {
@@ -885,6 +938,27 @@ small {
   justify-self: center;
 }
 
+.user_three {
+  display: grid;
+  grid-column: 1 / -1;
+  padding-bottom: 5rem;
+  justify-self: center;
+}
+
+.user_four {
+  display: grid;
+  grid-column: 1 / -1;
+  padding-bottom: 5rem;
+  justify-self: center;
+}
+
+.user_five {
+  display: grid;
+  grid-column: 1 / -1;
+  padding-bottom: 5rem;
+  justify-self: center;
+}
+
 .user-name {
   font-weight: 800;
   padding-top: 2rem;
@@ -906,8 +980,9 @@ small {
 .user-quote {
   text-align: left;
   padding-top: 2rem;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
   font-size: 2rem;
 }
 
@@ -923,12 +998,19 @@ small {
   justify-self: center;
 }
 
-.branding .style_examples a {
+.branding .style_examples a, .branding .style_examples_three{
   display: grid;
   grid-column: 1 / -1
 }
 
 .background a {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.background_two a {
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: 1fr;
@@ -1007,6 +1089,8 @@ small {
 .wireframes .screens_four {
   justify-items: center;
 }
+
+
 .STB_wireframe_collage {
   display: none;
 }
@@ -1036,6 +1120,23 @@ small {
 }
 
 .wireframes .screens_one img, .wireframes .screens_two img, .mockups .screens_three img, .preference_testing .screens_one img, .final_design .screens_one img, .wireframes .screens_four img, .visual_design .mockups .screens_five img, .front_end .screens_six img {
+  width: 90%;
+  max-width: 33.7rem;
+}
+
+.visual_design .insight {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.mockups .screens_eight img {
+  width: 90%;
+  max-width: 33.7rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+
+.wireframes .screens_seven img {
   width: 90%;
   max-width: 33.7rem;
 }
@@ -1110,6 +1211,10 @@ small {
   width: 90%;
 }
 
+.mind_mapping {
+  width: 90%;
+}
+
 .branding, .preference_testing, .round_two, .final_design {
   text-align: center;
 }
@@ -1125,12 +1230,26 @@ small {
 
 .icons img, .typography img, .color_scheme img {
   width: 90%;
-  max-width: 46.7rem;
+  max-width: 40rem;
   height: auto;
 }
 
-.refined_logo img {
+.typography img {
+  max-height: 35rem;
+}
+
+.icons img {
+  max-height: 35rem;
+}
+
+.refined_logo img, .refined_logo_two img {
   max-width: 12rem;
+}
+
+.refined_logo .logo_three {
+  max-width: 40rem;
+  width: 90%;
+  height: auto;
 }
 
 .typography_two img, .color_scheme_two img {
@@ -1138,7 +1257,7 @@ small {
   max-width: 35rem;
 }
 
-.style_examples {
+.style_examples, .style_examples_three {
   padding-top: 3rem;
 }
 
@@ -1146,7 +1265,7 @@ small {
   width: 90%;
 }
 
-.style_examples a, .final_design a {
+.style_examples a, .final_design a, .style_examples_three a {
   display: grid;
   grid-column: 1 / -1;
   justify-items: center;
@@ -1210,7 +1329,7 @@ small {
   padding-top: 0;
 }
 
-.wireframes .space_three, .branding .space_three, .front_end .space_three, .user .space_three, .user_two .space_three {
+.wireframes .space_three, .branding .space_three, .front_end .space_three, .user .space_three, .user_two .space_three, .user_three .space_three, .user_four .space_three, .user_five .space_three {
   padding-bottom: 0;
 }
 
@@ -1298,10 +1417,7 @@ text-align: left;
   transition: 0.1s;
 }
 
-.screen_shadow:hover {
-  transform: translateY(13px);
-  box-shadow: 10px 10px 10px #d3d3d3;
-}
+
 
 .no_shadow {
   margin-top: 1.5rem;
@@ -1324,8 +1440,12 @@ text-align: left;
     padding-bottom: 45rem;
   }
 
-  .fitcollect, .stb {
+  .fitcollect, .stb, .chipin {
     height: 35rem;
+  }
+
+  .fitcollect, .chipin {
+    background-size: 48% 95%;
   }
 
   .topnav {
@@ -1347,7 +1467,7 @@ text-align: left;
     height: 35.8rem;
   }
 
-  .STB_img {
+  .STB_img, .ChipIn_img {
     width: 50rem;
     height: 35.8rem;
   }
@@ -1520,10 +1640,20 @@ text-align: left;
 
   .background {
     display: grid;
-    grid-column: 2 / 12;
+    grid-column: 3 / 11;
     grid-row: 8;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10rem;
+    align-items: baseline;
+    background-size: cover;
+  }
+
+  .background_two {
+    display: grid;
+    grid-column: 2 / 12;
+    grid-row: 8;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5rem;
     align-items: baseline;
     background-size: cover;
   }
@@ -1561,6 +1691,24 @@ text-align: left;
   .user_two {
     display: grid;
     grid-column: 2;
+    margin-top: -45%;
+  }
+
+  .user_three {
+    display: grid;
+    grid-column: 1;
+    margin-top: -45%;
+  }
+
+  .user_four {
+    display: grid;
+    grid-column: 2;
+    margin-top: -45%;
+  }
+
+  .user_five {
+    display: grid;
+    grid-column: 3;
     margin-top: -45%;
   }
 
@@ -1632,7 +1780,7 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
-  .wireframes .screens_one, .preference_testing .screens_one, .final_design .screens_one {
+  .wireframes .screens_one, .preference_testing .screens_one, .final_design .screens_one, .wireframes .screens_seven {
     display: grid;
     grid-column: 2 / 12;
     grid-template-columns: 1fr 1fr;
@@ -1651,6 +1799,17 @@ text-align: left;
     display: grid;
     grid-column: 1 / -1;
   }
+
+  .mockups .screens_eight {
+    display: grid;
+    grid-column: 1 / -1;
+    justify-items: center;
+  }
+
+  .mockups .screens_eight img {
+    max-width: 70rem;
+  }
+
 
   .mockups .screens_five, .front_end .screens_six  {
     display: grid;
@@ -1723,12 +1882,17 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
+  .mind_mapping {
+    display: grid;
+    grid-column: 4 / 10;
+  }
+
   .branding_intro {
     display: grid;
     grid-column: 2 / 12;
   }
 
-  .style_examples {
+  .style_examples, .style_examples_three{
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: repeat(12, 1fr);
@@ -1742,14 +1906,19 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
-  .refined_logo {
+  .refined_logo, .refined_logo_two {
     display: grid;
     grid-column: 2 / 12;
     justify-items: center;
   }
 
-  .refined_logo img {
+
+  .refined_logo img, .refined_logo_two img {
     align-self: center;
+  }
+
+  .refined_logo .logo_three {
+    max-width: 40rem;
   }
 
   .color_scheme {
@@ -1770,7 +1939,7 @@ text-align: left;
     justify-items: center;
   }
 
-  .refined_logo img, .color_scheme img, .icons img, .typography img {
+  .refined_logo img, .color_scheme img, .icons img, .typography img, .refined_logo_two img {
     width: auto;
     padding-bottom: 0;
   }
@@ -1869,9 +2038,10 @@ text-align: left;
     padding-top: 5rem;
   }
 
-  .view_next .STB_link, .view_next .fitcollect_link {
+  .view_next .STB_link, .view_next .fitcollect_link, .view_next .ChipIn_link {
     width: 40rem;
     max-width: 40rem;
+
   }
 
   .wireframes .R1 .key-takeaway {
@@ -1919,6 +2089,10 @@ text-align: left;
 }
 @media screen and (min-width: 1030px) {
 
+  .fitcollect, .chipin {
+    background-size: 42% 95%;
+  }
+
   .mockups .screens_three .no_shadow {
     max-width: 67.5rem;
   }
@@ -1941,13 +2115,14 @@ text-align: left;
   }
 
   .projects {
-    grid-template-columns: repeat(2, minmax(45rem, 50rem));
+    grid-template-columns: repeat(3, minmax(35rem, 60rem));
     padding-bottom: 40rem;
     grid-gap: 0;
   }
 
-  .fitcollect, .stb {
-    height: 45rem;
+  .fitcollect, .stb, .chipin {
+    height: 35rem;
+    max-width: 40rem;
   }
 
   .topnav {
@@ -2060,7 +2235,12 @@ text-align: left;
     height: 100%;
   }
 
-  .fitcollect .project_headline, .stb .project_headline {
+  .chipin:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .fitcollect .project_headline, .stb .project_headline, .chipin .project_headline {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -2071,6 +2251,7 @@ text-align: left;
   }
 
   .project_desc {
+    padding-top: 6rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2116,7 +2297,7 @@ text-align: left;
   .key-takeaway {
     padding-top: 5rem;
     max-width: 70rem;
-    justify-self: center;
+
   }
 
   .aboutme_img {
@@ -2236,7 +2417,7 @@ text-align: left;
     align-self: center;
   }
 
-  .the-client, .the-client-two {
+  .the-client, .the-client-two, .the-client-three {
     grid-column: 3 / 7;
     grid-row: 2;
     align-self: center;
@@ -2244,7 +2425,7 @@ text-align: left;
     max-width: 50rem;
   }
 
-  .the-user, .the-user-two {
+  .the-user, .the-user-two, .the-user-three {
     grid-column: 7 / 11;
     grid-row: 2;
     align-self: center;
@@ -2330,9 +2511,21 @@ text-align: left;
     grid-column: 3 / 11;
     grid-row: 8;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10rem;
+    grid-column-gap: 8rem;
     align-items: baseline;
     background-size: cover;
+  }
+
+  .background_two {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 8;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 9rem;
+    align-items: baseline;
+    background-size: cover;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .US_background {
@@ -2354,7 +2547,15 @@ text-align: left;
     padding-bottom: 5rem;
   }
 
-  .user .user-quote, .user_two .user-quote {
+  .user .user-quote, .user_two .user-quote, .user_three .user-quote, .user_four .user-quote {
+    color: #6A5487;
+    font-size: 2.4rem;
+    font-style: italic;
+    text-indent: -1rem;
+    text-align: left;
+  }
+
+  .user_five .user-quote, .user_four .user-quote {
     color: #6A5487;
     font-size: 2.4rem;
     font-style: italic;
@@ -2377,6 +2578,24 @@ text-align: left;
   .user_two {
     display: grid;
     grid-column: 2;
+    margin-top: -45%;
+  }
+
+  .user_three {
+    display: grid;
+    grid-column: 1;
+    margin-top: -45%;
+  }
+
+  .user_four {
+    display: grid;
+    grid-column: 2;
+    margin-top: -45%;
+  }
+
+  .user_five {
+    display: grid;
+    grid-column: 3;
     margin-top: -45%;
   }
 
@@ -2460,6 +2679,7 @@ text-align: left;
     grid-column: 1 / -1;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    max-width: 70rem;
   }
 
   .wireframes .screens_one, .preference_testing .screens_one, .final_design .screens_one {
@@ -2469,6 +2689,14 @@ text-align: left;
     text-align: center;
     justify-items: center;
   }
+
+.wireframes .screens_seven {
+  display: grid;
+  grid-column: 1/ -1;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  justify-items: center;
+}
 
 
 
@@ -2540,13 +2768,15 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
+
+
   .branding_intro {
     display: grid;
     grid-column: 3 / 11;
 
   }
 
-  .style_examples {
+  .style_examples, .style_examples_two {
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: repeat(12, 1fr);
@@ -2596,8 +2826,14 @@ text-align: left;
     justify-items: center;
   }
 
+  .refined_logo_two {
+    display: grid;
+    grid-column: 1 / -1;
+  }
+
   .refined_logo img {
     align-self: center;
+    max-width: 40rem;
   }
 
   .color_scheme {
@@ -2605,6 +2841,10 @@ text-align: left;
     grid-column: 7 / 12;
     grid-row: 1;
     justify-items: center;
+  }
+
+  .refined_logo .logo_three {
+    padding-bottom: 9rem;
   }
 
   .typography {
@@ -2622,10 +2862,11 @@ text-align: left;
     align-self: end;
   }
 
-  .refined_logo img, .color_scheme img, .icons img, .typography img {
+  .refined_logo img, .color_scheme img, .icons img, .typography img, .refined_logo_two img {
     width: auto;
     padding-bottom: 0;
   }
+
 
   .mockups {
     display: grid;
@@ -2682,7 +2923,7 @@ text-align: left;
   .preference_testing, .final_design {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
   .preference_testing {
@@ -2785,9 +3026,9 @@ text-align: left;
     margin-top: 10rem;
   }
 
-  .view_next .STB_link, .view_next .fitcollect_link {
-    width: 50rem;
-    max-width: 55rem;
+  .view_next .STB_link, .view_next .fitcollect_link, .view_next .ChipIn_link {
+    width: 40rem;
+    max-width: 40rem;
   }
 
 

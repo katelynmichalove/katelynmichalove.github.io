@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <title>Katelyn Michalove</title>
+</head>
+<body>
+  <div class="wrapper_two">
+  <header class="project_version">
+    <nav class="topnav">
+      <!-- Logo and home button -->
+      <a href="index.html">
+        <img class="logo" src="Images/logo.svg">
+      </a>
+      <!-- Animated Main Hamburger Menu -->
+      <button href="javascript:void(0);" class="menu CS" onclick="myMenuFunction(); myFunction(this);">
+        <div class=bars>
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
+      </button>
+      <ul id="menu_links">
+        <li>
+          <a href="index.html" alt="Homepage">Work</a>
+        </li>
+        <li>
+          <a href="about.html" alt="About">About</a>
+        </li>
+        <li>
+          <a href="Katelyn_Michalove_Resume.pdf" alt="Resume" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Hero Section -->
+    <!-- Pink color block -->
+    <div class="intro_header_two">
+        <div class="pink-color-block"></div>
+        <h1 class="name">Chip In</h1>
+        <div class="intro_header">
+            <h3 class="desc">Chip In allows users to search for volunteer work nearby, filter by interest, sign up for shifts, and complete a background check that can be used with multiple organizations.</h3>
+        </div>
+    </div>
+    <div class="prototype">
+    <div class="ChipIn_img"></div>
+    <a href="http://sixth-tool-baseball.webflow.io" target="_blank">
+        <div class="pink-button">
+          View Prototype
+        </div>
+    </a>
+  </div>
+  </header>
+  <section class= "introduction">
+    <div class="introduction-items">
+      <div class="role">
+        <img src="Images/Role_Icon.svg" alt="Role Icon"/>
+        <h3 class="main">Role</h3>
+        <ul class="role-list">
+          <li>
+            <h4>UX Research</h4>
+          </li>
+          <li>
+            <h4>UX Design</h4>
+          </li>
+          <li>
+            <h4>Visual Design</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="pink-divider"></div>
+      <div class="tools">
+        <img src="Images/Tools_icon.svg" alt="Tools Icon"/>
+        <h3 class="main">Tools</h3>
+        <ul class="tools-list">
+          <li>
+            <h4>Figma</h4>
+          </li>
+          <li>
+            <h4>Sketch</h4>
+          </li>
+          <li>
+            <h4>Adobe Creative Suite</h4>
+          </li>
+          <li>
+            <h4>Marvel</h4>
+          </li>
+          <li>
+            <h4>Usability Hub</h4>
+          </li>
+          <li>
+            <h4>Maze</h4>
+          </li>
+          <li>
+            <h4>Draw.io</h4>
+          </li>
+          <li>
+            <h4>Omnigraffle</h4>
+          </li>
+        </ul>
+      </div>
+        <div class="pink-divider_two"></div>
+      <div class="deliverables">
+        <img src="Images/Deliverables_icon.svg" alt="Deliverables Icon"/>
+        <h3 class="main">Deliverables</h3>
+        <ul class="deliverables-list">
+          <li>
+            <h4>User Research</h4>
+          </li>
+          <li>
+            <h4>Competitive Analysis</h4>
+          </li>
+          <li>
+            <h4>UX Documentation</h4>
+          </li>
+          <li>
+            <h4>Wireframes</h4>
+          </li>
+          <li>
+            <h4>Style Guide</h4>
+          </li>
+          <li>
+            <h4>High Fidelity Mockups</h4>
+          </li>
+          <li>
+            <h4>Prototype</h4>
+          </li>
+          <li>
+            <h4>User Testing</h4>
+          </li>
+        </ul>
+      </div>
+      <div class="duration">
+        <img src="Images/Duration_icon.svg" alt="duration icon">
+        <h3 class="main">Duration</h3>
+        <ul class="duration-list">
+          <li>
+            <h4>6 Weeks</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="problem">
+    <h2 class="section_title">The Problem</h2>
+    <div class="the-client-three">
+      <h5 class="white">THE ORGANIZATIONS</h5>
+      <p class="client_quote">&quot;All organizations have different requirements. There are different levels of background checks that people require based on what population volunteers are working with.&quot;</p>
+    </div>
+    <div class="the-user-three">
+      <h5 class="white">THE USERS</h5>
+      <p class="client_quote">&quot;I have no idea how to find opportunities near me, much less something that I would be passionate about. I never know what work I’ll be doing when I do find something either.&quot;</p>
+    </div>
+    <div class="solution">
+      <img src="Images/solution_icon.svg" alt="Solution Icon"/>
+      <h2 class="section_title">The Solution</h2>
+      <p class="bold-purple sol">Chip In is a volunteer app that allows users to find opportunities near them and filter based on their personal interests and how many miles they want to travel. Most of all, volunteers can know right away what work they will be doing. They can sign up for shifts and save opportunities to view later.</p>
+      <p class="bold-purple sol">Chip In has three levels of background checks that organizations can choose from as a requirement. Volunteers can submit a request for a background check to participate in an opportunity. Their background check level will be shared with other organizations of the same level, eliminating repeat checks.</p>
+
+    </div>
+  </section>
+  <section class="discovery">
+    <div class="discovery_intro">
+        <img class="discovery-icon" src="Images/discovery_icon.svg" alt="Discovery Icon"/>
+        <h2 class="section_title white_title">Discovery</h2>
+    </div>
+    <div class="user-surveys">
+      <h3 class="category_title">User Surveys</h3>
+      <div class="US_background">
+      <div class="survey-item">
+        <h2 class="percentage">30.8%</h2>
+        <p>Sign up in person</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">40.6%</h2>
+        <p>Sign up by web browsing</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">61.5%</h2>
+        <p>Frustrated by not knowing what work they will be doing</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">30.8%</h2>
+        <p>Difficult to find opportunities</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">80.0%</h2>
+        <p>Want to filter by interests</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">73.3%</h2>
+        <p>Want to look at opportunities near them</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">53.5%</h2>
+        <p>Want a personal calendar or schedule</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">46.7%</h2>
+        <p>Want to save opportunities</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">66.7%</h2>
+        <p>Would like to know the purpose of the work</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">53.3%</h2>
+        <p>Would like to know the miles away and the organization name</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">67.0%</h2>
+        <p>Do NOT want social media included</p>
+      </div>
+      <div class="survey-item">
+        <h2 class="percentage">67.0%</h2>
+        <p>Prefer a mobile application</p>
+      </div>
+    </div>
+        </div>
+    <div class="user-interviews">
+      <h3 class="category_title">User Interviews</h3>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">I like having access to contact information for the person organizing the opportunity so I can get in touch if I have questions.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">I like having a list of all the shifts that I can scroll through, instead of a calendar that requires an extra step to click on a date.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">Scheduling is most important when picking out an opportunity.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">I really like seeing pictures of the volunteer opportunity. Something that shows what I might be doing.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">So many organizations have different requirements and even training you might have to go through.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">It is hard to find work that matches my interests.</p>
+      </div>
+    </div>
+
+    <!-- Grey Separating line -->
+    <div class="grey-line"></div>
+
+    <div class="competitive-analysis">
+      <h3 class="category_title">Competitive Analysis</h3>
+      <p class="bold-purple comp">When learning from the competition, I decided to analyze JustServe, Verified Volunteers, and Golden Volunteer Opportunity.</p>
+      <div class="key-takeaway">
+        <img class="bullet" src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">Just serve allowed volunteers to filter by their interests but you had to sign up for shifts outside of the application.</p>
+      </div>
+      <div class="key-takeaway">
+        <img class="bullet" src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">Verified volunteers has a great level system for background checks that can be shared between organizations, but volunteers can’t use it on their phones which is the preferred platform.</p>
+      </div>
+      <div class="key-takeaway">
+        <img class="bullet" src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">Golden Volunteer Opportunities focused on social media, but volunteers aren’t interested in making their volunteer work public.</p>
+      </div>
+      <a href="https://drive.google.com/drive/folders/14RSC4qiLKwx5MfFc33qENhWgKyNJ0bBS?usp=sharing" target="_blank">
+        <div class="pink-button content">
+          View SWOT Chart
+        </div>
+      </a>
+    </div>
+
+    <!-- Grey Separating Line -->
+    <div class="grey-line two"></div>
+
+    <div class="user-personas">
+      <h3 class="category_title UP">User Personas</h3>
+      <div class="background_two">
+      <div class="user_three">
+        <img class="user_img" src="Images/Rebecca.png" alt="User Persona Image">
+        <h5 class="user-name space_three">Rebecca</h5>
+        <h5 class="user-type">Lifelong Volunteer</h5>
+        <p class="bold-purple user-quote desktop_space">&quot; It's hard to find volunteer opportunities, which is why I joined the Junior League. Now it's hard to match my schedule when focusing on one organization. &quot;</p>
+        <h5 class="user-cat">Goals</h5>
+        <p>Continue to stay involved. Find new opportunities that match her schedule and are closer by.</p>
+        <h5 class="user-cat">Frustrations</h5>
+        <p>Not finding opportunities that match her schedule. Driving far away due to having a small amount of options.</p>
+      </div>
+      <div class="user_four">
+        <img class="user_img" src="Images/Tom.png" alt="User Persona Image">
+        <h5 class="user-name space_three">Tom</h5>
+        <h5 class="user-type">Interest-Driven Volunteer</h5>
+        <p class="bold-purple user-quote">&quot; I enjoy volunteering for opportunities that are related to my interests which usually change over time. I wish I could find something related to agriculture. &quot;</p>
+        <h5 class="user-cat">Goals</h5>
+        <p>Find a volunteer opportunity in the outdoors where he likes to spend his time. Volunteer more often this year. </p>
+        <h5 class="user-cat">Frustrations</h5>
+        <p>He finds it difficult to match his interests and often abandons the search. He also doesn't know where his help is really needed in the community. </p>
+      </div>
+      <div class="user_five">
+        <img class="user_img" src="Images/Elizabeth.png" alt="User Persona Image">
+        <h5 class="user-name space_three">Elizabeth</h5>
+        <h5 class="user-type">Dedicated Advocate</h5>
+        <p class="bold-purple user-quote">&quot; I usually find opportunities through college but the sign up process is very difficult. They send out a google doc to sign up once a month through email. &quot;</p>
+        <h5 class="user-cat">Goals</h5>
+        <p>Make time for organizations that she really cares about. Find new ways to contribute to the community. </p>
+        <h5 class="user-cat">Frustrations</h5>
+        <p>She finds it difficult to sign up and keep up with opportunities through google docs and forms. </p>
+      </div>
+      <a href="https://drive.google.com/drive/folders/1D-Zx5JgBryUtxHnWITm3tVL_gwZPtmg4?usp=sharing" target="_blank">
+        <div class="pink-button">
+        View Full Personas
+        </div>
+      </a>
+    </div>
+    </div>
+  </section>
+  <section class="IA">
+    <div class="IA_intro">
+        <img src="Images/IA_icon.svg" alt="Information Architecture Icon" class="IA_icon">
+        <h2 class="section_title white_title">Information Architecture</h2>
+    </div>
+    <div class="user-stories">
+      <h3 class="category_title">User Stories</h3>
+      <p class="topp">Based off user interviews and the competitive analysis, user stories were writen for new users, returning users, and all users. </p>
+      <p>Users needed to be able to search for opportunities near them, filter by interests and miles away, save opportunities for later, and sign up for shifts while completing any requirements needed. </p>
+      <a href="https://docs.google.com/spreadsheets/d/1JLOTvw2ZrbAudYHlZhloZWbqgNoJ3KfSEDXwJVT5lOw/edit?usp=sharing" target="_blank">
+        <div class="pink-button">
+        View User Stories
+        </div>
+      </a>
+    </div>
+
+    <!-- Grey Separating Line -->
+    <div class="grey-line" style="grid-row-start: 3;"></div>
+
+    <div class="user-flows">
+      <h3 class="category_title">User Flows</h3>
+      <p>After conducting my user research and learning the necessary features based on users and competition, I put my user stories to work and designed the user flows needed for an MVP. </p>
+      <img class="user-flows-img" src="Images/UserFlows_two.png" alt="User Flow Image"/>
+      <a href="https://drive.google.com/drive/folders/10sKPulxupa7UWw2S__wntSYkLg1mbeu1?usp=sharing" target="_blank">
+        <div class="pink-button">
+        View User Flows
+        </div>
+      </a>
+    </div>
+
+    <!-- Grey Separating Line -->
+    <div class="grey-line"></div>
+
+    <div class="site-map">
+      <h3 class="category_title">Site Map</h3>
+      <p>Before wireframing I first put together my content strategy and site map. Detailing the site map left very few questions when starting the wireframing process.</p>
+      <img class="site-map-img" src="Images/sitemap_two.png" alt="Site Map Image"/>
+      <a href="https://drive.google.com/file/d/1Y5q5FU2WAtJrG4VUGnmQWg1zkDeWUIxG/view?usp=sharing" target="_blank">
+        <div class="pink-button">
+        View Site Map
+        </div>
+      </a>
+    </div>
+
+    <!-- Grey Separating Line -->
+    <div class="grey-line" style="grid-row-start: 7;"></div>
+
+    <div class="wireframes">
+      <h3 class="category_title">Wireframes</h3>
+      <p class="p1">To begin wireframing I sketched out all of the screens needed for the MVP along with alternative variations. I performed some informal testing with users in person to see which variations they would prefer and how them see themselves using the app.</p>
+      <img src="Images/Wireframe_Sketches_ChipIn.jpg" alt="Wireframe Sketches Image" class="sketches"/>
+      <p class="p2">After finalizing my sketches, I put them into Sketch to create my first low fidelity wireframe to begin testing with Maze. </p>
+      <div class="screens_one">
+            <div class="scr1">
+                <h6>Main Dashboard</h6>
+                <img class="screen_shadow" src="Images/Explore V2.png" alt="Main Dashboard Screen"/>
+            </div>
+            <div class="scr2">
+                <h6>First Introduction Screen</h6>
+                <img class="screen_shadow" src="Images/Intro Screen One.png" alt="Introduction Screen"/>
+            </div>
+            <div class="scr3">
+                <h6>Volunteer Opportunity Screen</h6>
+                <img class="screen_shadow" src="Images/Volunteer Opportunity Example - Not Authorized.png" alt="Volunteer Opportunity Screen"/>
+            </div>
+      </div>
+      <div class="screens_two">
+            <div class="scr4">
+                <h6>Shift Schedule Screen</h6>
+                <img class="screen_shadow" src="Images/Shift Schedule V1.png" alt="Shift Schedule Screen"/>
+            </div>
+            <div class="scr5">
+                <h6>Interests Filter Screen</h6>
+                <img class="screen_shadow" src="Images/Interests Filter Checked.png" alt="Interest Filter Screen"/>
+            </div>
+      </div>
+      <div class="R1">
+          <h5>Round One User Testing</h5>
+          <p class="round-one">After user feedback, I altered my wireframes for further testing. Below were the key takeaways:</p>
+          <div class="key-takeaway">
+            <img class="bullet" src="Images/takeaway_icon.svg" alt="bullet point">
+            <p class="takeaway-content">The ‘Sign In’ option on the introduction screen was mistaken as a ‘Sign up’ button by users and drew out their sign up process.</p>
+          </div>
+          <div class="key-takeaway">
+            <img class="bullet" src="Images/takeaway_icon.svg" alt="bullet point">
+            <p class="takeaway-content">The apply button used on the filtering screens is at the bottom which can be hard for users to find when dealing with a long list of options like in the interest filter.</p>
+          </div>
+          <div class="key-takeaway space">
+            <img class="bullet" src="Images/takeaway_icon.svg" alt="bullet point">
+            <p class="takeaway-content">Users need a signal showing them that their background check is approved.</p>
+          </div>
+          <div class="key-takeaway space">
+            <img class="bullet" src="Images/takeaway_icon.svg" alt="bullet point">
+            <p class="takeaway-content">On the shift schedule screen some users want to keep scrolling through the list of shift options until they reached their desired choice, instead of horizontally scrolling on the calendar or selecting a specific date.</p>
+          </div>
+          <div class="key-takeaway space">
+            <img class="bullet" src="Images/takeaway_icon.svg" alt="bullet point">
+            <p class="takeaway-content">Users had trouble with saving an opportunity with the heart. It was noted to be monitored in the higher fidelity stages due to the heart not being as noticeable in this low fidelity stage. I also needed to put the user in a specific scenario so they could understand why they would click the heart icon.</p>
+          </div>
+      </div>
+      <div class="screens_two">
+        <div>
+          <h6>Updated Introduction Screen</h6>
+          <img class="screen_shadow" src="Images/Intro Screen One - Updated.png" alt="Updated Introduction Screen"/>
+        </div>
+        <div>
+          <h6>Background Check Approved!</h6>
+          <img class="screen_shadow" src="Images/Celebration Message - Approved - version1.png" alt="Celebration for background check approval"/>
+        </div>
+        </div>
+        <div class="screens_two">
+          <div>
+            <h6>Allowing for Vertical Scroll</h6>
+            <img class="screen_shadow" src="Images/Shift Schedule V1 Horizontal Scroll.png" alt="Schedule Screen Empty"/>
+          </div>
+          <div>
+            <h6>Apply Button Adjustment</h6>
+            <img class="screen_shadow" src="Images/Interests Filter Checked - Updated.png" alt="Schedule Screen with Prompt"/>
+          </div>
+          </div>
+      <p>After alterations and another round of usability testing, all previous problems were resolved. In this round users wanted to go to the ‘Schedule’ tab to schedule a shift after they were approved for the background check. I redesigned this screen to accommodate for this pathway.</p>
+      <div class="screens_two">
+        <div>
+          <h6>Original Schedule Tab After Approval</h6>
+          <img class="screen_shadow" src="Images/Before Schedule.png" alt="Schedule Screen Empty"/>
+        </div>
+        <div>
+          <h6>New Schedule Tab After Approval</h6>
+          <img class="screen_shadow" src="Images/After Schedule.png" alt="Schedule Screen with Prompt"/>
+        </div>
+        </div>
+        <p>After retesting users were able to complete all of the tasks and follow their desired pathway. I was able to move forward into the visual design portion of the project.</p>
+    </section>
+    <section class="visual_design">
+      <div class="visual_design_intro">
+          <img class="visual_design_icon" src="Images/visual_design_icon.svg" alt="Visual Design Icon"/>
+          <h2 class="section_title inner white_title">Visual Design</h2>
+      </div>
+      <div class="branding">
+        <h3 class="category_title">Branding</h3>
+        <p class="branding_intro">The branding for Chip In began with mind mapping. I spent time thinking of many words related to volunteer work, community, and giving back. I finally settled on Chip In which conveys a very fun and light tone which matched well with the targeted users of ages 18-37 years old.</p>
+        <img src="Images/Mind Mapping.jpg" alt="Mind Mapping Exercise Drawing" class="mind_mapping"/>
+        <p class="branding_intro">Next came the rough logo sketching and refinements. I had several options and many of them would match the desired branding. I reached out to other designers for feedback to decide on a direction for refinement.</p>
+        <div class="style_examples">
+            <div class="refined_logo">
+                <img class="logo_three" src="Images/Logo_refined.png" alt="Refined Logo Image"/>
+                <p>The final logo brings back nostalgic memories of when volunteers signed up on paper. The logo started with the font ‘Shadows Into Light’ and was refined until reaching the final logo. The 'C' helps out its neighbor 'i', chipping in.</p>
+            </div>
+            <div class="color_scheme">
+                <img src="Images/Color_scheme_three.png" alt="Color Scheme Image"/>
+                <p>I decided to go with a blue, green, and purple analogous color scheme. Blue and green are both colors that are often favored by all gender groups. The usage of green and blue also relates very well to the color scheme of earth, sustainability, and community.</p>
+            </div>
+            <div class="typography">
+                <img src="Images/typography_three.png" alt="Typography Choices Image"/>
+                <p>Typography guidelines were given in the style guide in order to maintain proper hierarchy and branding.</p>
+            </div>
+            <div class="icons">
+                <img src="Images/Icons_two.png" alt="Designed Icons Image"/>
+                <p>Icons and badges were designed to fit the Chip In brand. Gradients were used to maintain a fun and modern look. </p>
+            </div>
+            <a class="end" href="https://www.figma.com/file/a3ezlIWjcYt7xSfHeWaIDjYZ/Branding?node-id=42%3A0" target="_blank">
+              <div class="pink-button">
+              View Style Guide
+              </div>
+            </a>
+        </div>
+      </div>
+
+      <!-- Grey Separating Line -->
+      <div class="grey-line" style="grid-row-start: 3;"></div>
+
+      <div class="mockups">
+        <h3 class="category_title">High Fidelity Mockups</h3>
+        <p class="bold-purple">After designing the first verion of mockups, I utilized usability hub to gain insight into user preference. Below are three tests and the final results.</p>
+        <div class="screens_eight">
+            <h6>Preference Test One - Shift Schedule Color</h6>
+            <img src="Images/V1.png" alt="Preference Test One Shift Schedule Color"/>
+            <h6>Preference Test Two - Shift Schedule AM/PM</h6>
+            <img src="Images/V2.png" alt="Preference Test Two Shift Schedule AM/PM"/>
+            <h6>Preference Test Three - Volunteer Opportunity Heading Style</h6>
+            <img src="Images/P3.png" alt="Preference Test Three Volunteer Opportunity Headings"/>
+        </div>
+      </div>
+      <div class="preference_testing">
+            <h5>Preference Testing & Design Feedback</h5>
+            <div class="key-takeaway space_two">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">Users preferred the outline as the main color usage on the shift schedule with the filled in purple showing a selected shift.</p>
+            </div>
+            <div class="key-takeaway">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">Users preferred the AM/PM word usage instead of the icons. Users felt this helped filter through the options.</p>
+            </div>
+            <div class="key-takeaway">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">Users preferred the small, purple headings which also helped give hierarchy to the important details listed.</p>
+            </div>
+            <p class="bold-purple summary insight">These findings were implemented in the next version below. I also asked for feedback from two senior designers and made adjustments.</p>
+            <div class="screens_one">
+              <div>
+                <h6>Get Started Screen</h6>
+                <img class="screen_shadow" src="Images/Get Started - version2.png" alt="getting started screen, start exploring or sign up"/>
+              </div>
+              <div>
+                <h6>Main Dashboard</h6>
+                <img class="screen_shadow" src="Images/Explore V2 - version2.png" alt="Main dashboard screen"/>
+              </div>
+              <div>
+                <h6>Background Check Request Form</h6>
+                <img class="screen_shadow" src="Images/Background Check Request Filled In - version2.png" alt="Background Check Request Form Screen"/>
+              </div>
+            </div>
+            <div class="screens_one">
+              <div>
+                <h6>Volunteer Opportunity Screen</h6>
+                <img class="screen_shadow" src="Images/Volunteer Opportunity Example - Authorized - version2.png" alt="Volunteer Opportunity Screen"/>
+              </div>
+              <div>
+                <h6>Shift Schedule Screen</h6>
+                <img class="screen_shadow" src="Images/Shift Schedule V1 Reschedule Scheduled.png" alt="Shift Schedule Screen"/>
+              </div>
+            </div>
+      </div>
+      <div class="round_two">
+            <h5>Round Two User Testing</h5>
+            <div class="key-takeaway space_two">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">As discussed earlier in the wireframing stage, I wanted to verify at this stage that users could save opportunities for later. After putting them into a scenario and making the heart icon visible on the scrim, all users were able to complete the task quickly and easily.</p>
+            </div>
+            <div class="key-takeaway">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">After clicking to confirm a shift, users expected to be put back on the dashboard instead of having to click ‘done’ at the top.</p>
+            </div>
+            <div class="key-takeaway">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">Users weren’t aware of the background check levels/badges.</p>
+            </div>
+            <div class="key-takeaway">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">Users were looking for a security icon or badge on the background check page in order to feel secure about their data.</p>
+            </div>
+            <div class="key-takeaway">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">Users wanted to filter for opportunity requirements, in case they don’t have a few days to wait on a background check and want to volunteer soon.</p>
+            </div>
+            <div class="key-takeaway">
+              <img src="Images/takeaway_icon.svg" alt="bullet point">
+              <p class="takeaway-content">Most users did not want to allow access to location, which was the primary pathway that the prototype concentrated on.</p>
+            </div>
+      </div>
+      <p class="bold-purple summary insight">Based on this feedback, I made changes to better explain the background check levels, add security, add a requirements filter, and updated the prototype with desired pathways.</p>
+      <div class="final_design">
+            <h5 class="final_title">Final Design</h5>
+            <div class="screens_one">
+                <div>
+                    <h6>Getting Started Screen</h6>
+                    <img class="screen_shadow" src="Images/Get Started - version3.png" alt="Getting started screen for exploring or signing up"/>
+                </div>
+                <div>
+                    <h6>Tutorial Screen</h6>
+                    <img class="screen_shadow" src="Images/Volunteer Opportunity Example - Not Authorized- Not Saved - Message.png" alt="Tutorial screen for background check"/>
+                </div>
+                <div>
+                    <h6>Background Check Approved!</h6>
+                    <img class="screen_shadow" src="Images/Celebration Message - Approved - version3.png" alt="Approval message for background check screen"/>
+                </div>
+                <div>
+                    <h6>Background Check Screen One</h6>
+                    <img class="screen_shadow" src="Images/Background Check Intro One.png" alt="screen for onboarding for background check request"/>
+                </div>
+                <div>
+                    <h6>Background Check Screen Two</h6>
+                    <img class="screen_shadow" src="Images/Background Check Intro Two.png" alt="screen for onboarding for background check request"/>
+                </div>
+                <div>
+                    <h6>Background Check Request Form</h6>
+                    <img class="screen_shadow" src="Images/Background Check Request.png" alt="background check request form screen"/>
+                </div>
+                <div>
+                    <h6>Updated Main Dashboard</h6>
+                    <img class="screen_shadow" src="Images/Final Dash - Saving.png" alt="main dashboard screen"/>
+                </div>
+                <div>
+                    <h6>Requirements Filter</h6>
+                    <img class="screen_shadow" src="Images/Requirements Filter Checked.png" alt="Requirements filter screen"/>
+                </div>
+                <div>
+                    <h6>Alert Banner</h6>
+                    <img class="screen_shadow" src="Images/Shift Added Message.png" alt="Alert banner screen"/>
+                </div>
+            </div>
+            <a class="end" href="https://marvelapp.com/gfcie64" target="_blank">
+              <div class="pink-button">
+              View Prototype
+              </div>
+            </a>
+    </div>
+    </section>
+    <section class="reflections">
+      <div class="reflections_intro">
+          <img src="Images/Reflections_icon.svg" alt="reflections icon" class="reflections_icon"/>
+          <h2 class="section_title white_title">Reflections</h2>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">I would perform more testing to see how secure users perceive the background check process to be and how I could improve it.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">I would change the “Request Background Check” button to a “Complete Requirements” button in order to add in a form for references and a schedule page for signing up for training.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">I would also see if it would be preferable to have a filter button that contains all three filters or keep the three filter choices on the dash. I started with only two filters so I didn’t see a need for it, but now that there are three it would be beneficial to perform a test.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">I would think of several iterations of the shift schedule. The one I designed is for an MVP and was user focused in its visual and ux design, but I believe there could be a more convenient schedule design.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">Is there a way to work with organizations so that users can just get a Level 3 background check? This level is more expensive but the organizations could share cost since they are able to share background verifications. Although users already only enter their information once, this would eliminate levels all together and would allow users to submit one request only.</p>
+      </div>
+      <div class="key-takeaway">
+        <img src="Images/takeaway_icon.svg" alt="bullet point">
+        <p class="takeaway-content">One user type is focused on schedule because they are very busy and want to fit in a shift here and there. What percentage of the user base is this user? This user would like to first find a time that works for them and then see what opportunities are available. If this is a large percentage of the user base, I would want to see how I could design the app to allow this flow.</p>
+      </div>
+    </section>
+    <section class="view_next">
+      <h2>View Next</h2>
+      <a class="fitcollect_link" href="project_one.html">
+        <div class="fitcollect">
+          <div class="overlay">
+          <h2 class="project_headline">FitCollect</h2>
+          <h4 class="project_desc">Android App | UX &amp; Visual Design</h4>
+          </div>
+        </div>
+      </a>
+    </section>
+    <footer class="about_footer">
+      <h2 class= "footer_title">Let's Chat</h2>
+      <p>Feel free to connect with me.</p>
+      <p>I am currently open to UX/UI</p>
+      <p>Design opportunities.</p>
+      <ul class="footer_list">
+          <li class="email">
+            <a href="mailto:katelynmichalove@gmail.com">
+              <img src="Images/Email_icon.svg" alt="email icon"/>
+            </a>
+          </li>
+          <li class="github">
+            <a href="https://github.com/katelynmichalove">
+              <img src="Images/github_icon.svg"/>
+            </a>
+          </li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/katelynmichalove/">
+              <img src="Images/linkedin_icon.svg"/>
+            </a>
+          </li>
+        </ul>
+        <small class="copyright">&copy; 2019 Katelyn Michalove</small>
+        <small class="credit">Designed and Developed by Katelyn Michalove</small>
+      </footer>
+      </div>
+      <script src="script.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132787983-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132787983-1');
+      </script>
+      <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    </body>
+    </html>
