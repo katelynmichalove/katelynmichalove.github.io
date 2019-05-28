@@ -1228,6 +1228,10 @@ small {
   padding-bottom: 2rem;
 }
 
+.round_three {
+  padding-top: 2rem;
+}
+
 .icons img, .typography img, .color_scheme img {
   width: 90%;
   max-width: 40rem;
@@ -2001,12 +2005,12 @@ text-align: left;
     width: 70rem;
   }
 
-  .round_two {
+  .round_two, .round_three {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .round_two h5, .round_two .key-takeaway {
+  .round_two h5, .round_two .key-takeaway, .round_three .key-takeaway {
     display: grid;
     grid-column: 2 / 12;
   }
@@ -2956,12 +2960,12 @@ text-align: left;
     justify-self: center;
   }
 
-  .round_two {
+  .round_two, .round_three {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .round_two h5, .round_two .key-takeaway {
+  .round_two h5, .round_two .key-takeaway, .round_three .key-takeaway {
     display: grid;
     grid-column: 3 / 11;
   }
