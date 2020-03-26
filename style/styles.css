@@ -346,8 +346,10 @@ ul {
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.07);
 }
 
+
 .VDOS_link .coming_soon {
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.07);
+  opacity: 60%;
 }
 
 .smartequip_link {
@@ -404,7 +406,6 @@ ul {
   display: inline-block;
   position: relative;
   -webkit-box-flex: 0;
-  opacity: 60%;
 }
 
 .project_card:hover {
