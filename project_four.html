@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <title>Katelyn Michalove</title>
+</head>
+<body>
+  <header class="project_version">
+    <nav class="topnav">
+      <!-- Logo and home button -->
+      <a href="index.html">
+        <img class="logo" src="Images/logo.svg">
+      </a>
+      <!-- Animated Main Hamburger Menu -->
+      <button href="javascript:void(0);" class="menu CS" onclick="myMenuFunction(); myFunction(this);">
+        <div class=bars>
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+        </div>
+      </button>
+      <ul id="menu_links">
+        <li>
+          <a href="index.html" alt="Homepage">Work</a>
+        </li>
+        <li>
+          <a href="about.html" alt="About">About</a>
+        </li>
+        <li>
+          <a href="Katelyn_Michalove_Resume.pdf" alt="Resume" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper_two">
+    <div class="container">
+      <div class="intro_header_two">
+          <h1 class="name">Sunbelt: SmartEquip iOS Application</h1>
+      </div>
+      <div class="project_columns">
+      <div class="sidenav">
+        <div class="sidenav_position">
+          <a href="#introduction">Introduction</a>
+          <a href="#discovery">Discovery</a>
+          <a href="#IA">IA</a>
+          <a href="#visual_design">Visual Design</a>
+          <a href="#new_use_case">New Use Case</a>
+          <a href="#reflections">Reflections</a>
+        </div>
+      </div>
+      <div class="case_study">
+        <img src="Images/smartequip_img.png" class="ChipIn_img">
+        <div class="prototype">
+          <a href="https://marvelapp.com/gfcie64" target="_blank" class="pink-button">
+                View Prototype &rarr;
+          </a>
+        </div>
+        <section id="introduction" class= "introduction">
+          <h2 class="section_title introduction_title">Introduction</h2>
+          <div class="introduction-items">
+            <div class="role">
+              <img src="Images/Role_Icon.svg" alt="Role Icon"/>
+              <h3 class="main">Role</h3>
+              <ul class="role-list">
+                <li>
+                  <h4>UX Research</h4>
+                </li>
+                <li>
+                  <h4>UX Design</h4>
+                </li>
+                <li>
+                  <h4>Visual Design</h4>
+                </li>
+              </ul>
+            </div>
+            <div class="pink-divider"></div>
+            <div class="tools">
+              <img src="Images/Tools_icon.svg" alt="Tools Icon"/>
+              <h3 class="main">Tools</h3>
+              <ul class="tools-list">
+                <li>
+                  <h4>Figma</h4>
+                </li>
+                <li>
+                  <h4>Sketch</h4>
+                </li>
+                <li>
+                  <h4>Adobe CS</h4>
+                </li>
+                <li>
+                  <h4>Marvel</h4>
+                </li>
+                <li>
+                  <h4>Style Guide</h4>
+                </li>
+                <li>
+                  <h4>Sketch Pad</h4>
+                </li>
+              </ul>
+            </div>
+              <div class="pink-divider_two"></div>
+            <div class="deliverables">
+              <img src="Images/Deliverables_icon.svg" alt="Deliverables Icon"/>
+              <h3 class="main">Deliverables</h3>
+              <ul class="deliverables-list">
+                <li>
+                  <h4>User Research</h4>
+                </li>
+                <li>
+                  <h4>UX Documentation</h4>
+                </li>
+                <li>
+                  <h4>Wireframes</h4>
+                </li>
+                <li>
+                  <h4>High Fidelity Mockups</h4>
+                </li>
+                <li>
+                  <h4>Prototype</h4>
+                </li>
+                <li>
+                  <h4>Presentation</h4>
+                </li>
+              </ul>
+            </div>
+            <div class="duration">
+              <img src="Images/Duration_icon.svg" alt="duration icon">
+              <h3 class="main">Duration</h3>
+              <ul class="duration-list">
+                <li>
+                  <h4>1 Week</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="problem" class="problem">
+          <h2 class="section_title problem_title">The Problem</h2>
+          <h5 class="sunbelt_title">SUNBELT RENTALS</h5>
+          <p class="sunbelt_desc">Sunbelt Rentals rents a variety of equipment especially for the construction industry. There are several internal applications that help them keep up with their rentals. The equipment must be frequently maintained and often requires mechanics to travel to the customer’s location in order to resolve any equipment breakdowns.</p>
+          <div class="the-client-four">
+            <h5 class="white">THE CLIENT</h5>
+            <p class="client_quote">&quot;SmartEquip is a parts procurement and equipment lifecycle software which helps Sunbelt with it’s equipment maintainance. SmartEquip  developed a solution which eliminated the need for the paper form and emailed images. However, they needed a designer to help redesign their UI and UX flow to increase usability and field adoption.&quot;</p>
+          </div>
+          <div class="the-user-four">
+            <h5 class="white">THE USERS</h5>
+            <p class="client_quote">&quot;I spend a lot of time taking photos of equipment when working on breakdowns. Then I have to attach them all to an email I send to my manager. I fill out my record form on paper, then on our Wynne system and again on the mobile app. I don’t really trust our current photo capture.&quot;</p>
+          </div>
+          <div class="solution">
+            <h2 class="section_title">The Solution</h2>
+            <p class="sol">SmartEquip was redesigned to follow the human interface guidelines, human computer interaction fundamentals, and the Sunbelt Rental style guide.  I also eliminated custom, unconventional icons and added icons that aided in the understanding of the tasks.</p>
+          </div>
+        </section>
+        <section id="discovery" class="discovery">
+          <div class="discovery_intro">
+              <h2 class="section_title white_title">Discovery</h2>
+          </div>
+          <div class="user-interviews interview_four">
+            <h3 class="category_title">USER FIELD INTERVIEWS</h3>
+            <div class="field_interview">
+              <img class="interview_img" src="Images/interview_img.jpg" alt="Field Interview Photo">
+              <p>In order to learn their workflow as quickly as possible, I scheduled a day long ‘Ride-Along’ where I rode  in Tod’s service vehicle as we went to customer locations in the area to fix equipment. I got to see his normal workflow and  the challenges he encounters.</p>
+              <p>When it was time for lunch, we hit one of his usual spots, Waffle House. Even during this time, I got to see how he changed his status to ‘On Lunch’. Followed by a  looming countdown on his phone which he placed at the center of the table while we ate.</p>
+            </div>
+            <ul class="list">
+              <li class="key-takeaway">
+                There are many photos captured throughout the process to document the before, after, the hour meter, the paper documents, the part conditions, and all angles of the equipment.
+              </li>
+              <li class="key-takeaway">
+                Documenting their work and transferring it to two different applications sometimes took longer than than actual work of fixing the equipment.
+              </li>
+              <li class="key-takeaway">
+                They spend most of their time troubleshooting equipment failures. They need quick access to this equipment history as well as equipment specifications.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="IA" class="IA">
+          <div class="IA_intro smartequip_intro">
+              <h2 class="section_title white_title sunbelt_IA">Information Architecture</h2>
+          </div>
+
+          <div class="wireframes wireframes_four">
+            <h3 class="category_title">WIREFRAMES</h3>
+            <p class="p1">To begin my 1 week redesign of SmartEquip, I started sketching out possible solutions and improvements</p>
+            <img src="Images/smartequip_wireframes.jpg" alt="Wireframe Sketches Image" class="sketches"/>
+            <p class="p2">After ideating  and brainstorming with my sketches, I went straight to high fidelity mockups. I referenced the pilot SmartEquip iOS application on my phone, my research, my sketches, and the Sunbelt style guide in order to begin my iterations of visual mockups.</p>
+          </div>
+          </section>
+          <section id="visual_design" class="visual_design">
+            <div class="visual_design_intro">
+                <h2 class="section_title inner white_title">Visual Design</h2>
+            </div>
+            <div class="mockups mockups_four">
+              <h3 class="category_title">HIGH FIDELITY MOCKUPS</h3>
+              <p class="bold-purple smartequip_visual">While putting together the visual designs, I continued to improve the user flows using what I had learned during my field research. See some of the main changes I made along the way.</p>
+              <h5>Dashboard: Before and After</h5>
+              <div class="screens_one">
+                    <div class="scr1">
+                        <h6>Before: Dashboard</h6>
+                        <img class="screen_shadow" src="Images/Before_Dashboard.png" alt="Before Dashboard"/>
+                    </div>
+                    <div class="scr2">
+                        <h6>Before: Dashboard Scroll 1</h6>
+                        <img class="screen_shadow" src="Images/Before_Dashboard_Scroll1.png" alt="Before Dashboard Scroll 1"/>
+                    </div>
+                    <div class="scr3">
+                        <h6>Before: Dashboard Scroll 2</h6>
+                        <img class="screen_shadow" src="Images/Before_Dashboard_Scroll2.png" alt="Before Dashboard Scroll 2"/>
+                    </div>
+              </div>
+              <div class="screens_two">
+                    <div class="scr4">
+                        <h6>After: Dashboard</h6>
+                        <img class="screen_shadow" src="Images/After_Dashboard.png" alt="After Dashboard"/>
+                    </div>
+                    <div class="scr5">
+                        <h6>After: Menu</h6>
+                        <img class="screen_shadow" src="Images/After_Menu.png" alt="After Menu"/>
+                    </div>
+              </div>
+            </div>
+            <div class="preference_testing preference_testing_four">
+                  <ul>
+                    <li class="key-takeaway top-space">
+                      The language used for ‘Inspections In Location’ wasn’t clear for the user because in location actually meant all inspections in the area being done by other field technicians.</p>
+                    </li>
+                    <li class="key-takeaway">
+                      The offline/submitted not yet transferred section was also unclear and a bit lengthy in it’s wording.</p>
+                    </li>
+                    <li class="key-takeaway">
+                      The user could not see all of these options without scrolling three times through the dashboard.</p>
+                    </li>
+                    <li class="key-takeaway">
+                      The app version number was taking up a lot of space and could be located within the profile portion of the app. The logout function was also placed within the profile navigation as well.</p>
+                    </li>
+                  </ul>
+                  <h5 class="smartequip_space">My Inspections Screen: Before and After</h5>
+                  <div class="screens_one ipad_space">
+                    <div>
+                      <h6>Before: My Inspections</h6>
+                      <img class="screen_shadow" src="Images/Before_My_Inspections.png" alt="Before Inspections Screen"/>
+                    </div>
+                    <div>
+                      <h6>After: My Inspections</h6>
+                      <img class="screen_shadow" src="Images/After_My_Inspections.png" alt="After My Inspections Screen"/>
+                    </div>
+                  </div>
+            </div>
+            <div class="round_two smartequip_two">
+                  <ul>
+                    <li class="key-takeaway top-takeaway">
+                      I removed conventional icons that weren’t contributing to the users’ understanding of the task.
+                    </li>
+                    <li class="key-takeaway">
+                       I expanded the width of all screens to allow for more room.
+                    </li>
+                    <li class="key-takeaway">
+                      I utilized the iOS Human Interface Guidelines to show a list format for the inspections and gave priority to the status of the  individual inspection.
+                    </li>
+                    <li class="key-takeaway">
+                      I carried over a the ‘New’ label that was being used on another internal application. Users are familiar with this pattern so it would aid them in knowing what has been added to their list since they last looked.
+                    </li>
+                  </ul>
+            </div>
+            <div class="mockups mockups_four">
+              <h5>Inspection Summary: Before and After</h5>
+              <div class="screens_one">
+                    <div class="scr1">
+                        <h6>Before: Inspection Summary</h6>
+                        <img class="screen_shadow" src="Images/Before_Inspection_Summary.png" alt="Before Inspection Summary"/>
+                    </div>
+                    <div class="scr2">
+                        <h6>Before: Continued Scroll 1</h6>
+                        <img class="screen_shadow" src="Images/Before_Inspection_Summary_Scroll1.png" alt="Before Inspection Summary Scroll 1"/>
+                    </div>
+                    <div class="scr3">
+                        <h6>Before: Continued Scroll 2</h6>
+                        <img class="screen_shadow" src="Images/Before_Inspection_Summary_Scroll2.png" alt="Before Inspection Summary Scroll 2"/>
+                    </div>
+              </div>
+              <div class="screens_one">
+                    <div class="scr1">
+                        <h6>After: Inspection Summary</h6>
+                        <img class="screen_shadow" src="Images/After_Inspection_Summary.png" alt="After Inspection Summary"/>
+                    </div>
+                    <div class="scr2">
+                        <h6>After: Inspection History</h6>
+                        <img class="screen_shadow" src="Images/After_Inspection_Summary_Two.png" alt="After Inspection History"/>
+                    </div>
+                    <div class="scr3">
+                        <h6>After: New Menu</h6>
+                        <img class="screen_shadow" src="Images/After_Action_Menu.png" alt="After Action Menu"/>
+                    </div>
+              </div>
+            </div>
+            <div class="round_two smartequip_two">
+                  <ul>
+                    <li class="key-takeaway top-takeaway">
+                      Again, I removed the icongraphy and expanded the width of the screen. This allowed for the entire inspection summary to show in one view without scrolling. It also moved the main call to action up higher. so the user doesn’t have to scroll.
+                    </li>
+                    <li class="key-takeaway">
+                      I removed the ‘Change Loc’ functionality because the service technicians would not be using this functionality. It would be up to service manager to make this decision.
+                    </li>
+                    <li class="key-takeaway">
+                      I removed the Template section since this isn’t information that the user needs to know. This would be used by the engineers.
+                    </li>
+                    <li class="key-takeaway">
+                      I moved the secondary functionality into a menu containing the ‘Unassign’, ‘Stop Work’, and ‘Delete Inspection’. The delete inspection action was originally placed as the first action on the page. These functions would not be used very often.
+                    </li>
+                  </ul>
+            </div>
+            <div class="final_design">
+                  <h5 class="final_title">Inspection Form: Before and After</h5>
+                  <div class="screens_one smartequip_screens_one">
+                        <div class="scr1">
+                            <h6>Before: Inspection</h6>
+                            <img class="screen_shadow" src="Images/Before_Inspection.png" alt="Before Inspection"/>
+                        </div>
+                        <div class="scr2">
+                            <h6>Before: Inspection Menu</h6>
+                            <img class="screen_shadow" src="Images/Before_Inspection_Menu.png" alt="Before Inspection Menu"/>
+                        </div>
+                        <div class="scr3">
+                            <h6>Before: Comments & Images</h6>
+                            <img class="screen_shadow" src="Images/Before_Comment_Images.png" alt="Before Comments and Images"/>
+                        </div>
+                  </div>
+                  <div class="screens_one">
+                        <div class="scr4">
+                            <h6>After: Inspection</h6>
+                            <img class="screen_shadow" src="Images/After_Inspection.png" alt="After Inspection"/>
+                        </div>
+                        <div class="scr5">
+                            <h6>After: Comments & Images</h6>
+                            <img class="screen_shadow" src="Images/After_Comment_Images.png" alt="After Comments and Images"/>
+                        </div>
+                  </div>
+                  <div class="screens_one">
+                      <div>
+                          <h6>Before: Add an Image</h6>
+                          <img class="screen_shadow" src="Images/Before_Add_Image.png" alt="Before Add an Image"/>
+                      </div>
+                      <div>
+                          <h6>Before: Travel Mileage</h6>
+                          <img class="screen_shadow" src="Images/Before_Travel_Mileage.png" alt="Before Travel Mileage"/>
+                      </div>
+                      <div>
+                          <h6>Before: Dropdown Selection</h6>
+                          <img class="screen_shadow" src="Images/Before_Dropdown_Selection.png" alt="Before Dropdown Selection"/>
+                      </div>
+                      <div>
+                          <h6>After: Photo Selection</h6>
+                          <img class="screen_shadow" src="Images/After_Photo_Selection.png" alt="After Photo Selection"/>
+                      </div>
+                      <div>
+                          <h6>After: Travel Mileage</h6>
+                          <img class="screen_shadow" src="Images/After_Travel_Mileage.png" alt="After Travel Mileage"/>
+                      </div>
+                      <div>
+                          <h6>After: Dropdown Selection</h6>
+                          <img class="screen_shadow" src="Images/After_Dropdown_Selection.png" alt="After Dropdown Selection"/>
+                      </div>
+                  </div>
+                </div>
+                <div class="round_three">
+                  <ul>
+                    <li class="key-takeaway top-takeaway">
+                      The menu was pulled out into the main inspection form so users could easily access this important information. I also renamed ‘Header Information’ to ‘Contract Information’ which is the title service technicians use.
+                    </li>
+                    <li class="key-takeaway">
+                      Previously when a user added an image, an icon would appear and they would have no way to edit or see if they were successful. I added in a thumbnail and the ability to delete an image they’ve added.
+                    </li>
+                    <li class="key-takeaway">
+                      Previously it took several steps to add one image. When riding along with technicians, I saw them take at least 50 - 75 photos. I redesigned this feature to allow them to select multiple photos at one time.
+                    </li>
+                    <li class="key-takeaway">
+                      In cases where users were inputing only a number (See Travel Mileage), I incorporated a numerical keyboard.
+                    </li>
+                    <li class="key-takeaway">
+                      For selections with only a few options, I changed it from a dropdown to a radio selection. For selections with many options, I incorporated a search with a dropdown.
+                    </li>
+                  </ul>
+                </div>
+          </section>
+          <section id="new_use_case" class="visual_design">
+            <div class="visual_design_intro">
+                <h2 class="section_title inner white_title">Use Case Addition</h2>
+            </div>
+            <p class="bold-purple main">While gathering feedback from the field, we determined that there was a need to add parts to the field service record form. These are parts they used during the repair of the equipment. Previously there was only the ability to order/find a part, but we needed to add in the pathway for adding a part that was in their truck inventory or from the company part store.</p>
+            <div class="screens_one">
+                <div>
+                    <h6>Parts section of the inspection</h6>
+                    <img class="screen_shadow" src="Images/parts.png" alt="inspection screen"/>
+                </div>
+                <div>
+                    <h6>Add a part screen</h6>
+                    <img class="screen_shadow" src="Images/add_part.png" alt="Add a part screen"/>
+                </div>
+                <div>
+                    <h6>Manually add a part</h6>
+                    <img class="screen_shadow" src="Images/manual_add.png" alt="Manually add a part screen"/>
+                </div>
+                <div>
+                    <h6>Part search results</h6>
+                    <img class="screen_shadow" src="Images/search_result.png" alt="Part search results screen"/>
+                </div>
+                <div>
+                    <h6>Part Selection</h6>
+                    <img class="screen_shadow" src="Images/part_selection.png" alt="Part selection state"/>
+                </div>
+                <div>
+                    <h6>Part added</h6>
+                    <img class="screen_shadow" src="Images/part_added.png" alt="Part added screen"/>
+                </div>
+            </div>
+            <div class="round_three">
+              <ul>
+                <li class="key-takeaway top-takeaway">
+                  Users are presented with the two pathways of either finding a part or adding a part that they’ve already used from the store or their truck.
+                </li>
+                <li class="key-takeaway">
+                  When adding a part, the user can either search by part number or add it manually if their part can’t be found or doesn’t exist in the database.
+                </li>
+                <li class="key-takeaway">
+                  When discussing with development, we determined there wasn’t enough time for a live search capability. Therefore, I designed a ‘Submit’ button that signaled the need for a full number entry. The error state also notifies the user that an entire part number must be entered into the field.
+                </li>
+                <li class="key-takeaway">
+                  For the displayed results, I utilized a table that would allow them to adjust the quantity. I excluded information such as the ‘Stock Class’ which the user would not be familiar with and included what information they would need to find what they are looking for.
+                </li>
+                <li class="key-takeaway">
+                  Finally, when the part is added, they still have the ability to adjust quantity and delete the part from their form. The total cost is clear so they can compare it to their invoice or truck inventory form.
+                </li>
+              </ul>
+            </div>
+
+          </section>
+          <section id="reflections" class="reflections">
+            <div class="reflections_intro">
+                <h2 class="section_title">Reflections</h2>
+            </div>
+            <ul>
+              <li class="key-takeaway top-takeaway">
+                When starting this project I had no idea what a service technician really did with their day. I knew I had to spend some time seeing them in action before I could get started with any of my designs. Seeing how effective this was in contributing to successful design decisions, I’ve since carried this over to any other product I work on. Even before any sort of planned user research, I’ve found it most helpful to observe and spend time with the user.
+              </li>
+              <li class="key-takeaway">
+                This was my first opportunity to shift a culture towards UX Design . My first meeting for this redesign started with the group asking: “So why do we need UX Design, what is it?”. A month later, after the redesign, they came to me to design a new feature, knowing now that this is a crucial first step in the development of their product. Now their concerns and questions are starting to reflect their new knowledge of best practices and it’s really exciting to see the transformation. I’ve always enjoyed design, but I never knew how much I would love influencing a culture and teaching others.
+              </li>
+              <li class="key-takeaway">
+                Since the deadline was tight, I had to produce my designs and make decisions very quickly.  Given more time I could have explored better options and done usability testing with the service technicians to verify my designs. As they introduce my designs to the field during pilot, I will be able to make adjustments for users to continue my improvements.
+              </li>
+            </ul>
+        </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="about_footer">
+    <h2 class= "footer_title">Let's Chat</h2>
+    <p>Feel free to connect with me.</p>
+    <p>I am currently open to new</p>
+    <p>design opportunities.</p>
+    <ul class="footer_list">
+        <li class="email">
+          <a href="mailto:katelynmichalove@gmail.com">
+            <img src="Images/Email_icon.svg" alt="email icon"/>
+          </a>
+        </li>
+        <li class="github">
+          <a href="https://github.com/katelynmichalove">
+            <img src="Images/github_icon.svg"/>
+          </a>
+        </li>
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/katelynmichalove/">
+            <img src="Images/linkedin_icon.svg"/>
+          </a>
+        </li>
+      </ul>
+      <small class="copyright">&copy; 2020 Designed and Developed by Katelyn Michalove </small>
+    </footer>
+
+
+
+
+      <script src="script.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132787983-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132787983-1');
+      </script>
+      <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    </body>
+    </html>
