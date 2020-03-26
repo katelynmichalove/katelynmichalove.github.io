@@ -363,6 +363,9 @@ ul {
   -webkit-box-flex: 0;
 }
 
+.hierarchy {
+  font-weight: 500;
+}
 .chipin_link {
   flex: 49% 49%;
   max-width: 100%;
