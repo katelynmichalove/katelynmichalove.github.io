@@ -40,6 +40,7 @@ html {
   text-align: center;
   top: 5rem;
   width: 100%;
+  z-index: 1;
 }
 
 /* Link style for navigation */
