@@ -350,7 +350,8 @@ ul {
 
 .VDOS_link .coming_soon {
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.07);
-  opacity: 60%;
+  opacity: 0.6;
+  visibility: visible;
 }
 
 .smartequip_link {
