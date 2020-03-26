@@ -2525,7 +2525,7 @@ text-align: left;
 
   .heading_section {
     width: 80%;
-    padding-bottom: 5%;
+    padding-bottom: 5rem;
   }
 
   h1 {
@@ -3424,14 +3424,5 @@ text-align: left;
     justify-self: left;
   }
 
-
-}
-
-@media screen and (min-width: 1440px) {
-
-  .wrapper_two {
-    margin: 0 auto;
-    max-width: 1400px;
-  }
 
 }
