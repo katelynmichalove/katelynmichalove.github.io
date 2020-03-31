@@ -1562,7 +1562,7 @@ text-align: left;
   .the-user-three, .the-user {
     grid-column: 7 / 13;
     grid-row: 2;
-    align-self: center;
+    align-self: baseline;
     margin-top: 0;
     max-width: 31rem;
   }
@@ -2746,6 +2746,7 @@ text-align: left;
     grid-row: 2;
     max-width: 50rem;
     text-align: left;
+    align-self: top;
   }
 
   .the-client, .the-user {
@@ -2770,9 +2771,13 @@ text-align: left;
   .the-user, .the-user-three {
     grid-column: 7 / 13;
     grid-row: 2;
-    align-self: center;
+    align-self: baseline;
     margin-top: 0;
     max-width: 50rem;
+  }
+
+  .the-user-three {
+    padding-top: 3rem;
   }
 
   .the-user-four {
