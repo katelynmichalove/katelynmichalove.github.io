@@ -348,11 +348,16 @@ ul {
 }
 
 
-.VDOS_link .coming_soon {
+.VDOS_link .coming_soon, .smartequip_link .coming_soon {
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.07);
   opacity: 0.6;
   visibility: visible;
   filter: alpha(opacity=60);
+}
+
+.VDOS_video {
+  width: 69rem;
+  height: auto;
 }
 
 .smartequip_link {
@@ -422,7 +427,7 @@ ul {
   transition-delay: .1s;
 }
 
-.VDOS_link .project_card:hover {
+.VDOS_link .project_card:hover, .smartequip_link .project_card:hover {
   box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.07);
   margin-top: 0;
 }
@@ -716,7 +721,7 @@ small {
   max-width: 33.7rem;
 }
 
-.the-client-three, .the-client-four {
+.the-client-three, .the-client-four, .the-client-five {
   display: grid;
   grid-column: 1 / -1;
   color: #333333;
@@ -751,7 +756,7 @@ small {
   padding-bottom: 3rem;
 }
 
-.the-user, .the-user-three, .the-user-four {
+.the-user, .the-user-three, .the-user-four, .the-user-five {
   display: grid;
   grid-column: 1 / -1;
   color: #333333;
@@ -865,6 +870,7 @@ small {
   grid-template-columns: 1fr;
   padding-top: 3rem;
 }
+
 
 .key-takeaway {
   font-family: "Lato", sans-serif;
@@ -1559,6 +1565,11 @@ text-align: left;
     align-content: baseline;
   }
 
+  .the-client-five {
+    grid-column: 1 / -1;
+    max-width: 66.8rem;
+  }
+
   .the-user-three, .the-user {
     grid-column: 7 / 13;
     grid-row: 2;
@@ -1573,6 +1584,11 @@ text-align: left;
     margin-top: 0;
     max-width: 31rem;
     align-content: baseline;
+  }
+
+  .the-user-five {
+    grid-column: 1 / -1;
+    max-width: 66.8rem;
   }
 
   .introduction {
@@ -2749,6 +2765,10 @@ text-align: left;
     align-self: top;
   }
 
+  .the-client-five {
+    max-width: 69rem;
+  }
+
   .the-client, .the-user {
     padding-top: 3rem;
   }
@@ -2758,6 +2778,10 @@ text-align: left;
     grid-row: 4;
     max-width: 50rem;
     text-align: left;
+  }
+
+  .the-client-five {
+    max-width: 69rem;
   }
 
   .the-client-three, .the-client, .the-client-four {
@@ -2787,6 +2811,11 @@ text-align: left;
     margin-top: 0;
     max-width: 50rem;
     align-self: baseline;
+  }
+
+  .the-user-five {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 
   .client_quote {
@@ -2849,6 +2878,37 @@ text-align: left;
     grid-row: 4;
     grid-column: 1 / 13;
     padding-top: 5rem;
+  }
+
+  .interviews_five {
+    padding-top: 0;
+  }
+
+  .Before_VDOS {
+    grid-column: 1 / 2;
+    grid-row: 2;
+
+  }
+
+  .Board {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    padding-left: 2rem;
+  }
+
+  .Board_desc {
+    padding-left: 2rem;
+  }
+
+
+  .intro_images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3rem;
+  }
+
+  .intro_images h6 {
+    padding-bottom: 1rem;
   }
 
   .field_interview {
@@ -3016,6 +3076,20 @@ text-align: left;
   .user-stories {
     display: grid;
     grid-column: 1 / -1;
+  }
+
+  .user_stories_two {
+    padding-left: 2rem;
+  }
+
+  .IA .user-flows .flows_one img {
+    max-width: 69rem;
+    grid-row: 3;
+  }
+
+  .IA .user-flows .flows_two img {
+    max-width: 69rem;
+    grid-row: 4;
   }
 
   .user-stories p {
