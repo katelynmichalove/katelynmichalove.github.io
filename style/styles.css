@@ -251,7 +251,7 @@ h6 {
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 1.5rem;
+  padding-top: 3rem;
 }
 
 p {
@@ -260,6 +260,50 @@ p {
   line-height: 3.2rem;
   font-weight: 300;
   margin: 0;
+}
+
+.password {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.password_input {
+  margin-bottom: 2rem;
+  height: 4rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.password_button {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background-color: #CEC2E7;
+  -webkit-border-radius: 3px;
+  border: none;
+}
+
+.password_button:hover {
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.07);
+  margin-top: -.3rem;
+  transition: .3s;
+  transition-timing-function: ease;
+  transition-delay: .1s;
+  cursor: pointer;
+}
+
+form {
+  display: grid;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  text-align: center;
 }
 
 .bold {
@@ -347,14 +391,6 @@ ul {
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.07);
 }
 
-
-.VDOS_link .coming_soon, .smartequip_link .coming_soon {
-  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.07);
-  opacity: 0.6;
-  visibility: visible;
-  filter: alpha(opacity=60);
-}
-
 .VDOS_video {
   width: 69rem;
   height: auto;
@@ -425,11 +461,6 @@ ul {
   transition: .3s;
   transition-timing-function: ease;
   transition-delay: .1s;
-}
-
-.VDOS_link .project_card:hover, .smartequip_link .project_card:hover {
-  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.07);
-  margin-top: 0;
 }
 
 .VDOS_top {
@@ -728,6 +759,10 @@ small {
   grid-column: 1 / -1;
   width: 100%;
   max-width: 33.7rem;
+  padding-top: 0;
+}
+
+.the-client-four {
   padding-top: 3rem;
 }
 
@@ -753,7 +788,7 @@ small {
 }
 
 .sunbelt_title {
-  padding-bottom: 3rem;
+  padding-top: 0;
 }
 
 .the-user, .the-user-three, .the-user-four, .the-user-five {
@@ -762,16 +797,11 @@ small {
   color: #333333;
   grid-column: 1 / -1;
   align-items: end;
-  margin-top: 2rem;
+  margin-top: 3rem;
   width: 100%;
   max-width: 33.7rem;
   text-align: left;
 }
-
-.the-user-four {
-  padding-top: 3rem;
-}
-
 
 .solution {
   display: grid;
@@ -795,7 +825,7 @@ small {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-start: 1;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .discovery_intro {
@@ -835,7 +865,6 @@ small {
   grid-column: 1 / -1;
   margin: 0;
   font-weight: 500;
-  text-align: center;
   text-align: left;
 }
 
@@ -858,17 +887,21 @@ small {
 .section_title {
   margin-bottom: 0;
   margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .discovery .interview_four {
   padding-top: 0;
 }
 
+.discovery .interviews_five {
+  padding-top: 0;
+}
+
 .user-interviews {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 
@@ -881,10 +914,15 @@ small {
   padding-top: 2rem;
 }
 
-.user-interviews ul, .competitive-analysis ul, .R1 ul, .preference_testing ul, .reflections ul, .round_two ul, .round_three ul {
+.user-interviews ul, .competitive-analysis ul, .R1 ul, .preference_testing ul, .reflections ul, .round_two ul, .round_three ul, .IA .wireframes ul, .visual_design .final_design ul, .visual_design ul {
   list-style-type: circle;
   padding-left: 2rem;
   list-style-position: outside;
+  margin-top: 0;
+}
+
+.visual_design .final_design ul {
+  grid-column: 1 / -1;
 }
 
 .round_two h5 {
@@ -902,7 +940,7 @@ small {
   display: list-item;
 }
 
-.R1 ul {
+.R1 ul, .IA .wireframes ul {
   display: grid;
   grid-column: 1 / -1;
 }
@@ -970,6 +1008,11 @@ small {
 
 .user_three .bold-purple, .user_four .bold-purple {
   margin-top: 0;
+}
+
+.visual_design .final_design .bold-purple {
+  grid-column: 1 / -1;
+  margin-bottom: 3rem;
 }
 
 .user_four {
@@ -1074,8 +1117,16 @@ small {
   justify-items: left;
 }
 
+.IA .wireframes_five, .visual_design .wireframes_five {
+  padding-top: 0rem;
+}
+
+.IA .user-flows-five {
+  padding-top: 1rem;
+}
+
 .user-flows, .site-map, .wireframes {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .user-stories p, .user-flows p, .site-map p, .wireframes p {
@@ -1101,6 +1152,11 @@ small {
 
 .wireframes .sketches {
   width: 90%;
+  max-width: 100rem;
+}
+
+.wireframes .desktop_sketches, .wireframes_five .desktop_sketches, .visual_design .desktop_sketches {
+  width: 100%;
   max-width: 100rem;
 }
 
@@ -1139,6 +1195,10 @@ small {
 
 .wireframes .screens_one img, .wireframes .screens_two img, .mockups .screens_three img, .preference_testing .screens_one img, .final_design .screens_one img, .wireframes .screens_four img, .visual_design .mockups .screens_five img, .front_end .screens_six img, .mockups .screens_one img, .mockups .screens_two img, .visual_design .screens_one img {
   width: 90%;
+}
+
+.IA .wireframes_five img, .IA .user-flows img {
+  width: 100%;
   max-width: 33.7rem;
 }
 
@@ -1166,12 +1226,16 @@ small {
   max-width: 33.7rem;
 }
 
+.IA .wireframes_five {
+  padding-top: 3rem;
+}
+
 .wireframes_four {
   padding-top: 0;
 }
 
-.IA_intro .sunbelt_IA {
-  padding-top: 4rem;
+.visual_design .wireframes_five {
+  padding-top: 1rem;
 }
 
 .visual_design {
@@ -1185,13 +1249,25 @@ small {
   padding-top: 3rem;
 }
 
+.visual_design .h5_five {
+  padding-top: 0;
+  justify-self: left;
+}
+
+.wireframes .h5_five_two, .visual_design .h5_five_two {
+  padding-bottom: 0;
+}
+
+.visual_design_intro .visual_five {
+  padding-top: 3rem;
+}
+
 .visual_design_intro {
   display: grid;
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
   justify-self: left;
   text-align: left;
-  margin-top: 2rem;
 }
 
 .reflections_intro {
@@ -1250,6 +1326,10 @@ small {
   padding-top: 2rem;
 }
 
+.visual_design .round_three_space {
+  padding-bottom: 1.5rem;
+}
+
 .icons img, .typography img, .color_scheme img {
   width: 90%;
   max-width: 40rem;
@@ -1297,10 +1377,6 @@ small {
   justify-items: left;
 }
 
-.end {
-  margin-top: 3rem;
-}
-
 .dashboard_changes {
   width: 90%;
 }
@@ -1309,15 +1385,11 @@ small {
   display: grid;
   grid-column: 1 / -1;
   justify-items: left;
-  text-align: center;
-}
-
-.visual_design .mockups_four {
-  padding-top: 0;
+  text-align: left;
 }
 
 .mockups {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .mockups .key-takeaway {
@@ -1329,7 +1401,7 @@ small {
   grid-template-columns: 1fr;
   grid-column-start: 2;
   justify-items: center;
-  padding-top: 3rem;
+  padding-top: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -1444,6 +1516,14 @@ text-align: left;
   transition: 0.1s;
 }
 
+.IA .wireframes .desktop_label, .visual_design .desktop_label {
+  grid-column: 1 / -1;
+  justify-self: left;
+}
+
+.visual_design .wireframes_five .recommendations_title {
+  padding-top: 3rem;
+}
 
 .no_shadow {
   margin-top: 1.5rem;
@@ -1455,20 +1535,87 @@ text-align: left;
   padding-bottom: 3rem;
 }
 
+.Before_VDOS {
+  width: 100%;
+  margin-top: 1.5rem;
+  max-width: 40rem;
+}
+
+.final_design .screens_one {
+  padding-bottom: 3rem;
+}
+
+.Board {
+  width: 100%;
+  margin-top: 1.5rem;
+  max-width: 30rem;
+}
+
+.user-stories .intro_image_two {
+  padding-top: 3rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.user_stories_one {
+  grid-column: 1;
+}
+
+.user_stories_two {
+  grid-column: 1;
+}
+
+.intro_images {
+  padding-top: 1.5rem;
+}
+
+.flow_one {
+  width: 90%;
+}
+
+.IA .wireframes_five .p1 {
+  padding-bottom: 0;
+}
+
+.visual_design .mockups_four {
+  padding-top: 0;
+}
+
 
 @media screen and (min-width: 760px) {
 
-  .preference_testing_four {
+  .IA .wireframes_five {
+    padding-top: 1rem;
+  }
+
+  .visual_design .mockups_four {
+    padding-top: 3rem;
+  }
+
+  .case_study .visual_design .less_space {
     padding-top: 0;
+  }
+
+  .the-user-four {
+    padding-top: 3rem;
+  }
+
+  .visual_design .wireframes_five .recommendations_title {
+    padding-top: 0rem;
+  }
+
+  .IA .wireframes_five .p1 {
+    padding-bottom: 3rem;
+  }
+
+  .IA .wireframes_five img, .IA .user-flows img {
+    max-width: 100rem;
+    width: 100%;
   }
 
   .screens_one, .screens_two {
     justify-self: left;
-    text-align: center;
-  }
-
-  .sunbelt_title {
-    padding-top: 1rem;
+    text-align: left;
   }
 
   .container {
@@ -1524,7 +1671,7 @@ text-align: left;
 
   .problem {
     grid-template-columns: repeat(12, 1fr);
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
   .problem .solution {
@@ -1563,6 +1710,7 @@ text-align: left;
     grid-row: 4;
     max-width: 31rem;
     align-content: baseline;
+    padding-top: 0;
   }
 
   .the-client-five {
@@ -1791,7 +1939,7 @@ text-align: left;
   }
 
   .IA {
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 
   .user-flows p, .site-map p {
@@ -1800,13 +1948,17 @@ text-align: left;
     grid-row: 2;
   }
 
+  .user-flows .flow_two {
+    grid-row: 4;
+    width:
+  }
+
   .user-flows img, .site-map img {
     display: grid;
     grid-column: 1 / -1;
     grid-row: 3;
     width: 80%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
 
   .user-flows a, .site-map a {
@@ -1853,6 +2005,11 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
+  .wireframes .desktop_sketches, .visual_design .desktop_sketches {
+    display: grid;
+    grid-column: 1 / -1;
+  }
+
   .wireframes .screens_one, .preference_testing .screens_one, .final_design .screens_one, .wireframes .screens_seven, .visual_design .screens_one {
     display: grid;
     grid-column: 1 / -1;
@@ -1862,7 +2019,7 @@ text-align: left;
   }
 
   .preference_testing .screens_one {
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 
   .smartequip_space {
@@ -1870,11 +2027,6 @@ text-align: left;
   }
 
   .smartequip_two {
-    padding-top: 3rem;
-  }
-
-
-  .preference_testing {
     padding-top: 3rem;
   }
 
@@ -1913,7 +2065,7 @@ text-align: left;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column: 1 / -1;
-    padding-bottom: 5rem;
+    padding-bottom: .5rem;
     text-align: left;
   }
 
@@ -1922,7 +2074,7 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
-  .R1 h5, .mockups_four h5 {
+  .R1 h5, .mockups_four h5, .wireframes h5 {
     display: grid;
     grid-column: 1 / -1;
   }
@@ -1940,7 +2092,6 @@ text-align: left;
 
   .wireframes .key-takeaway {
     display: list-item;
-    justify-self: center;
     text-align: left;
   }
 
@@ -2099,6 +2250,10 @@ text-align: left;
     padding-top: 3rem;
   }
 
+  .visual_design .visual_list {
+    padding-bottom: 6rem;
+  }
+
   .preference_testing .key-takeaway {
     display: list-item;
     grid-column: 1 / -1;
@@ -2127,10 +2282,6 @@ text-align: left;
     padding-bottom: 0;
   }
 
-  .final_design, .preference_testing {
-    justify-items: center;
-  }
-
   .reflections {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -2145,10 +2296,6 @@ text-align: left;
     display: list-item;
     grid-column: 1 / -1;
     width: 65rem;
-  }
-
-  .final_design {
-    padding-top: 3rem;
   }
 
   .final_design a {
@@ -2260,7 +2407,25 @@ text-align: left;
 }
 
 .IA_intro .white_title {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+.user-stories .intro_image_two {
+  padding-top: 3rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.user_stories_one {
+  grid-column: 1;
+}
+
+.user_stories_two {
+  grid-column: 2;
+}
+
+.intro_images {
+  padding-top: 1.5rem;
 }
 
 
@@ -2268,6 +2433,27 @@ text-align: left;
 
   .smartequip_space {
     padding-bottom: 0;
+  }
+
+  .visual_design .round_three_space {
+    padding-bottom: 0rem;
+  }
+
+  .preference_testing_four {
+    padding-top: 0;
+  }
+
+  .IA_intro .sunbelt_IA {
+    padding-top: 4rem;
+  }
+
+  .sunbelt_title {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  .problem .problem_title {
+    margin-bottom: 1rem;
   }
 
   .hobbies_content .hobby {
@@ -2463,9 +2649,6 @@ text-align: left;
 
   .mockups .screens_three .no_shadow {
     max-width: 67.5rem;
-  }
-
-  .category_title {
   }
 
   .white_title {
@@ -2767,6 +2950,7 @@ text-align: left;
 
   .the-client-five {
     max-width: 69rem;
+    padding-top: 2rem;
   }
 
   .the-client, .the-user {
@@ -2887,13 +3071,16 @@ text-align: left;
   .Before_VDOS {
     grid-column: 1 / 2;
     grid-row: 2;
-
+    width: 100%;
+    margin-top: 0;
   }
 
   .Board {
     grid-column: 2 / 3;
     grid-row: 2;
     padding-left: 2rem;
+    width: 100%;
+    margin-top: 0;
   }
 
   .Board_desc {
@@ -3056,7 +3243,7 @@ text-align: left;
     display: grid;
     grid-column: 1 / -1;
     grid-row: 3;
-    width: 80%;
+    width: 100%;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
@@ -3096,6 +3283,10 @@ text-align: left;
     text-align: left;
   }
 
+  .IA .wireframes_five, .visual_design .wireframes_five {
+  padding-top: 0;
+  }
+
   .wireframes {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -3122,16 +3313,21 @@ text-align: left;
     width: 100%;
   }
 
+  .wireframes .desktop_sketches, .visual_design .desktop_sketches {
+    display: grid;
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-self: center;
+    width: 100%;
+  }
+
   .wireframes .screens_one, .preference_testing .screens_one, .final_design .screens_one, .mockups .screens_one, .visual_design .screens_one {
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     justify-items: center;
-  }
-
-  .visual_design .screens_one {
-    padding-top: 5rem;
   }
 
 .wireframes .screens_seven {
@@ -3152,7 +3348,7 @@ text-align: left;
   }
 
   .mockups .screens_one {
-    padding-top: 3rem;
+    padding-top: 1rem;
   }
 
   .mockups_four {
@@ -3173,7 +3369,7 @@ text-align: left;
   .wireframes .round-one {
     display: grid;
     grid-column: 1 / -1;
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
   .wireframes .screens_four {
@@ -3493,10 +3689,6 @@ text-align: left;
   .reflections .key-takeaway {
     display: list-item;
     grid-column: 1 / -1;
-  }
-
-  .final_design {
-    padding-top: 3rem;
   }
 
   .view_next {
