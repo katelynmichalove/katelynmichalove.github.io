@@ -19,7 +19,7 @@
 <form>
     <label class="password" for="pswd">Password</label>
     <input class="password_input" type="password" id="pswd">
-    <input class="password_button" type="button" id="btn" value="Submit" onClick="checkPswd();buttonCode();">
+    <input class="password_button" type="submit" id="btn" value="Submit" onClick="checkPswd();buttonCode();">
 </form>
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
@@ -28,9 +28,6 @@
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
              window.location="project_four.html";
-        }
-        else{
-            alert("Passwords do not match.");
         }
     }
 
@@ -46,6 +43,7 @@
 {
   alert("Button code executed.");
 }
+
 </script>
 </body>
 </html>
