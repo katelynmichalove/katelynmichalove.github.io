@@ -267,6 +267,8 @@ p {
   font-size: 3.6rem;
   font-weight: 500;
   padding-bottom: 2rem;
+  grid-row: 1;
+  display: grid;
 }
 
 .password_input {
@@ -275,17 +277,24 @@ p {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
+  grid-row: 2;
+  display: grid;
 }
 
 .password_button {
+  display: grid;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
   background-color: #CEC2E7;
   -webkit-border-radius: 3px;
+  width: 30rem;
+  height: 4.3rem;
   border: none;
+  display: grid;
+  position: static;
+
 }
 
 .password_button:hover {
@@ -299,6 +308,7 @@ p {
 
 form {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   max-width: 30rem;
   margin-left: auto;
   margin-right: auto;
