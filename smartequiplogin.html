@@ -19,7 +19,7 @@
 <form>
     <label class="password" for="pswd">Password</label>
     <input class="password_input" type="password" id="pswd">
-    <input class="password_button" type="submit" id="btn" value="Submit" onclick="checkPswd();buttonCode();">
+    <input class="password_button" type="submit" id="btn" value="Submit" onClick="checkPswd();buttonCode();">
 </form>
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
@@ -41,6 +41,8 @@
             document.getElementById("btn").click();
         }
     });
+
+    (document).ready(function(){ $("btn").on("click touchstart", function(){ }); }); Ot
 
     function buttonCode()
 {
