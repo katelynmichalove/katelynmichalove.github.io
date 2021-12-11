@@ -370,8 +370,8 @@ ul {
   flex-direction: column;
 }
 
-/* Div for Fitcollect on the homepage */
-.fitcollect_link {
+/* Div for Invoicing on the homepage */
+.invoicing_link {
   flex: 49% 49%;
   max-width: 100%;
   display: inline-block;
@@ -379,13 +379,13 @@ ul {
   -webkit-box-flex: 0;
 }
 
-.fitcollect_top {
+.invoicing_top {
   display: flex;
   height: 20rem;
-  background-image: url(../Images/FitCollect_pic_desktop.png);
+  background-image: url(../Images/invoicing_pic_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 26% 95%;
+  background-size: 65% 95%;
   background-color: #FFD37C;
   -webkit-box-pack: center;
   justify-content: center;
@@ -491,12 +491,12 @@ ul {
   padding: 2rem 2rem 2rem;
 }
 
-.chipin_bottom, .fitcollect_bottom {
+.chipin_bottom, .invoicing_bottom {
  padding: 2rem 2rem 2rem;
 }
 
 /* Headings for the project titles on both the homepage and View Next on CS Pages*/
-.fitcollect_bottom .project_headline, .chipin_bottom .project_headline, .smartequip_bottom .project_headline, .VDOS_bottom .project_headline {
+.invoicing_bottom .project_headline, .chipin_bottom .project_headline, .smartequip_bottom .project_headline, .VDOS_bottom .project_headline {
   width: auto;
   padding-bottom: 1.5rem;
   color: #333333;
@@ -505,10 +505,10 @@ ul {
 }
 
 
-.fitcollect_bottom .project_headline::after {
+.invoicing_bottom .project_headline::after {
   display: block;
   content: '';
-  width: 16rem;
+  width: 15rem;
   height: 1.8rem;
   background: rgba(255, 211, 124, .4);
   position: absolute;
@@ -550,7 +550,7 @@ ul {
 }
 
 
-.FitCollect_VN .project_headline {
+.invoicing_VN .project_headline {
   color: #ffffff;
   font-family: "Josefin Sans";
   margin-bottom: 0;
@@ -679,7 +679,7 @@ small {
   width: auto;
 }
 
-.fitcollect_img {
+.invoicing_img {
   display: block;
   margin-bottom: 2rem;
   max-width: 100%;
@@ -707,7 +707,7 @@ small {
   text-align: center;
 }
 
-.view_next .fitcollect_link {
+.view_next .invoicing_link {
   width: 90%;
   max-width: 35rem;
 }
@@ -838,7 +838,7 @@ small {
   margin-top: 3rem;
 }
 
-.discovery_intro {
+.discovery_intro, .discovery .findings_list {
   display: grid;
   grid-template-columns: 1fr;
   grid-column: 1 / -1;
@@ -878,6 +878,18 @@ small {
   text-align: left;
 }
 
+.visual_design .category_title {
+  justify-self: left;
+}
+
+.visual_design .extra_space {
+  padding-top: 4rem;
+}
+
+.discovery .findings_list .baseline_title {
+  padding-top: 5rem;
+}
+
 .bold-purple {
   color: #333333;
   font-weight: 400;
@@ -900,6 +912,8 @@ small {
   margin-bottom: 4rem;
 }
 
+
+
 .discovery .interview_four {
   padding-top: 0;
 }
@@ -907,6 +921,22 @@ small {
 .discovery .interviews_five {
   padding-top: 0;
 }
+
+.discovery .findings_list {
+  padding-top: 0rem;
+}
+
+.finding {
+  max-width: 33.7rem;
+}
+
+.findings_list h5 {
+  padding-bottom: 1rem;
+  color: #E67688;
+  font-weight: 900;
+  font-style:normal;
+}
+
 
 .user-interviews {
   display: grid;
@@ -1023,6 +1053,14 @@ small {
 .visual_design .final_design .bold-purple {
   grid-column: 1 / -1;
   margin-bottom: 3rem;
+}
+
+.solution .bold-purple {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f0f0f0;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .user_four {
@@ -1144,10 +1182,14 @@ small {
   text-align: left;
 }
 
-.user-flows p, .site-map p, .wireframes p, .branding p, .mockups p, .front_end p, .visual_design p {
+.user-flows p, .site-map p, .wireframes p, .branding p, .mockups p, .front_end p, .visual_design p, .IA .purple-space {
   display: grid;
   padding-bottom: 3rem;
   padding-top: 3rem;
+}
+
+.IA .purple-space {
+  grid-column: 1 / -1;
 }
 
 .visual_design .main {
@@ -1165,7 +1207,7 @@ small {
   max-width: 100rem;
 }
 
-.wireframes .desktop_sketches, .wireframes_five .desktop_sketches, .visual_design .desktop_sketches {
+.wireframes .desktop_sketches, .wireframes_five .desktop_sketches, .visual_design .desktop_sketches, .findings_list .desktop_sketches {
   width: 100%;
   max-width: 100rem;
 }
@@ -1207,9 +1249,13 @@ small {
   width: 90%;
 }
 
-.IA .wireframes_five img, .IA .user-flows img {
+.IA .wireframes_five img, .IA .user-flows img, .findings_list img {
   width: 100%;
   max-width: 33.7rem;
+}
+
+.findings_list img {
+  margin-bottom: 3rem;
 }
 
 
@@ -1637,15 +1683,15 @@ text-align: left;
     flex-basis: 20rem;
   }
 
-  .fitcollect, .stb, .chipin {
+  .invoicing, .stb, .chipin {
     height: 35rem;
   }
 
-  .fitcollect, .chipin {
+  .invoicing, .chipin {
     background-size: 48% 95%;
   }
 
-  .ChipIn_img, .fitcollect_img {
+  .ChipIn_img, .invoicing_img {
     max-width: 50rem;
   }
 
@@ -1670,7 +1716,7 @@ text-align: left;
     line-height: 3.5rem;
   }
 
-  .fitcollect_img {
+  .invoicing_img {
     width: 50rem;
   }
 
@@ -1856,6 +1902,19 @@ text-align: left;
     grid-column: 1 / 13;
   }
 
+  .finding {
+    float: left;
+    width: 50%;
+    padding-right: 2.5rem;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
   .grey-line {
     display: grid;
     grid-row-start: 5;
@@ -2015,7 +2074,7 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
-  .wireframes .desktop_sketches, .visual_design .desktop_sketches {
+  .wireframes, .visual_design .desktop_sketches, .findings_list .desktop_sketches {
     display: grid;
     grid-column: 1 / -1;
   }
@@ -2094,6 +2153,13 @@ text-align: left;
   }
 
   .R1 .key-takeaway {
+    display: list-item;
+    grid-column: 1 / -1;
+    text-align: left;
+    justify-items: left;
+  }
+
+  .discovery .list .key-takeaway {
     display: list-item;
     grid-column: 1 / -1;
     text-align: left;
@@ -2281,7 +2347,7 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
-  .round_two .key-takeaway, .round_three .key-takeaway {
+  .round_two .key-takeaway, .round_three .key-takeaway, .discovery .list .key-takeaway {
    display: list-item;
    grid-column: 1 / -1;
    width: 65rem;
@@ -2384,8 +2450,8 @@ text-align: left;
   justify-content: center;
 }
 
-.fitcollect_bottom .project_headline::after {
-  width: 16rem;
+.invoicing_bottom .project_headline::after {
+  width: 15rem;
   height: 1.8rem;
   margin-top: -12px;
 }
@@ -2521,23 +2587,23 @@ text-align: left;
     flex: 0 49%;
   }
 
-  .fitcollect_link {
+  .invoicing_link {
     flex: 0 49%;
   }
 
-  .fitcollect_top, .smartequip_top, .chipin_top, .VDOS_top {
+  .invoicing_top, .smartequip_top, .chipin_top, .VDOS_top {
     height: 30rem;
   }
 
-  .VDOS_bottom, .smartequip_bottom, .chipin_bottom, .fitcollect_bottom {
+  .VDOS_bottom, .smartequip_bottom, .chipin_bottom, .invoicing_bottom {
     padding: 4rem 3rem 3rem;
   }
 
-  .fitcollect_bottom .project_headline, .chipin_bottom .project_headline, .smartequip_bottom .project_headline, .VDOS_bottom .project_headline {
+  .invoicing_bottom .project_headline, .chipin_bottom .project_headline, .smartequip_bottom .project_headline, .VDOS_bottom .project_headline {
     padding-bottom: 3rem;
   }
 
-  .fitcollect_bottom .project_headline::after {
+  .invoicing_bottom .project_headline::after {
     width: 20rem;
     height: 1.8rem;
     margin-top: -16px;
@@ -2653,7 +2719,7 @@ text-align: left;
   }
 
 
-  .fitcollect, .chipin {
+  .invoicing, .chipin {
     background-size: 42% 95%;
   }
 
@@ -2674,7 +2740,7 @@ text-align: left;
     margin: 0;
   }
 
-  .fitcollect, .stb, .chipin {
+  .invoicing, .stb, .chipin {
     height: 35rem;
     max-width: 40rem;
   }
@@ -2768,7 +2834,7 @@ text-align: left;
 
 
 
-  .fitcollect .project_headline, .stb .project_headline, .chipin .project_headline {
+  .invoicing .project_headline, .stb .project_headline, .chipin .project_headline {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -2874,12 +2940,12 @@ text-align: left;
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .ChipIn_img, .fitcollect_img   {
+  .ChipIn_img, .invoicing_img   {
     max-width: 65rem;
     height: auto;
   }
 
-  .fitcollect_img {
+  .invoicing_img {
     width: 65rem;
   }
 
@@ -3324,7 +3390,7 @@ text-align: left;
     width: 100%;
   }
 
-  .wireframes .desktop_sketches, .visual_design .desktop_sketches {
+  .wireframes .desktop_sketches, .visual_design .desktop_sketches, .findings_list .desktop_sketches {
     display: grid;
     grid-column: 1 / -1;
     margin-top: 2rem;
@@ -3630,7 +3696,7 @@ text-align: left;
     width: 69rem;
   }
 
-  .preference_testing .key-takeaway, .round_two .key-takeaway, .round_three .key-takeaway, .reflections .key-takeaway {
+  .preference_testing .key-takeaway, .round_two .key-takeaway, .round_three .key-takeaway, .reflections .key-takeaway, .discovery .list .key-takeaway {
     display: list-item;
     grid-column: 1 / -1;
     justify-self: center;
