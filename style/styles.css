@@ -662,6 +662,10 @@ small {
   flex-direction: column;
 }
 
+.container .sidenav_space {
+  padding-bottom: 2rem;
+}
+
 .sidenav_position {
   position: sticky;
   top: 3rem;
@@ -1648,6 +1652,10 @@ text-align: left;
     padding-top: 3rem;
   }
 
+  .visual_design .extra_space {
+    padding-top: 0rem;
+  }
+
   .case_study .visual_design .less_space {
     padding-top: 0;
   }
@@ -2327,7 +2335,7 @@ text-align: left;
   }
 
   .visual_design .visual_list {
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
   }
 
   .preference_testing .key-takeaway {
