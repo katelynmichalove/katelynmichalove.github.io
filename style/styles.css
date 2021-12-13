@@ -886,6 +886,7 @@ small {
   justify-self: left;
 }
 
+
 .visual_design .extra_space {
   padding-top: 4rem;
 }
@@ -931,7 +932,7 @@ small {
 }
 
 .finding {
-  max-width: 33.7rem;
+  max-width: 100%;
 }
 
 .findings_list h5 {
@@ -987,6 +988,7 @@ small {
 .R1 ul, .IA .wireframes ul {
   display: grid;
   grid-column: 1 / -1;
+  padding-top: 2rem;
 }
 
 

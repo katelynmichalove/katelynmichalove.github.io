@@ -54,12 +54,12 @@
       <div class="project_columns">
       <div class="sidenav sidenav_space">
         <div class="sidenav_position">
-          <a>Introduction</a>
-          <a>Problem</a>
-          <a>Discovery</a>
-          <a>IA</a>
-          <a>Visual Design</a>
-          <a>Reflections</a>
+          <a href="#introduction">Introduction</a>
+          <a href="#problem">Problem</a>
+          <a href="#discovery">Discovery</a>
+          <a href="#IA">IA</a>
+          <a href="#visual_design">Visual Design</a>
+          <a href="#reflections">Reflections</a>
         </div>
       </div>
       <div class="case_study">
@@ -162,7 +162,7 @@
           <div class="solution">
             <h2 class="section_title">The Solution</h2>
             <p>During a 3 month redesign discovery phase, I’ve determined the key features, layout, and information that needed to be displayed in order to equip dispatchers with everything they need for an efficient schedule. I’ve balanced this need with business OKRs to achieve both user and business objectives. I’ve studied our top performing dispatcher to decode how he makes decisions and what sets him apart. Every day he pushes the limit of what his fleet can handle for the day. How can I instill this same level of confidence in all users?</p>
-            <p class="bold-purple sol">Instead of pushing these limits blindly, trip suggestions will be made, a trip building tool will be implemented, and finally a time estimation tool will help guide dispatchers in making decisions quickly.</p>
+            <p class="bold-purple">Instead of pushing these limits blindly, trip suggestions will be made, a trip building tool will be implemented, and finally a time estimation tool will help guide dispatchers in making decisions quickly.</p>
           </div>
         </section>
         <section id="discovery" class="discovery">
@@ -170,42 +170,44 @@
               <h2 class="section_title">Discovery</h2>
           </div>
           <div class="user-interviews interviews_five">
-            <h3 class="category_title">USER INTERVIEWS</h3>
+            <div class="user-interviews findings_list">
+              <h3 class="category_title">USER INTERVIEWS</h3>
+              <div class="row">
+                <div class="finding">
+                  <h5 class="category_title">Automation</h5>
+                  <p>Automating a full day’s schedule at one time wouldn’t pair well with how the business currently runs. Dispatchers are constantly getting new calls from their sales representatives which shifts their plans every hour of every day, unseen by the system.</p>
+                </div>
+                <div class="finding">
+                  <h5 class="category_title">Optimization</h5>
+                  <p>Stakeholders felt that many drivers were not picking up equipment on the way back and not dropping off multiple deliveries at one time.The problem wasn’t that drivers weren’t optimizing, the problem was that they weren't provided the information or tools to take it one step further.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="finding">
+                  <h5 class="category_title">Driver Status</h5>
+                  <p>Dispatchers need to know when a driver is expected to be back at their Sunbelt location. This tells them when and what they should be planning for the driver next.</p>
+                </div>
+              <div class="finding">
+                <h5 class="category_title">Long Term Planning</h5>
+                <p>Dispatchers are constantly keeping up with their driver, how many hours they’ve worked, and whether or not they have taken a break. This tells them how many driving hours they have left for the day and even the week.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="finding">
+                <h5 class="category_title">Dispatcher Work Space</h5>
+                <p>Dispatchers use two monitors, one with the map and one with the list of orders along with the schedule. Dispatchers will leave the software in order to open google maps to verify the route, and see if their truck can physically fit. The ability to see a street view is highly desired.</p>
+              </div>
+              <div class="finding">
+                <h5 class="category_title">Desired Information</h5>
+                <p>There was a desire from stakeholders to provide dispatchers with as much information as possible about each piece of equipment. From my interviews, I determined what information they needed (weight, dimensions, equipment name) and what information could be eliminated (inspection summaries).</p>
+              </div>
+            </div>
             <div class="intro_images">
               <h6>Before: VDOS</h6>
               <img class="Before_VDOS" src="Images/Old_VDOS.jpg" alt="Old VDOS"/>
               <h6 class="Board_desc">White Board at the PC</h6>
               <img class="Board" src="Images/Board.jpg" alt="White Board at the PC"/>
             </div>
-            <ul class="list">
-              <li class="key-takeaway">
-                Automating a full day’s schedule at one time wouldn’t pair well with how the business currently runs. Dispatchers are constantly getting new calls from their sales representatives which shifts their plans every hour of every day. The system doesn’t even see some of these orders, because this step is done in person and over the phone.
-              </li>
-              <li class="key-takeaway">
-                Many stakeholders believed that schedules were not being optimized. Meaning, they felt that many drivers were not picking up equipment on the way back and not dropping off multiple deliveries at one time. The goal was to change this. What I determined was that dispatchers were optimizing as much as possible and always tried to fit as many orders as possible onto the truck. The problem wasn’t that they weren’t optimizing, the problem was that they weren't provided the information or tools to take it one step further.
-              </li>
-              <li class="key-takeaway">
-                Dispatchers need to know when a driver is expected to be back at their Sunbelt location. This tells them when and what they should be planning for the driver next.
-              </li>
-              <li class="key-takeaway">
-                Dispatchers are constantly keeping up with their driver, how many hours they’ve worked, and whether or not they have taken a break. This tells them how many driving hours they have left for the day and even the week.
-              </li>
-              <li class="key-takeaway">
-                Dispatchers use two monitors, one with the map and one with the list of orders along with the schedule. This neededed to be included in any future redesign.
-              </li>
-              <li class="key-takeaway">
-                Dispatchers need easy access to the weight and dimensions of the equipment so they can plan what will fit on each type of truck.
-              </li>
-              <li class="key-takeaway">
-                Since the current VDOS doesn’t give any detail around each delivery and pickup, dispatchers are manually renaming a delivery from ‘Run 1’ to ‘Charlie’s Construction’ or ‘19’ Electric Scissorlift’, for example. This helps them keep up with the deliveries and pickups. This information needs to be easily accessible on the schedule screen.
-              </li>
-              <li class="key-takeaway">
-                Dispatchers will leave the software in order to open google maps to verify the route, and see if their truck can physically fit. The ability to see a street view is highly desired.
-              </li>
-              <li class="key-takeaway">
-                There was a desire from stakeholders to provide dispatchers with as much information as possible about each piece of equipment. From my interviews, I determined what information they needed (weight and dimensions) and what information could be eliminated (inspection summaries).
-              </li>
-            </ul>
           </div>
 
         </section>
@@ -238,7 +240,7 @@
             <img class="screen_shadow desktop_sketches" src="Images/Exception.jpg" alt="Wireframe Sketches Image"/>
             <h6 class="desktop_label">Variation Two: Creating a Trip</h6>
             <img class="screen_shadow desktop_sketches" src="Images/New_Trip.jpg" alt="Wireframe Sketches Image"/>
-            <ul class="list">
+            <ul class="list list_space">
               <li class="key-takeaway">
                 These variations incorporated the equipment name as a way to identify the run as well as the due date, time, and job site.
               </li>
