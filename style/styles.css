@@ -888,7 +888,7 @@ small {
 
 
 .visual_design .extra_space {
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 .discovery .findings_list .baseline_title {
@@ -1654,10 +1654,6 @@ text-align: left;
     padding-top: 3rem;
   }
 
-  .visual_design .extra_space {
-    padding-top: 0rem;
-  }
-
   .case_study .visual_design .less_space {
     padding-top: 0;
   }
@@ -1776,7 +1772,6 @@ text-align: left;
     grid-row: 4;
     max-width: 31rem;
     align-content: baseline;
-    padding-top: 0;
   }
 
   .the-client-five {
@@ -1992,7 +1987,7 @@ text-align: left;
   .user_three {
     display: grid;
     grid-column: 1;
-    margin-top: -17rem;
+    margin-top: -12rem;
   }
 
   .user_four {
@@ -2084,7 +2079,7 @@ text-align: left;
     grid-column: 1 / -1;
   }
 
-  .wireframes, .visual_design .desktop_sketches, .findings_list .desktop_sketches {
+  .wireframes, .visual_design .desktop_sketches, .findings_list .desktop_sketches, .wireframes .desktop_sketches {
     display: grid;
     grid-column: 1 / -1;
   }
@@ -2512,6 +2507,10 @@ text-align: left;
 
 .intro_images {
   padding-top: 1.5rem;
+}
+
+.branding, .mockups, .preference_testing, .visual_design .insight, .final_design, .preference_testing .screens_one {
+  max-width: 69rem;
 }
 
 
@@ -3674,6 +3673,10 @@ text-align: left;
     grid-template-columns: repeat(12, 1fr);
     max-width: 69rem;
     justify-self: left;
+  }
+
+  .preference_testing .screens_one {
+    max-width: 69rem;
   }
 
   .preference_testing {
