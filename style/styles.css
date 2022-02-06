@@ -882,6 +882,14 @@ small {
   text-align: left;
 }
 
+.discovery .location_title {
+  margin-bottom: 4rem;
+}
+
+.discovery .location_title_two, .IA .location_title_two {
+  margin-top: 4rem;
+}
+
 .visual_design .category_title {
   justify-self: left;
 }
@@ -904,6 +912,7 @@ small {
   background-color: #f0f0f0;
   margin-top: 3rem;
   text-align: left;
+  max-width: 69rem;
 }
 
 .percentage {
@@ -959,7 +968,7 @@ small {
   padding-top: 2rem;
 }
 
-.user-interviews ul, .competitive-analysis ul, .R1 ul, .preference_testing ul, .reflections ul, .round_two ul, .round_three ul, .IA .wireframes ul, .visual_design .final_design ul, .visual_design ul {
+.user-interviews ul, .competitive-analysis ul, .R1 ul, .preference_testing ul, .reflections ul, .round_two ul, .round_three ul, .IA .wireframes ul, .visual_design .final_design ul, .visual_design ul, .discovery ul {
   list-style-type: circle;
   padding-left: 2rem;
   list-style-position: outside;
@@ -981,11 +990,11 @@ small {
   padding-top: 0rem;
 }
 
-.R1 li, .preference_testing li, .reflections li {
+.R1 li, .preference_testing li, .reflections li, .discovery li {
   display: list-item;
 }
 
-.R1 ul, .IA .wireframes ul {
+.R1 ul, .IA .wireframes ul, .discovery ul {
   display: grid;
   grid-column: 1 / -1;
   padding-top: 2rem;
@@ -1218,6 +1227,10 @@ small {
   max-width: 100rem;
 }
 
+.next_steps .section_title {
+  margin-top: 0rem;
+}
+
 .wireframes .screens_four {
   justify-items: center;
 }
@@ -1251,13 +1264,30 @@ small {
 
 }
 
-.wireframes .screens_one img, .wireframes .screens_two img, .mockups .screens_three img, .preference_testing .screens_one img, .final_design .screens_one img, .wireframes .screens_four img, .visual_design .mockups .screens_five img, .front_end .screens_six img, .mockups .screens_one img, .mockups .screens_two img, .visual_design .screens_one img {
-  width: 90%;
+.wireframes .screens_one img, .IA .wireframes_five .location_screens img, .wireframes .screens_two img, .mockups .screens_three img, .preference_testing .screens_one img, .final_design .screens_one img, .wireframes .screens_four img, .visual_design .mockups .screens_five img, .front_end .screens_six img, .mockups .screens_one img, .mockups .screens_two img, .visual_design .screens_one img {
+  width: 95%;
 }
 
-.IA .wireframes_five img, .IA .user-flows img, .findings_list img {
+.IA .wireframes_five img, .IA .user-flows img, .findings_list img, .discovery img, .user-stories .intro_image, .IA .intro_image {
   width: 100%;
   max-width: 33.7rem;
+}
+
+.user-stories .intro_image {
+  margin-bottom: 4rem;
+}
+
+.IA .intro_image {
+  display: grid;
+  grid-column: 1 / -1;
+}
+
+.visual_space {
+  padding-top: 3rem;
+}
+
+.visual_design .visual_p {
+  padding-top: 0rem;
 }
 
 .findings_list img {
@@ -1619,6 +1649,11 @@ text-align: left;
   grid-gap: 2rem;
 }
 
+.discovery .analytics_image {
+  max-width: 40rem;
+  margin-top: 2rem;
+}
+
 .user_stories_one {
   grid-column: 1;
 }
@@ -1670,9 +1705,13 @@ text-align: left;
     padding-bottom: 3rem;
   }
 
-  .IA .wireframes_five img, .IA .user-flows img {
+  .IA .wireframes_five img, .IA .user-flows img, .discovery img, .user-stories .intro_image, .IA .intro_image {
     max-width: 100rem;
     width: 100%;
+  }
+
+  .user-stories .intro_image {
+    margin-bottom: 4rem;
   }
 
   .screens_one, .screens_two {
@@ -2033,6 +2072,12 @@ text-align: left;
     grid-row: 3;
     width: 80%;
     padding-bottom: 3rem;
+  }
+
+  .discovery img {
+    display: grid;
+    grid-column: 1 / -1;
+    width: 100%;
   }
 
   .user-flows a, .site-map a {
@@ -2668,6 +2713,10 @@ text-align: left;
 
   .wireframes .screens_one img, .wireframes .screens_two img, .mockups .screens_three img, .preference_testing .screens_one img, .final_design .screens_one img, .wireframes .screens_four img, .visual_design .mockups .screens_five img, .front_end .screens_six img, .mockups .screens_one img, .mockups .screens_two img, .visual_design .screens_one img {
     max-width: 24.6rem;
+  }
+
+  .IA .wireframes .location_screens img {
+    max-width: 21rem;
   }
 
   .case_study {
