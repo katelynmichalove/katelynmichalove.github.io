@@ -3038,6 +3038,7 @@ text-align: left;
     grid-column: 1;
     align-self: end;
     padding-bottom: 3rem;
+    max-width: 23rem;
   }
 
   .deliverables {
@@ -3045,6 +3046,7 @@ text-align: left;
     display: grid;
     grid-row: 1;
     grid-column: 3;
+    max-width: 23rem;
   }
 
   .tools {
@@ -3052,6 +3054,7 @@ text-align: left;
     display: grid;
     grid-row: 1;
     grid-column: 2;
+    max-width: 23rem;
   }
 
   .role {
@@ -3059,6 +3062,7 @@ text-align: left;
     display: grid;
     grid-row: 1;
     grid-column: 1;
+    max-width: 23rem;
   }
 
   .pink-divider {
