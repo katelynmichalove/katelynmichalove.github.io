@@ -446,10 +446,10 @@ ul {
 .smartequip_top {
   display: flex;
   height: 20rem;
-  background-image: url(../Images/smartequip_pic_desktop.png);
+  background-image: url(../Images/smartequip_img.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 35% 105%;
+  background-size: 85% 100%;
   background-color: #4FA693;
   -webkit-box-pack: center;
   justify-content: center;
