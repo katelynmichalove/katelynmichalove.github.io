@@ -895,8 +895,12 @@ small {
 }
 
 
-.visual_design .extra_space {
+.visual_design .extra_space, .visual_design .extra_space_two {
   padding-top: 4rem;
+}
+
+.discovery .list_space {
+  padding-bottom: 3rem;
 }
 
 .discovery .findings_list .baseline_title {
@@ -1288,6 +1292,7 @@ small {
 
 .visual_design .visual_p {
   padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 .findings_list img {
@@ -1419,7 +1424,7 @@ small {
 }
 
 .visual_design .round_three_space {
-  padding-bottom: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .icons img, .typography img, .color_scheme img {
@@ -1612,6 +1617,11 @@ text-align: left;
   grid-column: 1 / -1;
   padding-bottom: 1rem;
   text-align: center;
+  justify-self: center;
+}
+
+.visual_design .mockups .h5_space, .final_design .h5_space {
+  padding-bottom: 0rem;
 }
 
 .smartequip_space {
@@ -1688,6 +1698,10 @@ text-align: left;
 
   .IA .wireframes_five {
     padding-top: 1rem;
+  }
+
+  .visual_design .extra_space {
+    padding-top: 0rem;
   }
 
   .visual_design .mockups_four {
@@ -2571,16 +2585,13 @@ text-align: left;
   }
 
   .visual_design .round_three_space {
-    padding-bottom: 0rem;
+    padding-bottom: 4rem;
   }
 
   .preference_testing_four {
     padding-top: 0;
   }
 
-  .IA_intro .sunbelt_IA {
-    padding-top: 4rem;
-  }
 
   .sunbelt_title {
     padding-bottom: 3rem;
